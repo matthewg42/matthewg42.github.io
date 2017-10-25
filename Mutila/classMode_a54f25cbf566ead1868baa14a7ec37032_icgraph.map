@@ -1,0 +1,7 @@
+<map id="Mode::modeUpdate" name="Mode::modeUpdate">
+<area shape="rect" id="node2" href="$classMode.html#aeec43ebfc6d4e5bdab58cd336a34f4a5" title="Mode::update" alt="" coords="199,5,301,32"/>
+<area shape="rect" id="node4" href="$classMode.html#acb7c286b35a94482e05e646483aea531" title="Mode::modeStop" alt="" coords="189,56,311,83"/>
+<area shape="rect" id="node3" href="$classBrownoutMode.html#a3a0cefabe6f2b88c707e939a7e7affe5" title="BrownoutMode::update" alt="" coords="359,5,515,32"/>
+<area shape="rect" id="node5" href="$classMode.html#a653b321767a9bf1878c285068a2aae24" title="To be called when switching to another mode. " alt="" coords="393,56,480,83"/>
+<area shape="rect" id="node6" href="$classParentMode.html#ade4f1473efd9fd796d8c38c5963b08bb" title="ParentMode::switchMode" alt="" coords="563,56,733,83"/>
+</map>
