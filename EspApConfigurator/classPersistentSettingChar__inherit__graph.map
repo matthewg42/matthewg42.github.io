@@ -1,0 +1,4 @@
+<map id="PersistentSettingChar" name="PersistentSettingChar">
+<area shape="rect" id="node2" href="$classPersistentSettingAtom.html" title="{PersistentSettingAtom\l\&lt; char \&gt;\n|# _default\l# _validator\l# _value\l|+ PersistentSettingAtom()\l+ get()\l+ load()\l+ set()\l+ getNative()\l+ setNative()\l+ save()\l+ size()\l+ isValid()\l+ formLength()\l+ reset()\l+ peek()\l}" alt="" coords="5,263,179,545"/>
+<area shape="rect" id="node3" href="$classPersistentSetting.html" title="Abstract base class for PersistentSetting* classes of various types. " alt="" coords="21,5,163,215"/>
+</map>
