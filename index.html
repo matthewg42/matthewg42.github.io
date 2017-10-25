@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mouse's Projects</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<style type="text/css">
+    body{
+    	padding-top: 70px;
+    }
+</style>
+</head>
+<body>
+<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Mouse's Projects</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="https://github.com/matthewg42" target="_blank">Github</a></li>
+				<li><a href="https://nottinghack.org.uk/" target="_blank">Hackerspace</a></li>
+				<li><a href="https://www.emfcamp.org/" target="_blank">EMF Camp</a></li>
+				<li><a href="https://www.youtube.com/watch?v=T6EBe_5LxO8" target="_blank">Fire Pong</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container">
+	<div class="jumbotron">
+		<h1>Mouse's Project and Documentation</h1>
+		<p>This site collects together information about various projects by UK-based Free Software developer, hacker, crumpet-eater and part Yeti, 'Mouse'.</p>
+	</div>
+	<div class="row">
+		<div class="col-xs-4">
+			<h2>Mutila</h2>
+			<p>A collection of utility classes and functions which are of general interested to Arduino developers... you know the sort of thing - a well-made class to model debounced buttons, samplers for averaging analog measurements over time and so on.  Mutila came about when I found myself copying the same DebouncedButton class between my projects, adding a little functionality here and there, and kindof losing track of the One True Debouced Button class...  since then Mutila has accumulated a bunch of other features.</p>
+			<p><a href="Mutila/index.html" target="_blank" class="btn btn-success">Documentation</a></p>
+		</div>
+		<div class="col-xs-4">
+			<h2>EspApConfigurator</h2>
+			<p>Access-point based configuration to ESP8266 and ESP32-based projects. This library includes a set of classes for persistent storage of project settings, backed using the functions in the EEPROM part of the ESP library (which is actually backed by flash). EspApConfigurator derives some of it's code from the widely-used WifiManager projct, but adds Mouse-style features which I found lacking in that library.</p>
+			<p><a href="EspApConfigurator/index.html" target="_blank" class="btn btn-success">Documentation</a></p>
+		</div>
+		<div class="col-xs-4">
+			<h2>MutilaNeoPixel</h2>
+			<p>This is a simple wrapper around the Adafruit_NeoPixel library which compensates for the millis() drift which occurs because interrupts are disabled while data is sent to the RGB LEDs. This library is to be used in conjuction with the Mutila Millis() function.</p>
+			<p><a href="MutilaNeoPixel/index.html" target="_blank" class="btn btn-success">Documentation</a></p>
+		</div>
+		<div class="col-xs-4">
+			<h2>CheeseBoard</h2>
+			<p>Documentation for the CheeseBoard library - a library of tools for use with the CheeseBoard: Cheddar board from The Curious Electric Company</p>
+			<p><a href="CheeseBoard/index.html" target="_blank" class="btn btn-success">Documentation</a></p>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-xs-12">
+			<footer>
+				<p>Have a lot of fun</p>
+			</footer>
+		</div>
+	</div>
+</div>
+</body>
+</html>
