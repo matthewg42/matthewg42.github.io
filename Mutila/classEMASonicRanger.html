@@ -79,19 +79,11 @@ Inheritance diagram for EMASonicRanger:</div>
 <area shape="rect" id="node2" href="classSonicRanger.html" title="{SonicRanger\n||+ SonicRanger()\l+ begin()\l+ getRange()\l+ setMaxRange()\l+ setTimeoutMs()\l}" alt="" coords="16,5,141,141"/>
 </map>
 </div>
-<div class="dynheader">
-Collaboration diagram for EMASonicRanger:</div>
-<div class="dyncontent">
-<div class="center"><img src="classEMASonicRanger__coll__graph.png" border="0" usemap="#EMASonicRanger_coll__map" alt="Collaboration graph"/></div>
-<map name="EMASonicRanger_coll__map" id="EMASonicRanger_coll__map">
-<area shape="rect" id="node2" href="classSonicRanger.html" title="{SonicRanger\n||+ SonicRanger()\l+ begin()\l+ getRange()\l+ setMaxRange()\l+ setTimeoutMs()\l}" alt="" coords="16,5,141,141"/>
-</map>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad976f9a3090b625c912551289ffcaaef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEMASonicRanger.html#ad976f9a3090b625c912551289ffcaaef">EMASonicRanger</a> (const uint8_t trigPin, const uint8_t echoPin, const uint16_t periodMs=10, const float alpha=0.5)</td></tr>
-<tr class="separator:ad976f9a3090b625c912551289ffcaaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3a3c7606388f38dabdd9b3d23098f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEMASonicRanger.html#a1d3a3c7606388f38dabdd9b3d23098f3">EMASonicRanger</a> (const uint8_t trigPin, const uint8_t echoPin, const uint16_t periodMs=10, const float alpha=0.5, const uint16_t minimumRange=3)</td></tr>
+<tr class="separator:a1d3a3c7606388f38dabdd9b3d23098f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a995cbdd313937de3641239e05232f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEMASonicRanger.html#a5a995cbdd313937de3641239e05232f7">begin</a> ()</td></tr>
 <tr class="separator:a5a995cbdd313937de3641239e05232f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b97bca8d4b2901ff5be7f8baf2a2769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEMASonicRanger.html#a6b97bca8d4b2901ff5be7f8baf2a2769">update</a> ()</td></tr>
@@ -116,8 +108,8 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="EMASonicRanger_8h_source.html#l00013">13</a> of file <a class="el" href="EMASonicRanger_8h_source.html">EMASonicRanger.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad976f9a3090b625c912551289ffcaaef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad976f9a3090b625c912551289ffcaaef">&#9670;&nbsp;</a></span>EMASonicRanger()</h2>
+<a id="a1d3a3c7606388f38dabdd9b3d23098f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3a3c7606388f38dabdd9b3d23098f3">&#9670;&nbsp;</a></span>EMASonicRanger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,7 +136,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>alpha</em> = <code>0.5</code>&#160;</td>
+          <td class="paramname"><em>alpha</em> = <code>0.5</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramname"><em>minimumRange</em> = <code>3</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -160,9 +158,11 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">echoPin</td><td>the arduino pin conneced to the ECHO pin of the HC-SR04 device </td></tr>
     <tr><td class="paramname">periodMs</td><td>the minimum delay between sampling (provided <a class="el" href="classEMASonicRanger.html#a6b97bca8d4b2901ff5be7f8baf2a2769">update()</a> is called) </td></tr>
     <tr><td class="paramname">alpha</td><td>the alpha value used in EMA calculation </td></tr>
+    <tr><td class="paramname">minimumRange</td><td>the minium range to try to detect (discard samples below this range)</td></tr>
   </table>
   </dd>
 </dl>
+<p>The reason for the mimimum range is that some units exhibit a problem where they randomly report skewing results. </p>
 
 <p class="definition">Definition at line <a class="el" href="EMASonicRanger_8cpp_source.html#l00005">5</a> of file <a class="el" href="EMASonicRanger_8cpp_source.html">EMASonicRanger.cpp</a>.</p>
 
@@ -186,7 +186,7 @@ Public Member Functions</h2></td></tr>
 <p>Initialization</p>
 <p>Typically called from setup() to intialize pins and so on. </p>
 
-<p class="definition">Definition at line <a class="el" href="EMASonicRanger_8cpp_source.html#l00012">12</a> of file <a class="el" href="EMASonicRanger_8cpp_source.html">EMASonicRanger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EMASonicRanger_8cpp_source.html#l00013">13</a> of file <a class="el" href="EMASonicRanger_8cpp_source.html">EMASonicRanger.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -215,7 +215,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Fetch exponential moving average </p>
 
-<p class="definition">Definition at line <a class="el" href="EMASonicRanger_8cpp_source.html#l00029">29</a> of file <a class="el" href="EMASonicRanger_8cpp_source.html">EMASonicRanger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EMASonicRanger_8cpp_source.html#l00033">33</a> of file <a class="el" href="EMASonicRanger_8cpp_source.html">EMASonicRanger.cpp</a>.</p>
 
 </div>
 </div>
@@ -236,7 +236,7 @@ Here is the call graph for this function:</div>
 <p>Update the ranger (get range from hardware)</p>
 <p>NOTE: this function calls <a class="el" href="classSonicRanger.html#aced71d6ab88a1a8a3cf0171908717251">SonicRanger::getRange()</a>, which may take significant time to execute - see <a class="el" href="classSonicRanger.html#aced71d6ab88a1a8a3cf0171908717251">SonicRanger::getRange</a> documentation for details. </p>
 
-<p class="definition">Definition at line <a class="el" href="EMASonicRanger_8cpp_source.html#l00020">20</a> of file <a class="el" href="EMASonicRanger_8cpp_source.html">EMASonicRanger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="EMASonicRanger_8cpp_source.html#l00021">21</a> of file <a class="el" href="EMASonicRanger_8cpp_source.html">EMASonicRanger.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

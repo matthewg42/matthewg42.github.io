@@ -1,3 +1,5 @@
 <map id="PersistentSetting::save" name="PersistentSetting::save">
-<area shape="rect" id="node2" href="$classPersistentSetting.html#a836fcbffb3c50ead4a0573e8a3c8169f" title="Constructor. " alt="" coords="212,5,343,47"/>
+<area shape="rect" id="node2" href="$classPersistentSetting.html#a836fcbffb3c50ead4a0573e8a3c8169f" title="Constructor. " alt="" coords="233,5,363,47"/>
+<area shape="rect" id="node3" href="$classPersistentSettingManager.html#a29f483a8a54b60d4b3bfa08957e3249b" title="PersistentSettingManager\l::resetAll" alt="" coords="212,71,384,112"/>
+<area shape="rect" id="node4" href="$classPersistentSettingManager.html#a205e24b97f47f475ef0d443755a93b35" title="PersistentSettingManager\l::checkSignature" alt="" coords="432,71,604,112"/>
 </map>

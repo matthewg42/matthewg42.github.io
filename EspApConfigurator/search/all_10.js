@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7eespapconfigurator_5f',['~EspApConfigurator_',['../classEspApConfigurator__.html#aa25f356da687e2dc7bfa3272e3e6fb5a',1,'EspApConfigurator_']]]
+  ['validatorfunction',['validatorFunction',['../classPersistentSettingAtom.html#acf1735b49f506d991c67fac162074c6b',1,'PersistentSettingAtom::validatorFunction()'],['../classPersistentSettingString.html#a89c421b4e8cc5aa261d1934eb0bbdad4',1,'PersistentSettingString::validatorFunction()']]]
 ];

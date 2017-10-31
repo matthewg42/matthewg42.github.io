@@ -1,0 +1,14 @@
+<map id="PersistentSettingManager::checkSignature" name="PersistentSettingManager::checkSignature">
+<area shape="rect" id="node2" href="$classPersistentSettingUInt8.html#a198da9606cd33329020826ff1a7ccb78" title="PersistentSettingUInt8\l::load" alt="" coords="238,100,393,141"/>
+<area shape="rect" id="node5" href="$classPersistentSettingManager.html#a5b70f47756fb9a010c49bb672b2ad75e" title="PersistentSettingManager\l::calculateSignature" alt="" coords="229,35,401,76"/>
+<area shape="rect" id="node8" href="$classPersistentSettingAtom.html#ae4af3c4b3fa24c335ce4c1ed8bc79fb3" title="get the current value as a String " alt="" coords="226,166,405,193"/>
+<area shape="rect" id="node9" href="$classPersistentSettingManager.html#a29f483a8a54b60d4b3bfa08957e3249b" title="PersistentSettingManager\l::resetAll" alt="" coords="229,268,401,309"/>
+<area shape="rect" id="node12" href="$classPersistentSettingUInt8.html#a96dc99076c964a3196801d91fdc5f813" title="PersistentSettingUInt8::set" alt="" coords="225,217,405,243"/>
+<area shape="rect" id="node13" href="$classPersistentSettingAtom.html#a16fc5f87e9dff2e3af703c1bf65a594a" title="Save the value to EEPROM. " alt="" coords="239,333,392,375"/>
+<area shape="rect" id="node3" href="$classPersistentSettingAtom.html#a2a06a3e5f249e2ed5fd9fca387f44473" title="peek at what is in EEPROM for this setting (may not be a valid value) " alt="" coords="456,100,609,141"/>
+<area shape="rect" id="node4" href="$classPersistentSettingAtom.html#af8bb87b4c901e1fa1a693aa4673eaf44" title="Validation of String representation. " alt="" coords="456,184,609,225"/>
+<area shape="rect" id="node6" href="$classPersistentSetting.html#a136dd58f1a3993a7043009619981cd07" title="PersistentSetting::\ltypecode" alt="" coords="660,5,791,47"/>
+<area shape="rect" id="node7" href="$classPersistentSetting.html#ada9a4f488107349652e8bd2b324edb3f" title="Get the EEPROM address of the first byte for this setting. " alt="" coords="467,35,598,76"/>
+<area shape="rect" id="node10" href="$classPersistentSetting.html#a6a4b04c3f8b9a4cbb326ca20b4356c8c" title="Reset the value in RAM to the default value. " alt="" coords="467,259,598,300"/>
+<area shape="rect" id="node11" href="$classPersistentSetting.html#a059acaec872caacd988d6caa3cd68e7a" title="Save the value in RAM to EEPROM. " alt="" coords="453,325,612,351"/>
+</map>

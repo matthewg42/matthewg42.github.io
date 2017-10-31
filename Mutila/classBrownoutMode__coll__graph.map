@@ -1,6 +1,0 @@
-<map id="BrownoutMode" name="BrownoutMode">
-<area shape="rect" id="node2" href="$classMode.html" title="Mode base class. " alt="" coords="5,479,144,703"/>
-<area shape="rect" id="node3" href="$classEMAVDivSampler.html" title="Exponential Moving Average Voltage Divider based voltage sampler. " alt="" coords="169,523,317,659"/>
-<area shape="rect" id="node4" href="$classEMASampler.html" title="Exponential Moving Average (EMA) analog pin sampler. " alt="" coords="177,235,308,429"/>
-<area shape="rect" id="node5" href="$classAbstractSampler.html" title="Base class for analog pin sampling classes. " alt="" coords="169,5,316,185"/>
-</map>

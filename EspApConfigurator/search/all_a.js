@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_5b_5d',['operator[]',['../classPersistentSettingManager.html#af358440e232a54afa866774f2a83694f',1,'PersistentSettingManager']]]
+  ['nextfreeaddress',['nextFreeAddress',['../classPersistentSettingManager.html#abb181c9f8fe83d7386f64c6ccf7e8339',1,'PersistentSettingManager']]]
 ];
