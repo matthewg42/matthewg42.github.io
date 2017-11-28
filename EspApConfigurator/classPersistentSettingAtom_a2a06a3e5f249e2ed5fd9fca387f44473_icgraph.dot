@@ -1,0 +1,11 @@
+digraph "PersistentSettingAtom::peek"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node15 [label="PersistentSettingAtom\l::peek",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="PersistentSettingAtom\l\< bool \>::reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingAtom.html#a6c3c62bb6b07f130dda90a3a7008cd0c",tooltip="Reset the value in RAM to the default value. "];
+  Node15 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="PersistentSettingAtom\l\< bool \>::save",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingAtom.html#a16fc5f87e9dff2e3af703c1bf65a594a",tooltip="Save the value to EEPROM. "];
+}

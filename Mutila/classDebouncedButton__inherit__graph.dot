@@ -1,0 +1,8 @@
+digraph "DebouncedButton"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="{DebouncedButton\n||+ DebouncedButton()\l+ begin()\l+ update()\l+ on()\l+ pushed()\l+ tapped()\l+ held()\l+ repeat()\l+ setState()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node1 [label="{RawButton\n|# _pin\l# _pullup\l|+ RawButton()\l+ begin()\l+ on()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRawButton.html",tooltip="Basic instantaneous button. "];
+}

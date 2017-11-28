@@ -1,7 +1,0 @@
-<map id="PersistentSetting::PersistentSetting" name="PersistentSetting::PersistentSetting">
-<area shape="rect" id="node2" href="$classPersistentSetting.html#a89e5d7219b284a6e37180f29ae7d2613" title="Load the value stored in EEPROM into RAM. " alt="" coords="186,5,341,32"/>
-<area shape="rect" id="node3" href="$classPersistentSetting.html#a059acaec872caacd988d6caa3cd68e7a" title="Save the value in RAM to EEPROM. " alt="" coords="184,56,343,83"/>
-<area shape="rect" id="node4" href="$classPersistentSetting.html#a1fe56be60b208ec31e95bc02603d225d" title="Get the number of bytes of EEPROM used by this setting. " alt="" coords="186,107,341,133"/>
-<area shape="rect" id="node5" href="$classPersistentSetting.html#abdaf108ff215c5b934f0f45c23c6dffc" title="Get the maximum length in characters. " alt="" coords="198,158,329,199"/>
-<area shape="rect" id="node6" href="$classPersistentSetting.html#a6a4b04c3f8b9a4cbb326ca20b4356c8c" title="Reset the value in RAM to the default value. " alt="" coords="198,223,329,265"/>
-</map>

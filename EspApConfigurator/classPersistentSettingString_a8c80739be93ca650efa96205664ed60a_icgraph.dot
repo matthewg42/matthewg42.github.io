@@ -1,0 +1,13 @@
+digraph "PersistentSettingString::size"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node28 [label="PersistentSettingString\l::size",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node28 -> Node29 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="PersistentSettingString\l::typecode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingString.html#a816a6921d2c862c4a7dd3ed9c00c20e9"];
+  Node29 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="PersistentSettingString\l::reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingString.html#ad58bb2921fe58366bf807f08634f7c6f",tooltip="Reset the value in RAM to the default value. "];
+  Node28 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="PersistentSettingString\l::formLength",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingString.html#a8ec880797fcbdb5cd55d6009301cd7f6",tooltip="Get the maximum length in characters. "];
+}

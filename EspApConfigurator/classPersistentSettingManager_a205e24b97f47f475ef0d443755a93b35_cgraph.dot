@@ -1,0 +1,33 @@
+digraph "PersistentSettingManager::checkSignature"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node26 [label="PersistentSettingManager\l::checkSignature",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node26 -> Node27 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node27 [label="PersistentSettingUInt8\l::load",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingUInt8.html#a198da9606cd33329020826ff1a7ccb78"];
+  Node27 -> Node28 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node28 [label="PersistentSettingAtom\l\< uint8_t \>::peek",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingAtom.html#a2a06a3e5f249e2ed5fd9fca387f44473",tooltip="peek at what is in EEPROM for this setting (may not be a valid value) "];
+  Node27 -> Node29 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node29 [label="PersistentSettingAtom\l\< uint8_t \>::isValid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingAtom.html#af8bb87b4c901e1fa1a693aa4673eaf44",tooltip="Validation of String representation. "];
+  Node26 -> Node30 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="PersistentSettingManager\l::calculateSignature",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingManager.html#a5b70f47756fb9a010c49bb672b2ad75e"];
+  Node30 -> Node31 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="PersistentSetting::\ltypecode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSetting.html#a136dd58f1a3993a7043009619981cd07"];
+  Node30 -> Node32 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node32 [label="PersistentSetting::\laddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSetting.html#ada9a4f488107349652e8bd2b324edb3f",tooltip="Get the EEPROM address of the first byte for this setting. "];
+  Node32 -> Node31 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 -> Node33 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node33 [label="PersistentSettingAtom::get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingAtom.html#ae4af3c4b3fa24c335ce4c1ed8bc79fb3",tooltip="get the current value as a String "];
+  Node26 -> Node34 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node34 [label="PersistentSettingManager\l::resetAll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingManager.html#a29f483a8a54b60d4b3bfa08957e3249b"];
+  Node34 -> Node35 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node35 [label="PersistentSetting::\lreset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSetting.html#a6a4b04c3f8b9a4cbb326ca20b4356c8c",tooltip="Reset the value in RAM to the default value. "];
+  Node34 -> Node36 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node36 [label="PersistentSetting::save",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSetting.html#a059acaec872caacd988d6caa3cd68e7a",tooltip="Save the value in RAM to EEPROM. "];
+  Node26 -> Node37 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node37 [label="PersistentSettingUInt8::set",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingUInt8.html#a96dc99076c964a3196801d91fdc5f813"];
+  Node37 -> Node29 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 -> Node38 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node38 [label="PersistentSettingAtom\l::save",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingAtom.html#a16fc5f87e9dff2e3af703c1bf65a594a",tooltip="Save the value to EEPROM. "];
+}

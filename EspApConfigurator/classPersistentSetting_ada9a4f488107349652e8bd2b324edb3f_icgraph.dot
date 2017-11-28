@@ -1,0 +1,17 @@
+digraph "PersistentSetting::address"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node9 [label="PersistentSetting::\laddress",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="PersistentSettingManager\l::addSetting",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingManager.html#aa1aeef57755e78fc0504e45523d75a1f"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="PersistentSettingManager\l::addSetting",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingManager.html#a1d918d2f25b8bf4bb326a238e4698b40"];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PersistentSettingManager\l::nextFreeAddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingManager.html#abb181c9f8fe83d7386f64c6ccf7e8339"];
+  Node9 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="PersistentSettingManager\l::calculateSignature",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingManager.html#a5b70f47756fb9a010c49bb672b2ad75e"];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="PersistentSettingManager\l::checkSignature",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingManager.html#a205e24b97f47f475ef0d443755a93b35"];
+}

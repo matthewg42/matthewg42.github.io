@@ -1,5 +1,0 @@
-<map id="PersistentSettingString::isValid" name="PersistentSettingString::isValid">
-<area shape="rect" id="node2" href="$classPersistentSettingString.html#a7dafadd7fb60bdde97ca37cb84f433e3" title="set the value " alt="" coords="209,5,392,32"/>
-<area shape="rect" id="node3" href="$classPersistentSettingString.html#ada2ef8cc76970330cd990c55aed77518" title="Load the value stored in EEPROM for this setting. " alt="" coords="223,57,379,98"/>
-<area shape="rect" id="node4" href="$classPersistentSettingString.html#ad58bb2921fe58366bf807f08634f7c6f" title="Reset the value in RAM to the default value. " alt="" coords="223,122,379,163"/>
-</map>

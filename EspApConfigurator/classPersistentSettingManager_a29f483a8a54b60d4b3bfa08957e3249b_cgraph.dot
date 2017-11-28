@@ -1,0 +1,11 @@
+digraph "PersistentSettingManager::resetAll"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node56 [label="PersistentSettingManager\l::resetAll",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node56 -> Node57 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node57 [label="PersistentSetting::\lreset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSetting.html#a6a4b04c3f8b9a4cbb326ca20b4356c8c",tooltip="Reset the value in RAM to the default value. "];
+  Node56 -> Node58 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node58 [label="PersistentSetting::save",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSetting.html#a059acaec872caacd988d6caa3cd68e7a",tooltip="Save the value in RAM to EEPROM. "];
+}

@@ -1,8 +1,0 @@
-<map id="DebouncedButton::setState" name="DebouncedButton::setState">
-<area shape="rect" id="node2" href="$classDebouncedButton.html#af0bfebb2830f4b6f5873c9e0ec6ff18d" title="DebouncedButton::begin" alt="" coords="240,56,405,83"/>
-<area shape="rect" id="node5" href="$classDebouncedButton.html#a6df550e3af8195ab8374c86660abe6ae" title="DebouncedButton::update" alt="" coords="236,107,409,133"/>
-<area shape="rect" id="node3" href="$classDualButton.html#af57f28c932858d173c360d9deadff8c4" title="DualButton::begin" alt="" coords="467,5,594,32"/>
-<area shape="rect" id="node4" href="$classToggleButton.html#adf067cc210a5c24bd6ecd833a09d00a2" title="ToggleButton::begin" alt="" coords="461,56,600,83"/>
-<area shape="rect" id="node6" href="$classDualButton.html#aa3e0cbe8865dce165618a1897ee1575b" title="DualButton::update" alt="" coords="463,107,598,133"/>
-<area shape="rect" id="node7" href="$classToggleButton.html#ab8a6fdad6e76b0d9466e55bbefd3bc46" title="ToggleButton::update" alt="" coords="457,157,604,184"/>
-</map>

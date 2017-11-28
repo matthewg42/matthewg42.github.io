@@ -1,0 +1,17 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node18 [label="Mode",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node18 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="ModeAP_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classModeAP__.html",tooltip="Mode which does nothing (except debug out) "];
+  Node18 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="ModeDummy_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classModeDummy__.html",tooltip="Mode which does nothing (except debug out) "];
+  Node18 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="ModeReset_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classModeReset__.html",tooltip="Resets WiFi device - clears state like network details and other settings. "];
+  Node18 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="ModeWifiClient_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classModeWifiClient__.html",tooltip="Normal operation as WiFi client. "];
+  Node18 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="ModeWifiOff_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classModeWifiOff__.html",tooltip="Mode which does nothing (except debug out) "];
+}

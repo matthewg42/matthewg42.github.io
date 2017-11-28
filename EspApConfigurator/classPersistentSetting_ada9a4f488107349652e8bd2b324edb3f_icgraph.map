@@ -1,7 +1,0 @@
-<map id="PersistentSetting::address" name="PersistentSetting::address">
-<area shape="rect" id="node2" href="$classPersistentSettingManager.html#aa1aeef57755e78fc0504e45523d75a1f" title="PersistentSettingManager\l::addSetting" alt="" coords="184,5,356,47"/>
-<area shape="rect" id="node4" href="$classPersistentSettingManager.html#abb181c9f8fe83d7386f64c6ccf7e8339" title="PersistentSettingManager\l::nextFreeAddress" alt="" coords="184,71,356,112"/>
-<area shape="rect" id="node5" href="$classPersistentSettingManager.html#a5b70f47756fb9a010c49bb672b2ad75e" title="PersistentSettingManager\l::calculateSignature" alt="" coords="184,136,356,177"/>
-<area shape="rect" id="node3" href="$classPersistentSettingManager.html#a1d918d2f25b8bf4bb326a238e4698b40" title="PersistentSettingManager\l::addSetting" alt="" coords="404,5,576,47"/>
-<area shape="rect" id="node6" href="$classPersistentSettingManager.html#a205e24b97f47f475ef0d443755a93b35" title="PersistentSettingManager\l::checkSignature" alt="" coords="404,136,576,177"/>
-</map>

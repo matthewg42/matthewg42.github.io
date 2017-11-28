@@ -1,4 +1,0 @@
-<map id="PersistentSettingManager::resetAll" name="PersistentSettingManager::resetAll">
-<area shape="rect" id="node2" href="$classPersistentSetting.html#a6a4b04c3f8b9a4cbb326ca20b4356c8c" title="Reset the value in RAM to the default value. " alt="" coords="239,5,370,47"/>
-<area shape="rect" id="node3" href="$classPersistentSetting.html#a059acaec872caacd988d6caa3cd68e7a" title="Save the value in RAM to EEPROM. " alt="" coords="225,71,384,98"/>
-</map>

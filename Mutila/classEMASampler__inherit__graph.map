@@ -1,5 +1,0 @@
-<map id="EMASampler" name="EMASampler">
-<area shape="rect" id="node3" href="$classEMACurrentSampler.html" title="Exponential Moving Average current sampler. " alt="" coords="5,476,168,612"/>
-<area shape="rect" id="node4" href="$classEMAVDivSampler.html" title="Exponential Moving Average Voltage Divider based voltage sampler. " alt="" coords="193,476,341,612"/>
-<area shape="rect" id="node2" href="$classAbstractSampler.html" title="Base class for analog pin sampling classes. " alt="" coords="103,5,249,185"/>
-</map>

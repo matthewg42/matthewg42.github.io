@@ -1,0 +1,20 @@
+digraph "PersistentSetting::typecode"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node39 [label="PersistentSetting::\ltypecode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node39 -> Node40 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node40 [label="PersistentSetting::\laddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSetting.html#ada9a4f488107349652e8bd2b324edb3f",tooltip="Get the EEPROM address of the first byte for this setting. "];
+  Node40 -> Node41 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node41 [label="PersistentSettingManager\l::addSetting",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingManager.html#aa1aeef57755e78fc0504e45523d75a1f"];
+  Node41 -> Node42 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node42 [label="PersistentSettingManager\l::addSetting",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingManager.html#a1d918d2f25b8bf4bb326a238e4698b40"];
+  Node40 -> Node43 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node43 [label="PersistentSettingManager\l::nextFreeAddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingManager.html#abb181c9f8fe83d7386f64c6ccf7e8339"];
+  Node40 -> Node44 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node44 [label="PersistentSettingManager\l::calculateSignature",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingManager.html#a5b70f47756fb9a010c49bb672b2ad75e"];
+  Node44 -> Node45 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node45 [label="PersistentSettingManager\l::checkSignature",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingManager.html#a205e24b97f47f475ef0d443755a93b35"];
+  Node39 -> Node44 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

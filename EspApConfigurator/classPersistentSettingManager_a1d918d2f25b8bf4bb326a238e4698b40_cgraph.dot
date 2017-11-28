@@ -1,0 +1,17 @@
+digraph "PersistentSettingManager::addSetting"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node11 [label="PersistentSettingManager\l::addSetting",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="PersistentSettingManager\l::addSetting",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingManager.html#aa1aeef57755e78fc0504e45523d75a1f"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="PersistentSetting::\laddress",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSetting.html#ada9a4f488107349652e8bd2b324edb3f",tooltip="Get the EEPROM address of the first byte for this setting. "];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="PersistentSetting::\ltypecode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSetting.html#a136dd58f1a3993a7043009619981cd07"];
+  Node12 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="PersistentSetting::size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSetting.html#a1fe56be60b208ec31e95bc02603d225d",tooltip="Get the number of bytes of EEPROM used by this setting. "];
+  Node12 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="PersistentSetting::load",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSetting.html#a89e5d7219b284a6e37180f29ae7d2613",tooltip="Load the value stored in EEPROM into RAM. "];
+}

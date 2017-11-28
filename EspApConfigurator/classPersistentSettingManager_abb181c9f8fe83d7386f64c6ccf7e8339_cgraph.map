@@ -1,6 +1,0 @@
-<map id="PersistentSettingManager::nextFreeAddress" name="PersistentSettingManager::nextFreeAddress">
-<area shape="rect" id="node2" href="$classPersistentSettingAtom.html#a9c7abf68cdca35660965fbe9b2791913" title="Get the number of bytes of EEPROM used by this setting. " alt="" coords="226,5,379,47"/>
-<area shape="rect" id="node3" href="$classPersistentSetting.html#ada9a4f488107349652e8bd2b324edb3f" title="Get the EEPROM address of the first byte for this setting. " alt="" coords="237,71,368,112"/>
-<area shape="rect" id="node5" href="$classPersistentSetting.html#a1fe56be60b208ec31e95bc02603d225d" title="Get the number of bytes of EEPROM used by this setting. " alt="" coords="225,137,380,163"/>
-<area shape="rect" id="node4" href="$classPersistentSetting.html#a136dd58f1a3993a7043009619981cd07" title="PersistentSetting::\ltypecode" alt="" coords="428,71,559,112"/>
-</map>

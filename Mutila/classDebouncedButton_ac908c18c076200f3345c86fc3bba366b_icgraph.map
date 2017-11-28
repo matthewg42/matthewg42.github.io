@@ -1,7 +1,0 @@
-<map id="DebouncedButton::on" name="DebouncedButton::on">
-<area shape="rect" id="node2" href="$classDebouncedButton.html#a52d31c961275c5caeaedccb0884284d5" title="DebouncedButton::held" alt="" coords="207,5,366,32"/>
-<area shape="rect" id="node4" href="$classDebouncedButton.html#ace5621dee2abbec7612160d3fa4a06e3" title="DebouncedButton::repeat" alt="" coords="201,56,372,83"/>
-<area shape="rect" id="node6" href="$classDualButton.html#aeab84d886111669d451f2ad9f4c86e5a" title="DualButton::on" alt="" coords="232,107,341,133"/>
-<area shape="rect" id="node3" href="$classDualButton.html#a1123763ede6e1a3ab440462c950a31fe" title="DualButton::held" alt="" coords="426,5,545,32"/>
-<area shape="rect" id="node5" href="$classDualButton.html#abea55cbea72524f488e503cf3ee6b7bd" title="DualButton::repeat" alt="" coords="420,56,551,83"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="BrownoutMode::update" name="BrownoutMode::update">
-<area shape="rect" id="node2" href="$classEMASampler.html#ad18de568b8bae0f032fe1b2a8c40835d" title="EMASampler::update" alt="" coords="242,5,389,32"/>
-<area shape="rect" id="node3" href="$classEMAVDivSampler.html#a8ddf2a68a05dc8f05b3777d4a0aa158c" title="Get the mean value in the sample set. " alt="" coords="209,56,421,83"/>
-<area shape="rect" id="node5" href="$classBrownoutMode.html#af53aafeeb702f6a6a0024881fc99609f" title="BrownoutMode::exitBrownout" alt="" coords="219,107,412,133"/>
-<area shape="rect" id="node6" href="$classBrownoutMode.html#a0ad73f43215f9772e0bf468412a3988d" title="BrownoutMode::enterBrownout" alt="" coords="215,157,416,184"/>
-<area shape="rect" id="node7" href="$classMode.html#aeec43ebfc6d4e5bdab58cd336a34f4a5" title="Mode::update" alt="" coords="265,208,366,235"/>
-<area shape="rect" id="node4" href="$classEMASampler.html#a84c39b246ce7e165e6e5e78b88940d0b" title="The mean value in the sample set. " alt="" coords="469,56,623,83"/>
-<area shape="rect" id="node8" href="$classMode.html#a54f25cbf566ead1868baa14a7ec37032" title="Mode::modeUpdate" alt="" coords="478,208,614,235"/>
-</map>
