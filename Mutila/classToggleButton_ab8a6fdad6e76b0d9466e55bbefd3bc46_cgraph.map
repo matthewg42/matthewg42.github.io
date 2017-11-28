@@ -1,0 +1,6 @@
+<map id="ToggleButton::update" name="ToggleButton::update">
+<area shape="rect" id="node2" href="$classDebouncedButton.html#a6df550e3af8195ab8374c86660abe6ae" title="DebouncedButton::update" alt="" coords="215,31,405,57"/>
+<area shape="rect" id="node5" href="$classDebouncedButton.html#a57863e89ceb79fb8cb0b2f6e183decea" title="DebouncedButton::pushed" alt="" coords="213,81,407,108"/>
+<area shape="rect" id="node3" href="$classRawButton.html#aa1ff6ef2c4300d63eccc631bac61cd74" title="RawButton::on" alt="" coords="496,5,613,32"/>
+<area shape="rect" id="node4" href="$classDebouncedButton.html#a9b34291dcea290feac4502ef0692a732" title="DebouncedButton::setState" alt="" coords="455,56,655,83"/>
+</map>

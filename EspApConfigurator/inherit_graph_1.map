@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classModeAP__.html" title="Mode which does nothing (except debug out) " alt="" coords="133,5,215,32"/>
+<area shape="rect" id="node3" href="$classModeDummy__.html" title="Mode which does nothing (except debug out) " alt="" coords="116,56,232,83"/>
+<area shape="rect" id="node4" href="$classModeReset__.html" title="Resets WiFi device &#45; clears state like network details and other settings. " alt="" coords="124,107,224,133"/>
+<area shape="rect" id="node5" href="$classModeWifiClient__.html" title="Normal operation as WiFi client. " alt="" coords="111,157,237,184"/>
+<area shape="rect" id="node6" href="$classModeWifiOff__.html" title="Mode which does nothing (except debug out) " alt="" coords="120,208,228,235"/>
+</map>

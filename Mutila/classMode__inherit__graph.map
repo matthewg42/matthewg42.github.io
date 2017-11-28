@@ -1,0 +1,4 @@
+<map id="Mode" name="Mode">
+<area shape="rect" id="node2" href="$classBrownoutMode.html" title="Mode class with brownout detection. " alt="" coords="5,277,149,457"/>
+<area shape="rect" id="node3" href="$classParentMode.html" title="{ParentMode\n|# pMode\l|+ ParentMode()\l+ switchMode()\l}" alt="" coords="174,321,298,413"/>
+</map>

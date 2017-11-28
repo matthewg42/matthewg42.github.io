@@ -1,9 +1,0 @@
-digraph "PersistentSettingAtom::isValid"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node10 [label="PersistentSettingAtom\l::isValid",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node11 [label="PersistentSettingAtom\l\< bool \>::setNative",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersistentSettingAtom.html#a3d2b5af27c44dc080ea9dc86853cb152",tooltip="set the value "];
-}

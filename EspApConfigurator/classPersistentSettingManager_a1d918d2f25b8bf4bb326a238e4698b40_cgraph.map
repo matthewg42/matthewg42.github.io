@@ -1,0 +1,7 @@
+<map id="PersistentSettingManager::addSetting" name="PersistentSettingManager::addSetting">
+<area shape="rect" id="node2" href="$classPersistentSettingManager.html#aa1aeef57755e78fc0504e45523d75a1f" title="PersistentSettingManager\l::addSetting" alt="" coords="243,64,432,105"/>
+<area shape="rect" id="node3" href="$classPersistentSetting.html#ada9a4f488107349652e8bd2b324edb3f" title="Get the EEPROM address of the first byte for this setting. " alt="" coords="494,5,635,47"/>
+<area shape="rect" id="node5" href="$classPersistentSetting.html#a1fe56be60b208ec31e95bc02603d225d" title="Get the number of bytes of EEPROM used by this setting. " alt="" coords="481,71,648,98"/>
+<area shape="rect" id="node6" href="$classPersistentSetting.html#a89e5d7219b284a6e37180f29ae7d2613" title="Load the value stored in EEPROM into RAM. " alt="" coords="480,122,649,149"/>
+<area shape="rect" id="node4" href="$classPersistentSetting.html#a136dd58f1a3993a7043009619981cd07" title="PersistentSetting::\ltypecode" alt="" coords="697,5,839,47"/>
+</map>

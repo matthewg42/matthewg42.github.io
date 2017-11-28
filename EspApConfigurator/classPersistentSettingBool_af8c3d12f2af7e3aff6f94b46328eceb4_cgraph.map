@@ -1,0 +1,4 @@
+<map id="PersistentSettingBool::load" name="PersistentSettingBool::load">
+<area shape="rect" id="node2" href="$classPersistentSettingAtom.html#a2a06a3e5f249e2ed5fd9fca387f44473" title="peek at what is in EEPROM for this setting (may not be a valid value) " alt="" coords="216,5,384,47"/>
+<area shape="rect" id="node3" href="$classPersistentSettingAtom.html#af8bb87b4c901e1fa1a693aa4673eaf44" title="Validation of String representation. " alt="" coords="216,71,384,112"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="PersistentSetting::typecode" name="PersistentSetting::typecode">
+<area shape="rect" id="node2" href="$classPersistentSetting.html#ada9a4f488107349652e8bd2b324edb3f" title="Get the EEPROM address of the first byte for this setting. " alt="" coords="195,73,336,115"/>
+<area shape="rect" id="node6" href="$classPersistentSettingManager.html#a5b70f47756fb9a010c49bb672b2ad75e" title="PersistentSettingManager\l::calculateSignature" alt="" coords="384,136,573,177"/>
+<area shape="rect" id="node3" href="$classPersistentSettingManager.html#aa1aeef57755e78fc0504e45523d75a1f" title="PersistentSettingManager\l::addSetting" alt="" coords="384,5,573,47"/>
+<area shape="rect" id="node5" href="$classPersistentSettingManager.html#abb181c9f8fe83d7386f64c6ccf7e8339" title="PersistentSettingManager\l::nextFreeAddress" alt="" coords="384,71,573,112"/>
+<area shape="rect" id="node4" href="$classPersistentSettingManager.html#a1d918d2f25b8bf4bb326a238e4698b40" title="PersistentSettingManager\l::addSetting" alt="" coords="621,5,811,47"/>
+<area shape="rect" id="node7" href="$classPersistentSettingManager.html#a205e24b97f47f475ef0d443755a93b35" title="PersistentSettingManager\l::checkSignature" alt="" coords="621,136,811,177"/>
+</map>

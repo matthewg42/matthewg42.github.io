@@ -1,0 +1,4 @@
+<map id="PersistentSettingAtom::peek" name="PersistentSettingAtom::peek">
+<area shape="rect" id="node2" href="$classPersistentSettingAtom.html#a6c3c62bb6b07f130dda90a3a7008cd0c" title="Reset the value in RAM to the default value. " alt="" coords="221,5,389,47"/>
+<area shape="rect" id="node3" href="$classPersistentSettingAtom.html#a16fc5f87e9dff2e3af703c1bf65a594a" title="Save the value to EEPROM. " alt="" coords="221,71,389,112"/>
+</map>
