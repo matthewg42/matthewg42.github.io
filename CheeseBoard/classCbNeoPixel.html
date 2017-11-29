@@ -67,7 +67,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classCbNeoPixel.html" title="CbNeoPixel. ">CbNeoPixel</a>.  
+<p>Wrapper around Adafruit_NeoPixel with Millis() correction.  
  <a href="classCbNeoPixel.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="CbLeds_8h_source.html">CbLeds.h</a>&gt;</code></p>
@@ -81,23 +81,89 @@ Inheritance diagram for CbNeoPixel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a254d82554cdabac009e1fac1d016d48c"><td class="memItemLeft" align="right" valign="top"><a id="a254d82554cdabac009e1fac1d016d48c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCbNeoPixel.html#a254d82554cdabac009e1fac1d016d48c">CbNeoPixel</a> (uint16_t n, uint8_t p=6, neoPixelType t=NEO_GRB+NEO_KHZ800)</td></tr>
-<tr class="memdesc:a254d82554cdabac009e1fac1d016d48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classCbNeoPixel.html" title="CbNeoPixel. ">CbNeoPixel</a> object. <br /></td></tr>
+<tr class="memitem:a254d82554cdabac009e1fac1d016d48c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCbNeoPixel.html#a254d82554cdabac009e1fac1d016d48c">CbNeoPixel</a> (uint16_t n, uint8_t p=6, neoPixelType t=NEO_GRB+NEO_KHZ800)</td></tr>
 <tr class="separator:a254d82554cdabac009e1fac1d016d48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab14beac03e9e70987f1d94fa95ebb88"><td class="memItemLeft" align="right" valign="top"><a id="aab14beac03e9e70987f1d94fa95ebb88"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCbNeoPixel.html#aab14beac03e9e70987f1d94fa95ebb88">show</a> (void)</td></tr>
-<tr class="memdesc:aab14beac03e9e70987f1d94fa95ebb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send updated pixel state to LEDs, and update Millis() offset. <br /></td></tr>
+<tr class="memitem:aab14beac03e9e70987f1d94fa95ebb88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCbNeoPixel.html#aab14beac03e9e70987f1d94fa95ebb88">show</a> (void)</td></tr>
 <tr class="separator:aab14beac03e9e70987f1d94fa95ebb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classCbNeoPixel.html" title="CbNeoPixel. ">CbNeoPixel</a>. </p>
-<p>When the Adafruit_NeoPixel.show() member is called interrupts are temporarily disabled to allow the precise timing required when sending data out to the WS2811 LEDs. This has a few side-effects, including a drift in the timer which is used by millis().</p>
-<p>This is usually a small effect, but when a long strip of LEDs is updated frequently, the offset can add up and become noticable. In one application, the author noticed the value of millis being 50% slower than real time!</p>
-<p>This class is a simple sub-class of the Adafruit_NeoPixel class which estimates the offset to the millis timer, and updates the offset for the Millis() call. </p>
+<div class="textblock"><p>Wrapper around Adafruit_NeoPixel with Millis() correction. </p>
+<p>When the Adafruit_NeoPixel.show() member is called interrupts are temporarily disabled to allow the precise timing required when sending data out to the LEDs. This has a few side-effects, including a drift in the timer which is used by millis().</p>
+<p>This is usually a small effect, but when LEDs are updated very frequently the offset can add up and become noticable. In one application, the author noticed the value of millis being 50% slower than real time!</p>
+<p>This class is a simple sub-class of the Adafruit_NeoPixel class which estimates the offset to the millis() timer, and updates the offset for the Millis() call. </p>
 
 <p class="definition">Definition at line <a class="el" href="CbLeds_8h_source.html#l00021">21</a> of file <a class="el" href="CbLeds_8h_source.html">CbLeds.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a254d82554cdabac009e1fac1d016d48c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a254d82554cdabac009e1fac1d016d48c">&#9670;&nbsp;</a></span>CbNeoPixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CbNeoPixel::CbNeoPixel </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>p</em> = <code>6</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">neoPixelType&#160;</td>
+          <td class="paramname"><em>t</em> = <code>NEO_GRB+NEO_KHZ800</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor.</p>
+<p>Parameter names kept the same as the Adafruit_NeoPixel docs for consistency.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>The number of LEDs in the strip. </td></tr>
+    <tr><td class="paramname">p</td><td>The pin for the LED data line. </td></tr>
+    <tr><td class="paramname">t</td><td>RGB LED type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="CbLeds_8cpp_source.html#l00007">7</a> of file <a class="el" href="CbLeds_8cpp_source.html">CbLeds.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aab14beac03e9e70987f1d94fa95ebb88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab14beac03e9e70987f1d94fa95ebb88">&#9670;&nbsp;</a></span>show()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CbNeoPixel::show </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Send updated pixel state to LEDs.</p>
+<p>This calls Adafruit_NeoPixel.show() and then makes an adjustment to the Millis() offset, so that Millis() returns about the right time. </p>
+
+<p class="definition">Definition at line <a class="el" href="CbLeds_8cpp_source.html#l00012">12</a> of file <a class="el" href="CbLeds_8cpp_source.html">CbLeds.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="CbLeds_8h_source.html">CbLeds.h</a></li>
 <li>src/<a class="el" href="CbLeds_8cpp_source.html">CbLeds.cpp</a></li>
 </ul>

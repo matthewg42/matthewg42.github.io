@@ -67,12 +67,14 @@ $(function() {
 <div class="title">GfxNetInfo Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="GfxNetInfo_8h_source.html">GfxNetInfo.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for GfxNetInfo:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGfxNetInfo__inherit__graph.png" border="0" usemap="#GfxNetInfo_inherit__map" alt="Inheritance graph"/></div>
 <map name="GfxNetInfo_inherit__map" id="GfxNetInfo_inherit__map">
-<area shape="rect" id="node2" href="classGfxItem.html" title="{GfxItem\n||+ draw()\l+ width()\l+ height()\l}" alt="" coords="24,5,101,112"/>
+<area shape="rect" id="node2" href="classGfxItem.html" title="{GfxItem\n||+ draw()\l+ width()\l+ height()\l}" alt="" coords="26,5,114,112"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -90,14 +92,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1bd85c6a0c221ba0702e2f12349b9f3f"><td class="memItemLeft" align="right" valign="top"><a id="a1bd85c6a0c221ba0702e2f12349b9f3f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classGfxNetInfo.html">GfxNetInfo</a> &amp;other)</td></tr>
 <tr class="separator:a1bd85c6a0c221ba0702e2f12349b9f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadfadeef0aef5437f50d159c1d4c711b"><td class="memItemLeft" align="right" valign="top"><a id="aadfadeef0aef5437f50d159c1d4c711b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (uint16_t xOffset=0, uint16_t yOffset=0)</td></tr>
+<tr class="memitem:aadfadeef0aef5437f50d159c1d4c711b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGfxNetInfo.html#aadfadeef0aef5437f50d159c1d4c711b">draw</a> (uint16_t xOffset=0, uint16_t yOffset=0)</td></tr>
 <tr class="separator:aadfadeef0aef5437f50d159c1d4c711b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45dc270f722f9863bdde09e4a49cae84"><td class="memItemLeft" align="right" valign="top"><a id="a45dc270f722f9863bdde09e4a49cae84"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>width</b> ()</td></tr>
+<tr class="memitem:a45dc270f722f9863bdde09e4a49cae84"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGfxNetInfo.html#a45dc270f722f9863bdde09e4a49cae84">width</a> ()</td></tr>
 <tr class="separator:a45dc270f722f9863bdde09e4a49cae84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a1036d6eaaa14aa63f6400b5b875525"><td class="memItemLeft" align="right" valign="top"><a id="a1a1036d6eaaa14aa63f6400b5b875525"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> ()</td></tr>
+<tr class="memitem:a1a1036d6eaaa14aa63f6400b5b875525"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGfxNetInfo.html#a1a1036d6eaaa14aa63f6400b5b875525">height</a> ()</td></tr>
 <tr class="separator:a1a1036d6eaaa14aa63f6400b5b875525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dbec4c0c43e4ddeb31cf955f139104a"><td class="memItemLeft" align="right" valign="top"><a id="a2dbec4c0c43e4ddeb31cf955f139104a"></a>
 String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGfxNetInfo.html#a2dbec4c0c43e4ddeb31cf955f139104a">ssid</a> ()</td></tr>
@@ -140,9 +139,128 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_lastSeenMs</b></
 <tr class="separator:a67a0ef1d041f1274cac24b4ec524fdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="GfxNetInfo_8h_source.html#l00007">7</a> of file <a class="el" href="GfxNetInfo_8h_source.html">GfxNetInfo.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>A <a class="el" href="classGfxItem.html">GfxItem</a> for showing a WiFi network (SSID &amp; signal). </p>
+
+<p class="definition">Definition at line <a class="el" href="GfxNetInfo_8h_source.html#l00009">9</a> of file <a class="el" href="GfxNetInfo_8h_source.html">GfxNetInfo.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aadfadeef0aef5437f50d159c1d4c711b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadfadeef0aef5437f50d159c1d4c711b">&#9670;&nbsp;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GfxNetInfo::draw </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>xOffset</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>yOffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Draw the object on the display (don't send buffer). </p>
+
+<p>Implements <a class="el" href="classGfxItem.html#a002a4638af5c55b1eee43840ccd28dc8">GfxItem</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="GfxNetInfo_8cpp_source.html#l00038">38</a> of file <a class="el" href="GfxNetInfo_8cpp_source.html">GfxNetInfo.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGfxNetInfo_aadfadeef0aef5437f50d159c1d4c711b_cgraph.png" border="0" usemap="#classGfxNetInfo_aadfadeef0aef5437f50d159c1d4c711b_cgraph" alt=""/></div>
+<map name="classGfxNetInfo_aadfadeef0aef5437f50d159c1d4c711b_cgraph" id="classGfxNetInfo_aadfadeef0aef5437f50d159c1d4c711b_cgraph">
+<area shape="rect" id="node2" href="classGfxItem.html#a5bbba5847e3c0c7ddae444aa3f0bc95c" title="GfxItem::width" alt="" coords="217,5,336,32"/>
+<area shape="rect" id="node3" href="classGfxSignalStrength.html#ac2530e1c5fcaea62d064bb75ab587583" title="GfxSignalStrength::\lwidth" alt="" coords="203,57,351,98"/>
+<area shape="rect" id="node4" href="classGfxSignalStrength.html#a89d3d4385320e2f8e1f87588696bc011" title="GfxSignalStrength::draw" alt="" coords="187,123,367,149"/>
+<area shape="rect" id="node5" href="classGfxTextBox.html#aa3dc4bc5d8d24f8532dfaf371aad6a07" title="GfxTextBox::draw" alt="" coords="208,173,345,200"/>
+<area shape="rect" id="node8" href="classGfxTextBox.html#a2c0dff88f4dd13702129d5b4005dc169" title="GfxTextBox::width" alt="" coords="206,224,347,251"/>
+<area shape="rect" id="node6" href="classGfxStringListBox.html#a8e0273ae3a5e4b15330601c31f3c0b01" title="GfxStringListBox::width" alt="" coords="417,148,592,175"/>
+<area shape="rect" id="node7" href="classGfxStringListBox.html#a173760d8b7225e8616d3872efc66ac33" title="GfxStringListBox::height" alt="" coords="415,199,595,225"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1a1036d6eaaa14aa63f6400b5b875525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a1036d6eaaa14aa63f6400b5b875525">&#9670;&nbsp;</a></span>height()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t GfxNetInfo::height </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get object height.</p>
+<dl class="section return"><dt>Returns</dt><dd>Object height in pixels. </dd></dl>
+
+<p>Implements <a class="el" href="classGfxItem.html#af5b6e757ebf50a61f5b66f93de37de06">GfxItem</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="GfxNetInfo_8cpp_source.html#l00051">51</a> of file <a class="el" href="GfxNetInfo_8cpp_source.html">GfxNetInfo.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a45dc270f722f9863bdde09e4a49cae84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45dc270f722f9863bdde09e4a49cae84">&#9670;&nbsp;</a></span>width()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t GfxNetInfo::width </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get object width.</p>
+<dl class="section return"><dt>Returns</dt><dd>Object width in pixels. </dd></dl>
+
+<p>Implements <a class="el" href="classGfxItem.html#a5bbba5847e3c0c7ddae444aa3f0bc95c">GfxItem</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="GfxNetInfo_8cpp_source.html#l00056">56</a> of file <a class="el" href="GfxNetInfo_8cpp_source.html">GfxNetInfo.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="GfxNetInfo_8h_source.html">GfxNetInfo.h</a></li>
 <li>src/<a class="el" href="GfxNetInfo_8cpp_source.html">GfxNetInfo.cpp</a></li>
 </ul>

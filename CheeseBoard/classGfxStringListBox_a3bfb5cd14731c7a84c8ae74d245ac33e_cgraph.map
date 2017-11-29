@@ -1,5 +1,5 @@
 <map id="GfxStringListBox::scrollTo" name="GfxStringListBox::scrollTo">
-<area shape="rect" id="node2" href="$classGfxSSIDListBox.html#af7a19d87c31d9ce60876bbfd0a518e10" title="Find out if idx is currently visible on screen. " alt="" coords="228,5,423,32"/>
-<area shape="rect" id="node3" href="$classGfxSSIDListBox.html#adca62d391d9c14f542893afb56f9d8af" title="GfxSSIDListBox::scrollUp" alt="" coords="238,56,413,83"/>
-<area shape="rect" id="node4" href="$classGfxSSIDListBox.html#ad7eb99286a388acebc2e6939e0258aa3" title="GfxSSIDListBox::scrollDown" alt="" coords="229,107,421,133"/>
+<area shape="rect" id="node2" href="$classGfxSSIDListBox.html#af7a19d87c31d9ce60876bbfd0a518e10" title="GfxSSIDListBox::isOnScreen" alt="" coords="241,5,445,32"/>
+<area shape="rect" id="node3" href="$classGfxSSIDListBox.html#adca62d391d9c14f542893afb56f9d8af" title="GfxSSIDListBox::scrollUp" alt="" coords="251,56,435,83"/>
+<area shape="rect" id="node4" href="$classGfxSSIDListBox.html#ad7eb99286a388acebc2e6939e0258aa3" title="GfxSSIDListBox::scrollDown" alt="" coords="242,107,445,133"/>
 </map>

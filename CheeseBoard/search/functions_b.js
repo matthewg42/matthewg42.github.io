@@ -5,6 +5,7 @@ var searchData=
   ['scrollup',['scrollUp',['../classGfxSSIDListBox.html#adca62d391d9c14f542893afb56f9d8af',1,'GfxSSIDListBox::scrollUp()'],['../classGfxStringListBox.html#a027fb3eab96bbe06bf8dd74a9f5284d2',1,'GfxStringListBox::scrollUp()']]],
   ['select',['select',['../classGfxSSIDListBox.html#acf01a8885875e444ef39485b1b0d233d',1,'GfxSSIDListBox::select()'],['../classGfxStringListBox.html#aa6a57e5b482d085ece3a87b075ee85c8',1,'GfxStringListBox::select()']]],
   ['selected',['selected',['../classGfxSSIDListBox.html#afd855c01bf222c0908846b5bbee32b14',1,'GfxSSIDListBox::selected()'],['../classGfxStringListBox.html#a297078b0935506a27fe08226a3ab8076',1,'GfxStringListBox::selected()']]],
+  ['setcommandmode',['setCommandMode',['../classCbHC12Class.html#a2c43a6804c722369d31ca3079373c41a',1,'CbHC12Class']]],
   ['settext',['setText',['../classGfxTextBox2.html#a867a36e63c864542fa3b8671b35e76c4',1,'GfxTextBox2']]],
   ['show',['show',['../classCbNeoPixel.html#aab14beac03e9e70987f1d94fa95ebb88',1,'CbNeoPixel::show()'],['../classCbOledDisplayClass.html#a4a4c3cbf321e4fb18b19b147d66735a3',1,'CbOledDisplayClass::show()']]],
   ['signal',['signal',['../classGfxNetInfo.html#a126a695f41775cc9bad117891589c29a',1,'GfxNetInfo']]],

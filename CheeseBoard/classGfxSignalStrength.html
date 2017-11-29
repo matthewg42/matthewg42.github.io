@@ -67,12 +67,14 @@ $(function() {
 <div class="title">GfxSignalStrength Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="GfxSignalStrength_8h_source.html">GfxSignalStrength.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for GfxSignalStrength:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGfxSignalStrength__inherit__graph.png" border="0" usemap="#GfxSignalStrength_inherit__map" alt="Inheritance graph"/></div>
 <map name="GfxSignalStrength_inherit__map" id="GfxSignalStrength_inherit__map">
-<area shape="rect" id="node2" href="classGfxItem.html" title="{GfxItem\n||+ draw()\l+ width()\l+ height()\l}" alt="" coords="41,5,118,112"/>
+<area shape="rect" id="node2" href="classGfxItem.html" title="{GfxItem\n||+ draw()\l+ width()\l+ height()\l}" alt="" coords="44,5,132,112"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -81,14 +83,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a301e9d3805ac71302ed18714db1643"><td class="memItemLeft" align="right" valign="top"><a id="a7a301e9d3805ac71302ed18714db1643"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setSignal</b> (uint8_t percent)</td></tr>
 <tr class="separator:a7a301e9d3805ac71302ed18714db1643"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89d3d4385320e2f8e1f87588696bc011"><td class="memItemLeft" align="right" valign="top"><a id="a89d3d4385320e2f8e1f87588696bc011"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (uint16_t xOffset=0, uint16_t yOffset=0)</td></tr>
+<tr class="memitem:a89d3d4385320e2f8e1f87588696bc011"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGfxSignalStrength.html#a89d3d4385320e2f8e1f87588696bc011">draw</a> (uint16_t xOffset=0, uint16_t yOffset=0)</td></tr>
 <tr class="separator:a89d3d4385320e2f8e1f87588696bc011"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2530e1c5fcaea62d064bb75ab587583"><td class="memItemLeft" align="right" valign="top"><a id="ac2530e1c5fcaea62d064bb75ab587583"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>width</b> ()</td></tr>
+<tr class="memitem:ac2530e1c5fcaea62d064bb75ab587583"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGfxSignalStrength.html#ac2530e1c5fcaea62d064bb75ab587583">width</a> ()</td></tr>
 <tr class="separator:ac2530e1c5fcaea62d064bb75ab587583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af78ecfd422273ec7883cd4ce9058999c"><td class="memItemLeft" align="right" valign="top"><a id="af78ecfd422273ec7883cd4ce9058999c"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> ()</td></tr>
+<tr class="memitem:af78ecfd422273ec7883cd4ce9058999c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGfxSignalStrength.html#af78ecfd422273ec7883cd4ce9058999c">height</a> ()</td></tr>
 <tr class="separator:af78ecfd422273ec7883cd4ce9058999c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -101,9 +100,140 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>_signal</b></td></
 <tr class="separator:a37736f965484bfe2a7f6e881417e7cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="GfxSignalStrength_8h_source.html#l00009">9</a> of file <a class="el" href="GfxSignalStrength_8h_source.html">GfxSignalStrength.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>Small <a class="el" href="classGfxItem.html">GfxItem</a> for displaying signal strength as a siny vertical bar graph.</p>
+<p>The bar is 2 pixels wide and 12 pixels tall. </p>
+
+<p class="definition">Definition at line <a class="el" href="GfxSignalStrength_8h_source.html#l00011">11</a> of file <a class="el" href="GfxSignalStrength_8h_source.html">GfxSignalStrength.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a89d3d4385320e2f8e1f87588696bc011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d3d4385320e2f8e1f87588696bc011">&#9670;&nbsp;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GfxSignalStrength::draw </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>xOffset</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>yOffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Draw the object on the display (don't send buffer). </p>
+
+<p>Implements <a class="el" href="classGfxItem.html#a002a4638af5c55b1eee43840ccd28dc8">GfxItem</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="GfxSignalStrength_8cpp_source.html#l00010">10</a> of file <a class="el" href="GfxSignalStrength_8cpp_source.html">GfxSignalStrength.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGfxSignalStrength_a89d3d4385320e2f8e1f87588696bc011_icgraph.png" border="0" usemap="#classGfxSignalStrength_a89d3d4385320e2f8e1f87588696bc011_icgraph" alt=""/></div>
+<map name="classGfxSignalStrength_a89d3d4385320e2f8e1f87588696bc011_icgraph" id="classGfxSignalStrength_a89d3d4385320e2f8e1f87588696bc011_icgraph">
+<area shape="rect" id="node2" href="classGfxNetInfo.html#aadfadeef0aef5437f50d159c1d4c711b" title="GfxNetInfo::draw" alt="" coords="233,5,367,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af78ecfd422273ec7883cd4ce9058999c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af78ecfd422273ec7883cd4ce9058999c">&#9670;&nbsp;</a></span>height()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t GfxSignalStrength::height </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get object height.</p>
+<dl class="section return"><dt>Returns</dt><dd>Object height in pixels. </dd></dl>
+
+<p>Implements <a class="el" href="classGfxItem.html#af5b6e757ebf50a61f5b66f93de37de06">GfxItem</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="GfxSignalStrength_8cpp_source.html#l00025">25</a> of file <a class="el" href="GfxSignalStrength_8cpp_source.html">GfxSignalStrength.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGfxSignalStrength_af78ecfd422273ec7883cd4ce9058999c_icgraph.png" border="0" usemap="#classGfxSignalStrength_af78ecfd422273ec7883cd4ce9058999c_icgraph" alt=""/></div>
+<map name="classGfxSignalStrength_af78ecfd422273ec7883cd4ce9058999c_icgraph" id="classGfxSignalStrength_af78ecfd422273ec7883cd4ce9058999c_icgraph">
+<area shape="rect" id="node2" href="classGfxSSIDListBox.html#a0bcfa026103d1e9300086b5b5ce98014" title="GfxSSIDListBox::draw" alt="" coords="201,13,364,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac2530e1c5fcaea62d064bb75ab587583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2530e1c5fcaea62d064bb75ab587583">&#9670;&nbsp;</a></span>width()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t GfxSignalStrength::width </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get object width.</p>
+<dl class="section return"><dt>Returns</dt><dd>Object width in pixels. </dd></dl>
+
+<p>Implements <a class="el" href="classGfxItem.html#a5bbba5847e3c0c7ddae444aa3f0bc95c">GfxItem</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="GfxSignalStrength_8cpp_source.html#l00020">20</a> of file <a class="el" href="GfxSignalStrength_8cpp_source.html">GfxSignalStrength.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGfxSignalStrength_ac2530e1c5fcaea62d064bb75ab587583_icgraph.png" border="0" usemap="#classGfxSignalStrength_ac2530e1c5fcaea62d064bb75ab587583_icgraph" alt=""/></div>
+<map name="classGfxSignalStrength_ac2530e1c5fcaea62d064bb75ab587583_icgraph" id="classGfxSignalStrength_ac2530e1c5fcaea62d064bb75ab587583_icgraph">
+<area shape="rect" id="node2" href="classGfxNetInfo.html#aadfadeef0aef5437f50d159c1d4c711b" title="GfxNetInfo::draw" alt="" coords="216,5,349,32"/>
+<area shape="rect" id="node3" href="classGfxSSIDListBox.html#a0bcfa026103d1e9300086b5b5ce98014" title="GfxSSIDListBox::draw" alt="" coords="201,56,364,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/<a class="el" href="GfxSignalStrength_8h_source.html">GfxSignalStrength.h</a></li>
 <li>src/<a class="el" href="GfxSignalStrength_8cpp_source.html">GfxSignalStrength.cpp</a></li>
 </ul>

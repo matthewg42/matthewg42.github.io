@@ -1,4 +1,8 @@
 <map id="GfxStringListBox::draw" name="GfxStringListBox::draw">
-<area shape="rect" id="node2" href="$classGfxSSIDListBox.html#af7a19d87c31d9ce60876bbfd0a518e10" title="Find out if idx is currently visible on screen. " alt="" coords="211,5,405,32"/>
-<area shape="rect" id="node3" href="$classGfxSSIDListBox.html#afd855c01bf222c0908846b5bbee32b14" title="GfxSSIDListBox::selected" alt="" coords="220,56,396,83"/>
+<area shape="rect" id="node2" href="$classGfxSSIDListBox.html#af7a19d87c31d9ce60876bbfd0a518e10" title="GfxSSIDListBox::isOnScreen" alt="" coords="224,5,428,32"/>
+<area shape="rect" id="node3" href="$classGfxSSIDListBox.html#afd855c01bf222c0908846b5bbee32b14" title="GfxSSIDListBox::selected" alt="" coords="233,56,419,83"/>
+<area shape="rect" id="node4" href="$classGfxTextBox.html#aa3dc4bc5d8d24f8532dfaf371aad6a07" title="GfxTextBox::draw" alt="" coords="257,107,395,133"/>
+<area shape="rect" id="node7" href="$classGfxTextBox.html#aaf70d795581660b5f44c4cc8d26751c8" title="GfxTextBox::height" alt="" coords="253,157,399,184"/>
+<area shape="rect" id="node5" href="$classGfxStringListBox.html#a8e0273ae3a5e4b15330601c31f3c0b01" title="GfxStringListBox::width" alt="" coords="479,81,653,108"/>
+<area shape="rect" id="node6" href="$classGfxStringListBox.html#a173760d8b7225e8616d3872efc66ac33" title="GfxStringListBox::height" alt="" coords="476,132,656,159"/>
 </map>

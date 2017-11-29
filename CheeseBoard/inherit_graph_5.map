@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classGfxScene.html" title="GfxScene" alt="" coords="5,5,85,32"/>
+<area shape="rect" id="node1" href="$classGfxItem.html" title="GfxItem" alt="" coords="5,132,80,159"/>
+<area shape="rect" id="node2" href="$classGfxNetInfo.html" title="GfxNetInfo" alt="" coords="151,5,245,32"/>
+<area shape="rect" id="node3" href="$classGfxSignalStrength.html" title="GfxSignalStrength" alt="" coords="128,56,268,83"/>
+<area shape="rect" id="node4" href="$classGfxSSIDListBox.html" title="GfxSSIDListBox" alt="" coords="137,107,259,133"/>
+<area shape="rect" id="node5" href="$classGfxStringListBox.html" title="GfxStringListBox" alt="" coords="133,157,263,184"/>
+<area shape="rect" id="node6" href="$classGfxTextBox.html" title="GfxTextBox" alt="" coords="149,208,247,235"/>
+<area shape="rect" id="node7" href="$classGfxTextBox2.html" title="GfxTextBox2" alt="" coords="145,259,251,285"/>
 </map>

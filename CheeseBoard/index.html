@@ -63,12 +63,77 @@ $(function() {
 <div class="title">CheeseBoard Library </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This library contains components for use with the CheeseBoard Cheddar and variants. The examples show off some of the features of the boards - using WiFi, displaying messages and graphics on the OLED screen, using the RGB LEDs and getting input from the rotary encoder and it's push-button feature.</p>
-<p>The library defines the following convenience classes:</p>
+<div class="textblock"><p>This library contains components for use with the <em>CheeseBoard: Cheddar</em> and variants, with examples which demonstrate the use of the various devices on the board:</p>
 <ul>
-<li>CbLeds - Global instance of <a class="el" href="classCbNeoPixel.html" title="CbNeoPixel. ">CbNeoPixel</a> - for controlling the RGB LEDs (inherits from Adafruit_NeoPixel)</li>
+<li>WiFi</li>
+<li>OLED screen</li>
+<li>RGB LEDs</li>
+<li>Rotary encoder / push button</li>
+<li>HC12 wireless serial module (optional extra)</li>
+</ul>
+<h2>Setting Up the Arduino IDE</h2>
+<ul>
+<li>Install Arduino IDE (this process tested with version 1.8.5 on Windows/Linux)</li>
+<li>Visit <a href="https://github.com/esp8266/Arduino">https://github.com/esp8266/Arduino</a><ul>
+<li>Scroll down and copy the "Boards manager link" for the stable release</li>
+</ul>
+</li>
+<li>In the Arduino IDE, go to: File [menu] -&gt; Preferences [menuitem]<ul>
+<li>Paste the link into the "Additional Board Manager URLs" box</li>
+<li>If there's already something there, add a new line with the link</li>
+<li>Click the OK [button]</li>
+</ul>
+</li>
+<li>Tools [menu] -&gt; Board [menu item] -&gt; Boards Manager [menu item]<ul>
+<li>Wait for Downloading Platforms Index to download</li>
+<li>Search for "esp8266"</li>
+<li>Install latest version of "esp8266 by Esp8266 Community"</li>
+<li>Click the OK [button]</li>
+</ul>
+</li>
+<li>Sketch [menu] -&gt; Include Library [menu item] -&gt; Manager Libraries... [menu item]</li>
+<li>Search for and install the following libraries:<ul>
+<li>Adafruit NeoPixel library by Adafruit (install using IDE library manager)</li>
+<li>Encoder library by Paul Stoffregen (install using IDE library manager)</li>
+<li>Time library by Michael Margolis (install using IDE library manager, search for "Timekeeping")</li>
+<li>U8g2 library by Oliver Kraus (install using IDE library manager)</li>
+</ul>
+</li>
+<li>Visit <a href="https://github.com/matthewg42/Mutila">https://github.com/matthewg42/Mutila</a> click "Clone or download" and choose "Download ZIP"<ul>
+<li>Sketch [menu] -&gt; Include Library [menu item] -&gt; Add .ZIP library... [menu item]</li>
+<li>Find the .ZIP file you downloaded and select it, click OK</li>
+</ul>
+</li>
+<li>Visit <a href="https://github.com/matthewg42/EspApConfigurator">https://github.com/matthewg42/EspApConfigurator</a> click "Clone or download" and choose "Download ZIP"<ul>
+<li>Sketch [menu] -&gt; Include Library [menu item] -&gt; Add .ZIP library... [menu item]</li>
+<li>Find the .ZIP file you downloaded and select it, click OK</li>
+</ul>
+</li>
+<li>Visit <a href="https://github.com/matthewg42/CheeseBoard">https://github.com/matthewg42/CheeseBoard</a> click "Clone or download" and choose "Download ZIP"<ul>
+<li>Sketch [menu] -&gt; Include Library [menu item] -&gt; Add .ZIP library... [menu item]</li>
+<li>Find the .ZIP file you downloaded and select it, click OK</li>
+</ul>
+</li>
+</ul>
+<h2>Building an Example Sketch</h2>
+<p>First set up the Arduino IDE as described above. Then:</p>
+<ul>
+<li>Open the HardwareTest example: File [menu] -&gt; Examples [menu item] -&gt; Examples From Custom Libraries [menu item] -&gt; CheeseBoard [menu item] -&gt; HardwareTest [menu item]</li>
+<li>Choose the NodeMCU board: Tools [menu] -&gt; Board ... [menu item] -&gt; NodeMCU 1.0 (ESP-12R Module)</li>
+<li>Click Verify [toolbar button] to build the example - this might take a while</li>
+<li>Connect the USB cable direcly to the NodeMCU module (not to the other USB connector!)</li>
+<li>Select the correct serial port with Tools [menu] -&gt; Port [menu item] -&gt; ...</li>
+<li>Select high speed with Tools [menu] -&gt; Upload Speed [menu item] -&gt; 921600</li>
+<li>Click Upload [toolbar button]. Upload can take a little while compared to a regular Arduino - there is much more data being sent!</li>
+</ul>
+<p>If you have trouble with the upload, try adjusting the speed and trying again (with some cables the highest speeds don't work so well).</p>
+<h2>Library Overview</h2>
+<p>The library defines the following objects and classes:</p>
+<ul>
+<li>CbLeds - Global instance of <a class="el" href="classCbNeoPixel.html" title="Wrapper around Adafruit_NeoPixel with Millis() correction. ">CbNeoPixel</a> class - for controlling the RGB LEDs (inherits from Adafruit_NeoPixel, adjusting Millis() as necessary to avoid time drift)</li>
 <li>CbOledDisplay - Global instance of <a class="el" href="classCbOledDisplayClass.html">CbOledDisplayClass</a> - U2g2 object which adds justified wrapped text</li>
 <li>CbRotaryInput - Global instance of <a class="el" href="classCbRotaryInputClass.html">CbRotaryInputClass</a> for interactive with the rotary encoder + button inputs</li>
+<li>CbHC12 - Global instance of SoftwareSerial-based class for using the HC12</li>
 <li><a class="el" href="classGfxItem.html">GfxItem</a> - base class for high-level objects which can be drawn on CbOledDisplay</li>
 <li><a class="el" href="classGfxSSIDListBox.html">GfxSSIDListBox</a> - a list box for displaying WiFi network information</li>
 <li><a class="el" href="classGfxNetInfo.html">GfxNetInfo</a> - an item for the <a class="el" href="classGfxSSIDListBox.html">GfxSSIDListBox</a></li>
@@ -77,26 +142,34 @@ $(function() {
 <li><a class="el" href="classGfxStringListBox.html">GfxStringListBox</a> - generic listbox for strings (needs completion)</li>
 <li><a class="el" href="classGfxTextBox.html">GfxTextBox</a> - show text in a box with optional border</li>
 </ul>
-<p>Select your hardware by copying or linking the appropriate XXXConfig.h file to CheeseboardConfig.h in this directory.</p>
-<h1>Status </h1>
-<p>2017-10: Still under heavy development.</p>
-<h2>Documentation </h2>
-<p>Doxygen-generated documentation can be found here: <a href="https://matthewg42.github.io/CheeseBoard/">https://matthewg42.github.io/CheeseBoard/</a></p>
-<h2>Dependencies </h2>
+<h3>Notes About the CheeseBoard Library</h3>
+<p>The CheeseBoard library and examples use the Mutila library for various functions and classes. To avoid confusion, I'll mention a few here which you may notice in the examples:</p>
+<p>0. The CheeseBoard library and examples are still under development at time of writing. Some of the code is a bit ugly and/or incomplete.</p>
+<ol type="1">
+<li>The macros DB, DBLN abd DBF act like Serial.print, Serial.println and Serial.printf respectively. These only produce output if DEBUG is defined, allowing quick enabling / disabling of debugging output on serial when building with the Makefile. To enable debugging output from the IDE, simply add this line at the top of your sketch:</li>
+</ol>
+<div class="fragment"><div class="line"><span class="preprocessor">#define DEBUG 1</span></div></div><!-- fragment --><ol type="1">
+<li>When sending color data to RGB LEDs, interrupts are disabled. This is because the timing of the signal is critical. However, this causes an unwanted side-effect - the counter which the millis() function returns is not updated while interrupts are disabled. With heavy RGB LED use, this causes the millis() return value to be less than excpected. With very frequent updates to RGB LEDs, this can be quite pronounced. Mutila implements Millis(), which does the same thing as millis(), but allows for a correction to be applied, which is done when the <a class="el" href="classCbNeoPixel.html" title="Wrapper around Adafruit_NeoPixel with Millis() correction. ">CbNeoPixel</a> class is used (CbLeds is a global instance of <a class="el" href="classCbNeoPixel.html" title="Wrapper around Adafruit_NeoPixel with Millis() correction. ">CbNeoPixel</a>).</li>
+<li>Mutila classes for hardware devices like buttons are all implemented with a timeslice approach. That is, they require an update() function to be called frequently to maintain their state. The idea behind this is to avoid using interrupts wherever possible in order to prevent conflicts with other libraries.</li>
+<li>In the examples, global instances of classes are defined in files whose names are the same as the global object, e.g. Button.h and Button.cpp should define a global object called Button. If the class of that object is also defined in these files, the class name may be the same as the object name with an underscore or "Class" as a suffix.</li>
+<li>In the CheeseBoard examples, I include function prototypes before any function definitions. This is so I can have setup() and loop() at the top of the main source file, but still build with a Makefile. They are not strictly necessary for the IDE build.</li>
+<li>EspApConfigurator is my own re-implementation of venerable WiFi Manager library. It doesn't block like WiFi Manager, and has a better (IMO) persistent settings system. At time of writing, EspApConfigurator is not complete - multi-page setup mode and custom themed settings pages are still to be implemented. However, single page configuration mode works just fine, which is what we use in the CheeseBoard examples.</li>
+</ol>
+<p>More detailed Doxygen-generated API documentation for the library can be found here:</p>
 <ul>
-<li>ESP8266 board (install using IDE boards manager, or manually from here: <a href="https://github.com/esp8266/Arduino">https://github.com/esp8266/Arduino</a>)</li>
-<li>Adafruit_NeoPixel library (install using IDE library manager)</li>
-<li>Encoder library (install using IDE library manager)</li>
-<li>TimeLib (install using IDE library manager)</li>
-<li>U8g2 (install using IDE library manager)</li>
-<li>Mutila install manually from <a href="https://github.com/matthewg42/Mutila">https://github.com/matthewg42/Mutila</a></li>
-<li>EspApConfigurator install manually from <a href="https://github.com/matthewg42/EspApConfigurator">https://github.com/matthewg42/EspApConfigurator</a></li>
+<li><a href="https://matthewg42.github.io/Mutila/">https://matthewg42.github.io/Mutila/</a></li>
+<li><a href="https://matthewg42.github.io/EspApConfigurator/">https://matthewg42.github.io/EspApConfigurator/</a></li>
+<li><a href="https://matthewg42.github.io/CheeseBoard/">https://matthewg42.github.io/CheeseBoard/</a></li>
 </ul>
-<h2>Future </h2>
+<h2>Selecting Cheeseboard Version</h2>
+<p>Select your hardware by editing the <a class="el" href="CheeseboardConfig_8h_source.html">CheeseboardConfig.h</a> file, specifying the ???????Config.h file for your hardware and version. For example, the prototype CheeseBoard: Cheddar uses the config file <a class="el" href="CheddarV0Config_8h_source.html">CheddarV0Config.h</a>, so we edit the <a class="el" href="CheeseboardConfig_8h_source.html">CheeseboardConfig.h</a> to contain:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#pragma once</span></div><div class="line"></div><div class="line"><span class="preprocessor">#include &quot;CheddarV0Config.h&quot;</span></div></div><!-- fragment --><p>At time of writing, this is the default since this is the only board which has been made. This mechanism may change in future releases.</p>
+<h2>Future</h2>
 <ul>
 <li>Better method of selecting hardware</li>
 <li>Make sure all dependent libs are available in IDE library manager - including CheeseBoard</li>
-<li>Host generated docs on github or readthedocs </li>
+<li>Light metronome example</li>
+<li>HC12 AT mode configuration utility example example </li>
 </ul>
 </div></div><!-- contents -->
 <!-- start footer part -->

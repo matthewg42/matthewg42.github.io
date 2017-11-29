@@ -66,36 +66,150 @@ $(function() {
 <div class="title">GfxItem Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="GfxItem_8h_source.html">GfxItem.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for GfxItem:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGfxItem__inherit__graph.png" border="0" usemap="#GfxItem_inherit__map" alt="Inheritance graph"/></div>
 <map name="GfxItem_inherit__map" id="GfxItem_inherit__map">
-<area shape="rect" id="node2" href="classGfxNetInfo.html" title="{GfxNetInfo\n|# _ssid\l# _channel\l# _signal\l# _lastSeenMs\l|+ GfxNetInfo()\l+ ~GfxNetInfo()\l+ GfxNetInfo()\l+ operator=()\l+ operator==()\l+ draw()\l+ width()\l+ height()\l+ ssid()\l+ channel()\l+ signal()\l+ lastSeenMs()\l+ lastSeen()\l+ update()\l}" alt="" coords="5,226,120,538"/>
-<area shape="rect" id="node3" href="classGfxSignalStrength.html" title="{GfxSignalStrength\n|# _text\l# _signal\l|+ GfxSignalStrength()\l+ setSignal()\l+ draw()\l+ width()\l+ height()\l}" alt="" coords="145,307,293,457"/>
-<area shape="rect" id="node4" href="classGfxSSIDListBox.html" title="{GfxSSIDListBox\n|+ MaxItems\l# _items\l# _selected\l# _screenLines\l# _screenStart\l# _lineHeight\l|+ GfxSSIDListBox()\l+ ~GfxSSIDListBox()\l+ add()\l+ remove()\l+ draw()\l+ width()\l+ height()\l+ lineHeight()\l+ operator[]()\l+ operator[]()\land 10 more...\l# findGap()\l# isCompacted()\l# compact()\l# isOnScreen()\l# rowsFrom()\l}" alt="" coords="317,197,464,567"/>
-<area shape="rect" id="node5" href="classGfxStringListBox.html" title="{GfxStringListBox\n|+ MaxItems\l# _items\l# _width\l# _lineHeight\l# _selected\l# _screenLines\l# _screenStart\l|+ GfxStringListBox()\l+ ~GfxStringListBox()\l+ add()\l+ remove()\l+ draw()\l+ width()\l+ height()\l+ find()\l+ select()\l+ selected()\l+ scrollDown()\l+ scrollUp()\l+ scrollTo()\l# findGap()\l# findNext()\l# findPreceding()\l# isCompacted()\l# compact()\l# isOnScreen()\l# rowsFrom()\l}" alt="" coords="488,160,637,604"/>
-<area shape="rect" id="node6" href="classGfxTextBox.html" title="{GfxTextBox\n|# _width\l# _text\l# _border\l|+ GfxTextBox()\l+ draw()\l+ width()\l+ height()\l}" alt="" coords="661,307,773,457"/>
-<area shape="rect" id="node7" href="classGfxTextBox2.html" title="{GfxTextBox2\n|# _text\l# _font\l# _border\l# _padding\l# _justify\l# _width\l# _height\l|+ GfxTextBox2()\l+ draw()\l+ width()\l+ height()\l+ text()\l+ setText()\l}" alt="" coords="798,263,917,501"/>
+<area shape="rect" id="node2" href="classGfxNetInfo.html" title="{GfxNetInfo\n|# _ssid\l# _channel\l# _signal\l# _lastSeenMs\l|+ GfxNetInfo()\l+ ~GfxNetInfo()\l+ GfxNetInfo()\l+ operator=()\l+ operator==()\l+ draw()\l+ width()\l+ height()\l+ ssid()\l+ channel()\l+ signal()\l+ lastSeenMs()\l+ lastSeen()\l+ update()\l}" alt="" coords="5,226,135,538"/>
+<area shape="rect" id="node3" href="classGfxSignalStrength.html" title="{GfxSignalStrength\n|# _text\l# _signal\l|+ GfxSignalStrength()\l+ setSignal()\l+ draw()\l+ width()\l+ height()\l}" alt="" coords="159,307,325,457"/>
+<area shape="rect" id="node4" href="classGfxSSIDListBox.html" title="{GfxSSIDListBox\n|+ MaxItems\l# _items\l# _selected\l# _screenLines\l# _screenStart\l# _lineHeight\l|+ GfxSSIDListBox()\l+ ~GfxSSIDListBox()\l+ add()\l+ remove()\l+ draw()\l+ width()\l+ height()\l+ lineHeight()\l+ operator[]()\l+ operator[]()\land 10 more...\l# findGap()\l# isCompacted()\l# compact()\l# isOnScreen()\l# rowsFrom()\l}" alt="" coords="349,197,508,567"/>
+<area shape="rect" id="node5" href="classGfxStringListBox.html" title="{GfxStringListBox\n|+ MaxItems\l# _items\l# _width\l# _lineHeight\l# _selected\l# _screenLines\l# _screenStart\l|+ GfxStringListBox()\l+ ~GfxStringListBox()\l+ add()\l+ remove()\l+ draw()\l+ width()\l+ height()\l+ find()\l+ select()\l+ selected()\l+ scrollDown()\l+ scrollUp()\l+ scrollTo()\l# findGap()\l# findNext()\l# findPreceding()\l# isCompacted()\l# compact()\l# isOnScreen()\l# rowsFrom()\l}" alt="" coords="532,160,699,604"/>
+<area shape="rect" id="node6" href="classGfxTextBox.html" title="{GfxTextBox\n|# _width\l# _text\l# _border\l|+ GfxTextBox()\l+ draw()\l+ width()\l+ height()\l}" alt="" coords="723,307,846,457"/>
+<area shape="rect" id="node7" href="classGfxTextBox2.html" title="{GfxTextBox2\n|# _text\l# _font\l# _border\l# _padding\l# _justify\l# _width\l# _height\l|+ GfxTextBox2()\l+ draw()\l+ width()\l+ height()\l+ text()\l+ setText()\l}" alt="" coords="870,263,1001,501"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a002a4638af5c55b1eee43840ccd28dc8"><td class="memItemLeft" align="right" valign="top"><a id="a002a4638af5c55b1eee43840ccd28dc8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (uint16_t xOffset=0, uint16_t yOffset=0)=0</td></tr>
+<tr class="memitem:a002a4638af5c55b1eee43840ccd28dc8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGfxItem.html#a002a4638af5c55b1eee43840ccd28dc8">draw</a> (uint16_t xOffset=0, uint16_t yOffset=0)=0</td></tr>
 <tr class="separator:a002a4638af5c55b1eee43840ccd28dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bbba5847e3c0c7ddae444aa3f0bc95c"><td class="memItemLeft" align="right" valign="top"><a id="a5bbba5847e3c0c7ddae444aa3f0bc95c"></a>
-virtual uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>width</b> ()=0</td></tr>
+<tr class="memitem:a5bbba5847e3c0c7ddae444aa3f0bc95c"><td class="memItemLeft" align="right" valign="top">virtual uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGfxItem.html#a5bbba5847e3c0c7ddae444aa3f0bc95c">width</a> ()=0</td></tr>
 <tr class="separator:a5bbba5847e3c0c7ddae444aa3f0bc95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5b6e757ebf50a61f5b66f93de37de06"><td class="memItemLeft" align="right" valign="top"><a id="af5b6e757ebf50a61f5b66f93de37de06"></a>
-virtual uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> ()=0</td></tr>
+<tr class="memitem:af5b6e757ebf50a61f5b66f93de37de06"><td class="memItemLeft" align="right" valign="top">virtual uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGfxItem.html#af5b6e757ebf50a61f5b66f93de37de06">height</a> ()=0</td></tr>
 <tr class="separator:af5b6e757ebf50a61f5b66f93de37de06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="GfxItem_8h_source.html#l00003">3</a> of file <a class="el" href="GfxItem_8h_source.html">GfxItem.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Base class for other Gfx objects. </p>
+
+<p class="definition">Definition at line <a class="el" href="GfxItem_8h_source.html#l00005">5</a> of file <a class="el" href="GfxItem_8h_source.html">GfxItem.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a002a4638af5c55b1eee43840ccd28dc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a002a4638af5c55b1eee43840ccd28dc8">&#9670;&nbsp;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GfxItem::draw </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>xOffset</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>yOffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Draw the object on the display (don't send buffer). </p>
+
+<p>Implemented in <a class="el" href="classGfxStringListBox.html#af2d2dcf34b7386bfaf450694fc17de4a">GfxStringListBox</a>, <a class="el" href="classGfxSSIDListBox.html#a0bcfa026103d1e9300086b5b5ce98014">GfxSSIDListBox</a>, <a class="el" href="classGfxTextBox2.html#a1cdef91278ae2830968b93fb427c84f9">GfxTextBox2</a>, <a class="el" href="classGfxNetInfo.html#aadfadeef0aef5437f50d159c1d4c711b">GfxNetInfo</a>, <a class="el" href="classGfxSignalStrength.html#a89d3d4385320e2f8e1f87588696bc011">GfxSignalStrength</a>, and <a class="el" href="classGfxTextBox.html#aa3dc4bc5d8d24f8532dfaf371aad6a07">GfxTextBox</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGfxItem_a002a4638af5c55b1eee43840ccd28dc8_icgraph.png" border="0" usemap="#classGfxItem_a002a4638af5c55b1eee43840ccd28dc8_icgraph" alt=""/></div>
+<map name="classGfxItem_a002a4638af5c55b1eee43840ccd28dc8_icgraph" id="classGfxItem_a002a4638af5c55b1eee43840ccd28dc8_icgraph">
+<area shape="rect" id="node2" href="classGfxScene.html#a6ac6294e565c22fe6fa65e1f302ec153" title="Draws all items in a scene in order. " alt="" coords="168,5,292,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af5b6e757ebf50a61f5b66f93de37de06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b6e757ebf50a61f5b66f93de37de06">&#9670;&nbsp;</a></span>height()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint16_t GfxItem::height </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get object height.</p>
+<dl class="section return"><dt>Returns</dt><dd>Object height in pixels. </dd></dl>
+
+<p>Implemented in <a class="el" href="classGfxStringListBox.html#a173760d8b7225e8616d3872efc66ac33">GfxStringListBox</a>, <a class="el" href="classGfxSSIDListBox.html#aeb915eb238595922d97ebec4c76ef15a">GfxSSIDListBox</a>, <a class="el" href="classGfxTextBox2.html#a8f9b17f0c8460c8ea986359abfd4a896">GfxTextBox2</a>, <a class="el" href="classGfxNetInfo.html#a1a1036d6eaaa14aa63f6400b5b875525">GfxNetInfo</a>, <a class="el" href="classGfxSignalStrength.html#af78ecfd422273ec7883cd4ce9058999c">GfxSignalStrength</a>, and <a class="el" href="classGfxTextBox.html#aaf70d795581660b5f44c4cc8d26751c8">GfxTextBox</a>.</p>
+
+</div>
+</div>
+<a id="a5bbba5847e3c0c7ddae444aa3f0bc95c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bbba5847e3c0c7ddae444aa3f0bc95c">&#9670;&nbsp;</a></span>width()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint16_t GfxItem::width </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get object width.</p>
+<dl class="section return"><dt>Returns</dt><dd>Object width in pixels. </dd></dl>
+
+<p>Implemented in <a class="el" href="classGfxStringListBox.html#a8e0273ae3a5e4b15330601c31f3c0b01">GfxStringListBox</a>, <a class="el" href="classGfxSSIDListBox.html#ad17e73b397348656bba2d5be6896f336">GfxSSIDListBox</a>, <a class="el" href="classGfxTextBox2.html#a49e5f1bb2fd1be88137a9b1e0677a98a">GfxTextBox2</a>, <a class="el" href="classGfxNetInfo.html#a45dc270f722f9863bdde09e4a49cae84">GfxNetInfo</a>, <a class="el" href="classGfxSignalStrength.html#ac2530e1c5fcaea62d064bb75ab587583">GfxSignalStrength</a>, and <a class="el" href="classGfxTextBox.html#a2c0dff88f4dd13702129d5b4005dc169">GfxTextBox</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGfxItem_a5bbba5847e3c0c7ddae444aa3f0bc95c_icgraph.png" border="0" usemap="#classGfxItem_a5bbba5847e3c0c7ddae444aa3f0bc95c_icgraph" alt=""/></div>
+<map name="classGfxItem_a5bbba5847e3c0c7ddae444aa3f0bc95c_icgraph" id="classGfxItem_a5bbba5847e3c0c7ddae444aa3f0bc95c_icgraph">
+<area shape="rect" id="node2" href="classGfxNetInfo.html#aadfadeef0aef5437f50d159c1d4c711b" title="GfxNetInfo::draw" alt="" coords="172,5,305,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/<a class="el" href="GfxItem_8h_source.html">GfxItem.h</a></li>
 </ul>
 </div><!-- contents -->
