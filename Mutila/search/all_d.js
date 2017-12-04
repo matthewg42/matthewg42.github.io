@@ -2,7 +2,7 @@ var searchData=
 [
   ['parentmode',['ParentMode',['../classParentMode.html',1,'ParentMode'],['../classParentMode.html#a760b0e94cda00ffe806dd298f1ce8e32',1,'ParentMode::ParentMode()']]],
   ['pause',['Pause',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da3be961ea6f60513eabaacc503dda0067',1,'DFPlayerMini']]],
-  ['pin',['pin',['../classAbstractSampler.html#aca730a2d746481bf8331de92f8be4691',1,'AbstractSampler']]],
+  ['pin',['pin',['../classAbstractSampler.html#aa98f9791c9a06de867b8e4f7d6374716',1,'AbstractSampler']]],
   ['play',['Play',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da6c7ae278fce2922183459004991acdbf',1,'DFPlayerMini']]],
   ['playphysical',['PlayPhysical',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da31510c9f60883eca4e2ec08f54c38d99',1,'DFPlayerMini']]],
   ['playtf',['PlayTf',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da1f276dfa388841efb520506cbd7afb23',1,'DFPlayerMini']]],

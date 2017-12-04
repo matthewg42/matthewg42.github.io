@@ -9,8 +9,8 @@ var searchData=
   ['_5fmean',['_mean',['../classBufferedSampler.html#abf2e3f330cb78fdaa6149e568f3d5bd5',1,'BufferedSampler']]],
   ['_5fminimum',['_minimum',['../classBufferedSampler.html#a0cff231e1c09e85e02e4b79e00dbb554',1,'BufferedSampler']]],
   ['_5fmovingaverage',['_movingAverage',['../classEMASampler.html#a7706d29fc4ba9d7219960f32a3b05b29',1,'EMASampler']]],
-  ['_5fperiodms',['_periodMs',['../classAbstractSampler.html#a3e0fc9e67e0050a561538aecb1c47a3d',1,'AbstractSampler']]],
-  ['_5fpin',['_pin',['../classAbstractSampler.html#a837581a6d29aa763c9ac8765ec23e79d',1,'AbstractSampler']]],
+  ['_5fperiodms',['_periodMs',['../classAbstractSampler.html#a1a0a4b32eeff0ea47e3d57982289bc5a',1,'AbstractSampler']]],
+  ['_5fpin',['_pin',['../classAbstractSampler.html#a43878ad4751cb0886896cf599d8ad6fe',1,'AbstractSampler']]],
   ['_5fsampledata',['_sampleData',['../classBufferedSampler.html#a62362a8686b017b04339c7f0fbf6c768',1,'BufferedSampler']]],
   ['_5fsamples',['_samples',['../classBufferedSampler.html#a4a669502fc6ad56dbf70789b8c58dc60',1,'BufferedSampler']]],
   ['_5fupdated',['_updated',['../classBufferedSampler.html#a6e739a8922d4b8938dfb547924d20f05',1,'BufferedSampler']]]
