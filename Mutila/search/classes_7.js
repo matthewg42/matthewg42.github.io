@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rawbutton',['RawButton',['../classRawButton.html',1,'']]]
+  ['sonicranger',['SonicRanger',['../classSonicRanger.html',1,'']]]
 ];

@@ -1,0 +1,9 @@
+<map id="AbstractButton" name="AbstractButton">
+<area shape="rect" id="node2" href="$classAbstractDebouncedButton.html" title="{AbstractDebouncedButton\n|+ DefaultThreshold\l+ DefaultButtonDelay\l+ DefaultHeldMs\l+ DefaultButtonRepeatInitialMs\l+ DefaultButtonRepeatMs\l# _threshold\l# _delay\l# _lastUpdate\l# _counter\l# _state\l# _lastStateChange\l# _pushed\l# _repeatCount\l# _lastRepeat\l# _lastOnDuration\l|+ AbstractDebouncedButton()\l+ begin()\l+ update()\l+ pushed()\l+ tapped()\l+ held()\l+ repeat()\l+ setState()\l}" alt="" coords="198,160,426,545"/>
+<area shape="rect" id="node6" href="$classAnalogInputButton.html" title="{AnalogInputButton\n|# _pin\l# _pullup\l# _analogThreshold\l|+ AnalogInputButton()\l+ begin()\l+ on()\l}" alt="" coords="5,285,173,421"/>
+<area shape="rect" id="node7" href="$classDigitalInputButton.html" title="{DigitalInputButton\n|# _pin\l# _pullup\l|+ DigitalInputButton()\l+ begin()\l+ on()\l}" alt="" coords="450,292,617,413"/>
+<area shape="rect" id="node8" href="$classDualInputButton.html" title="{DualInputButton\n|# _button1\l# _button2\l# _mix\l|+ DualInputButton()\l+ begin()\l+ on()\l}" alt="" coords="641,285,794,421"/>
+<area shape="rect" id="node3" href="$classDebouncedAnalogButton.html" title="Timeslice&#45;based button with debouncing using analogRead. " alt="" coords="43,593,251,715"/>
+<area shape="rect" id="node4" href="$classDebouncedButton.html" title="{DebouncedButton\n||+ DebouncedButton()\l+ begin()\l+ update()\l+ on()\l}" alt="" coords="281,593,444,715"/>
+<area shape="rect" id="node5" href="$classDebouncedDualButton.html" title="{DebouncedDualButton\n||+ DebouncedDualButton()\l+ begin()\l+ update()\l+ on()\l}" alt="" coords="570,593,763,715"/>
+</map>

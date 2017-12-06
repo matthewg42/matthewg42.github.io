@@ -1,3 +1,3 @@
 <map id="DFPReader" name="DFPReader">
-<area shape="rect" id="node2" href="$classDFPlayerMini.html" title="Easy&#45;to&#45;use controller class for DFPlayer Mini devices. " alt="" coords="14,5,146,156"/>
+<area shape="rect" id="node2" href="$classDFPlayerMini.html" title="{DFPlayerMini\n|+ BufferLength\l+ MinimumTimeMs\l+ ResponseTimeoutMs\l+ PacketOffsetCmd\l+ PacketOffsetArg\l+ PacketOffsetCkSum\l|+ DFPlayerMini()\l+ begin()\l+ sendCmd()\l+ query()\l+ busy()\l+ check()\l}" alt="" coords="5,5,176,229"/>
 </map>

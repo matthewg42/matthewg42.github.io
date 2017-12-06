@@ -1,5 +1,5 @@
 <map id="DualButton::update" name="DualButton::update">
-<area shape="rect" id="node2" href="$classDebouncedButton.html#a6df550e3af8195ab8374c86660abe6ae" title="DebouncedButton::update" alt="" coords="201,31,392,57"/>
-<area shape="rect" id="node3" href="$classRawButton.html#aa1ff6ef2c4300d63eccc631bac61cd74" title="RawButton::on" alt="" coords="481,5,599,32"/>
-<area shape="rect" id="node4" href="$classDebouncedButton.html#a9b34291dcea290feac4502ef0692a732" title="DebouncedButton::setState" alt="" coords="440,56,640,83"/>
+<area shape="rect" id="node2" href="$classDebouncedButton.html#a6df550e3af8195ab8374c86660abe6ae" title="DebouncedButton::update" alt="" coords="201,35,392,61"/>
+<area shape="rect" id="node3" href="$classDigitalInputButton.html#a502de66816d4f2116b834ce505cf7c31" title="DigitalInputButton::on" alt="" coords="453,5,619,32"/>
+<area shape="rect" id="node4" href="$classAbstractDebouncedButton.html#a865fdf4b67386c90b53d33906a22bc6d" title="AbstractDebouncedButton\l::setState" alt="" coords="440,57,632,98"/>
 </map>

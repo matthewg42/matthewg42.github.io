@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['sonicranger',['SonicRanger',['../classSonicRanger.html',1,'']]]
+  ['times',['Times',['../classHeartbeat.html#structHeartbeat_1_1Times',1,'Heartbeat']]],
+  ['togglebutton',['ToggleButton',['../classToggleButton.html',1,'']]]
 ];

@@ -1,0 +1,5 @@
+<map id="DebouncedDualButton" name="DebouncedDualButton">
+<area shape="rect" id="node2" href="$classAbstractDebouncedButton.html" title="{AbstractDebouncedButton\n|+ DefaultThreshold\l+ DefaultButtonDelay\l+ DefaultHeldMs\l+ DefaultButtonRepeatInitialMs\l+ DefaultButtonRepeatMs\l# _threshold\l# _delay\l# _lastUpdate\l# _counter\l# _state\l# _lastStateChange\l# _pushed\l# _repeatCount\l# _lastRepeat\l# _lastOnDuration\l|+ AbstractDebouncedButton()\l+ begin()\l+ update()\l+ pushed()\l+ tapped()\l+ held()\l+ repeat()\l+ setState()\l}" alt="" coords="5,160,233,545"/>
+<area shape="rect" id="node3" href="$classAbstractButton.html" title="{AbstractButton\n||+ AbstractButton()\l+ begin()\l+ on()\l}" alt="" coords="154,5,298,112"/>
+<area shape="rect" id="node4" href="$classDualInputButton.html" title="{DualInputButton\n|# _button1\l# _button2\l# _mix\l|+ DualInputButton()\l+ begin()\l+ on()\l}" alt="" coords="257,285,411,421"/>
+</map>

@@ -62,13 +62,14 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classDFPReader-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DFPReader Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a> controller with numeric readout functions.  
+<p><a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> controller with numeric readout functions.  
  <a href="classDFPReader.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="DFPReader_8h_source.html">DFPReader.h</a>&gt;</code></p>
@@ -77,7 +78,7 @@ Inheritance diagram for DFPReader:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDFPReader__inherit__graph.png" border="0" usemap="#DFPReader_inherit__map" alt="Inheritance graph"/></div>
 <map name="DFPReader_inherit__map" id="DFPReader_inherit__map">
-<area shape="rect" id="node2" href="classDFPlayerMini.html" title="Easy&#45;to&#45;use controller class for DFPlayer Mini devices. " alt="" coords="14,5,146,156"/>
+<area shape="rect" id="node2" href="classDFPlayerMini.html" title="{DFPlayerMini\n|+ BufferLength\l+ MinimumTimeMs\l+ ResponseTimeoutMs\l+ PacketOffsetCmd\l+ PacketOffsetArg\l+ PacketOffsetCkSum\l|+ DFPlayerMini()\l+ begin()\l+ sendCmd()\l+ query()\l+ busy()\l+ check()\l}" alt="" coords="5,5,176,229"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -141,8 +142,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr
 <tr class="memitem:a9cbb46808219d8030ba675274c208424"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPReader.html#a9cbb46808219d8030ba675274c208424">appendElement</a> (uint8_t value)</td></tr>
 <tr class="separator:a9cbb46808219d8030ba675274c208424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classDFPlayerMini"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDFPlayerMini')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a></td></tr>
-<tr class="memitem:aead5c4345c63cc4bf4a5b59567fc87d7 inherit pub_methods_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#aead5c4345c63cc4bf4a5b59567fc87d7">DFPlayerMini</a> (Stream &amp;serial, uint8_t busyPin=0)</td></tr>
-<tr class="separator:aead5c4345c63cc4bf4a5b59567fc87d7 inherit pub_methods_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145c491034ae5bc0a05bbfb9c19bb486 inherit pub_methods_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a145c491034ae5bc0a05bbfb9c19bb486">DFPlayerMini</a> (Stream &amp;serial, const uint8_t busyPin=0)</td></tr>
+<tr class="separator:a145c491034ae5bc0a05bbfb9c19bb486 inherit pub_methods_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39407b29a79cada8add9b8d2c50073ea inherit pub_methods_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a39407b29a79cada8add9b8d2c50073ea">begin</a> ()</td></tr>
 <tr class="separator:a39407b29a79cada8add9b8d2c50073ea inherit pub_methods_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81cfb933970793106a39bec9a9a6d83e inherit pub_methods_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a81cfb933970793106a39bec9a9a6d83e">sendCmd</a> (<a class="el" href="classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542d">Cmd</a> cmd, uint16_t arg=0)</td></tr>
@@ -153,12 +154,139 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr
 <tr class="separator:a77c49559ebb6df0e377f4bf2d691d588 inherit pub_methods_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e63c101a7595d945884a055f431c306 inherit pub_methods_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a8e63c101a7595d945884a055f431c306">check</a> ()</td></tr>
 <tr class="separator:a8e63c101a7595d945884a055f431c306 inherit pub_methods_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:acf6edcb7e028622ec5e6579133b704f1"><td class="memItemLeft" align="right" valign="top"><a id="acf6edcb7e028622ec5e6579133b704f1"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>PlaybackStartMs</b> = 120</td></tr>
+<tr class="separator:acf6edcb7e028622ec5e6579133b704f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33b9b886d07509f942585cac72cba59"><td class="memItemLeft" align="right" valign="top"><a id="ac33b9b886d07509f942585cac72cba59"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackZero</b> = 200</td></tr>
+<tr class="separator:ac33b9b886d07509f942585cac72cba59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c2a471dcc51e0ef01a268e95a191c0b"><td class="memItemLeft" align="right" valign="top"><a id="a7c2a471dcc51e0ef01a268e95a191c0b"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackTen</b> = 210</td></tr>
+<tr class="separator:a7c2a471dcc51e0ef01a268e95a191c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699d1755ac0fdd57efebcbe55e755cff"><td class="memItemLeft" align="right" valign="top"><a id="a699d1755ac0fdd57efebcbe55e755cff"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackTwenty</b> = 220</td></tr>
+<tr class="separator:a699d1755ac0fdd57efebcbe55e755cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade6b774c1557be2bd9440e5048c09b5b"><td class="memItemLeft" align="right" valign="top"><a id="ade6b774c1557be2bd9440e5048c09b5b"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackThirty</b> = 221</td></tr>
+<tr class="separator:ade6b774c1557be2bd9440e5048c09b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b26e47f9586c55cdef652b1c6e60d75"><td class="memItemLeft" align="right" valign="top"><a id="a1b26e47f9586c55cdef652b1c6e60d75"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackFourty</b> = 222</td></tr>
+<tr class="separator:a1b26e47f9586c55cdef652b1c6e60d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929889740d117fd8ad147a80dd5fa00f"><td class="memItemLeft" align="right" valign="top"><a id="a929889740d117fd8ad147a80dd5fa00f"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackFifty</b> = 223</td></tr>
+<tr class="separator:a929889740d117fd8ad147a80dd5fa00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f04a436932b57c001089213f30dbbd"><td class="memItemLeft" align="right" valign="top"><a id="a72f04a436932b57c001089213f30dbbd"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackSixty</b> = 224</td></tr>
+<tr class="separator:a72f04a436932b57c001089213f30dbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a956c2cd414b0436feec313e5e8cecf32"><td class="memItemLeft" align="right" valign="top"><a id="a956c2cd414b0436feec313e5e8cecf32"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackSeventy</b> = 225</td></tr>
+<tr class="separator:a956c2cd414b0436feec313e5e8cecf32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d46ba1feb51cc4430e6c4e79db18464"><td class="memItemLeft" align="right" valign="top"><a id="a9d46ba1feb51cc4430e6c4e79db18464"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackEighty</b> = 226</td></tr>
+<tr class="separator:a9d46ba1feb51cc4430e6c4e79db18464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a371896017b78e0dc507fd8002681fc7e"><td class="memItemLeft" align="right" valign="top"><a id="a371896017b78e0dc507fd8002681fc7e"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackNinety</b> = 227</td></tr>
+<tr class="separator:a371896017b78e0dc507fd8002681fc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a665552aae61822baa515d40b4a8d9540"><td class="memItemLeft" align="right" valign="top"><a id="a665552aae61822baa515d40b4a8d9540"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackHundred</b> = 228</td></tr>
+<tr class="separator:a665552aae61822baa515d40b4a8d9540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb623b68499373fdc818efab84f912c"><td class="memItemLeft" align="right" valign="top"><a id="a8eb623b68499373fdc818efab84f912c"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackThousand</b> = 229</td></tr>
+<tr class="separator:a8eb623b68499373fdc818efab84f912c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91cc1b8f081eb82ea2ab6dea68a9ffb3"><td class="memItemLeft" align="right" valign="top"><a id="a91cc1b8f081eb82ea2ab6dea68a9ffb3"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackMillion</b> = 230</td></tr>
+<tr class="separator:a91cc1b8f081eb82ea2ab6dea68a9ffb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d51d405531f80fd1c09874c25a0970"><td class="memItemLeft" align="right" valign="top"><a id="af1d51d405531f80fd1c09874c25a0970"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackBillion</b> = 231</td></tr>
+<tr class="separator:af1d51d405531f80fd1c09874c25a0970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539384ee4c87661860d76c85c409807f"><td class="memItemLeft" align="right" valign="top"><a id="a539384ee4c87661860d76c85c409807f"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackTrillion</b> = 232</td></tr>
+<tr class="separator:a539384ee4c87661860d76c85c409807f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b11925d013dc54467c29cc53c6e38bd"><td class="memItemLeft" align="right" valign="top"><a id="a2b11925d013dc54467c29cc53c6e38bd"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackPoint</b> = 233</td></tr>
+<tr class="separator:a2b11925d013dc54467c29cc53c6e38bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2baaecb6e28b91dec25c0923aa1d4ea"><td class="memItemLeft" align="right" valign="top"><a id="ab2baaecb6e28b91dec25c0923aa1d4ea"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackMinus</b> = 234</td></tr>
+<tr class="separator:ab2baaecb6e28b91dec25c0923aa1d4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1101b7a44619def0d3150be32144024"><td class="memItemLeft" align="right" valign="top"><a id="ae1101b7a44619def0d3150be32144024"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackYear</b> = 235</td></tr>
+<tr class="separator:ae1101b7a44619def0d3150be32144024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069906e5dcdedb0d2ac52a0178009201"><td class="memItemLeft" align="right" valign="top"><a id="a069906e5dcdedb0d2ac52a0178009201"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackYears</b> = 236</td></tr>
+<tr class="separator:a069906e5dcdedb0d2ac52a0178009201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dcd6da16bc8106f84aa211243ce7b0c"><td class="memItemLeft" align="right" valign="top"><a id="a0dcd6da16bc8106f84aa211243ce7b0c"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackMonth</b> = 237</td></tr>
+<tr class="separator:a0dcd6da16bc8106f84aa211243ce7b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbaba60e1e3c3bdfa8b20ebb6040babd"><td class="memItemLeft" align="right" valign="top"><a id="acbaba60e1e3c3bdfa8b20ebb6040babd"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackMonths</b> = 238</td></tr>
+<tr class="separator:acbaba60e1e3c3bdfa8b20ebb6040babd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410449e0b8b0b88f1615fe318ae9895a"><td class="memItemLeft" align="right" valign="top"><a id="a410449e0b8b0b88f1615fe318ae9895a"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackWeek</b> = 239</td></tr>
+<tr class="separator:a410449e0b8b0b88f1615fe318ae9895a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ecc67391b4f541e9e7e4eeb53c88390"><td class="memItemLeft" align="right" valign="top"><a id="a0ecc67391b4f541e9e7e4eeb53c88390"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackWeeks</b> = 240</td></tr>
+<tr class="separator:a0ecc67391b4f541e9e7e4eeb53c88390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c6d8e30bcc4aad1ea8ca7a9968abc2c"><td class="memItemLeft" align="right" valign="top"><a id="a5c6d8e30bcc4aad1ea8ca7a9968abc2c"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackDay</b> = 241</td></tr>
+<tr class="separator:a5c6d8e30bcc4aad1ea8ca7a9968abc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12738c43c29679195aa842c4333d8958"><td class="memItemLeft" align="right" valign="top"><a id="a12738c43c29679195aa842c4333d8958"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackDays</b> = 242</td></tr>
+<tr class="separator:a12738c43c29679195aa842c4333d8958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d9a7d96204781efddaf22b5c230c03"><td class="memItemLeft" align="right" valign="top"><a id="a63d9a7d96204781efddaf22b5c230c03"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackHour</b> = 243</td></tr>
+<tr class="separator:a63d9a7d96204781efddaf22b5c230c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fea65acc1cf0c97c522fa8a53f031dd"><td class="memItemLeft" align="right" valign="top"><a id="a2fea65acc1cf0c97c522fa8a53f031dd"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackHours</b> = 244</td></tr>
+<tr class="separator:a2fea65acc1cf0c97c522fa8a53f031dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a194f03eb89c79a7c405e1671cd79dfef"><td class="memItemLeft" align="right" valign="top"><a id="a194f03eb89c79a7c405e1671cd79dfef"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackMinute</b> = 245</td></tr>
+<tr class="separator:a194f03eb89c79a7c405e1671cd79dfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0016eda35b8e8d59ff69e29a0d92ac3c"><td class="memItemLeft" align="right" valign="top"><a id="a0016eda35b8e8d59ff69e29a0d92ac3c"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackMinutes</b> = 246</td></tr>
+<tr class="separator:a0016eda35b8e8d59ff69e29a0d92ac3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2338416b72ff7be82358751fcd6ebd07"><td class="memItemLeft" align="right" valign="top"><a id="a2338416b72ff7be82358751fcd6ebd07"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackSecond</b> = 247</td></tr>
+<tr class="separator:a2338416b72ff7be82358751fcd6ebd07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a395fcce1344aabe93b9aa3fa80e1f8"><td class="memItemLeft" align="right" valign="top"><a id="a3a395fcce1344aabe93b9aa3fa80e1f8"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackSeconds</b> = 248</td></tr>
+<tr class="separator:a3a395fcce1344aabe93b9aa3fa80e1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c7af6fb9028646f579a2b35192b323"><td class="memItemLeft" align="right" valign="top"><a id="af1c7af6fb9028646f579a2b35192b323"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackMillisecond</b> = 249</td></tr>
+<tr class="separator:af1c7af6fb9028646f579a2b35192b323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad883151564da782dc08d259a454aeebf"><td class="memItemLeft" align="right" valign="top"><a id="ad883151564da782dc08d259a454aeebf"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackMilliseconds</b> = 250</td></tr>
+<tr class="separator:ad883151564da782dc08d259a454aeebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7cb1e27a7bb6972e4cf6340516627f7"><td class="memItemLeft" align="right" valign="top"><a id="ad7cb1e27a7bb6972e4cf6340516627f7"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Mp3TrackAnd</b> = 251</td></tr>
+<tr class="separator:ad7cb1e27a7bb6972e4cf6340516627f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classDFPlayerMini"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classDFPlayerMini')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a></td></tr>
+<tr class="memitem:a811bdd44704a8495155e05335d69a1f8 inherit pub_static_attribs_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top"><a id="a811bdd44704a8495155e05335d69a1f8"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>BufferLength</b> = 10</td></tr>
+<tr class="separator:a811bdd44704a8495155e05335d69a1f8 inherit pub_static_attribs_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6652f68b6790b578ab0d22d632cd98c9 inherit pub_static_attribs_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top"><a id="a6652f68b6790b578ab0d22d632cd98c9"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MinimumTimeMs</b> = 20</td></tr>
+<tr class="separator:a6652f68b6790b578ab0d22d632cd98c9 inherit pub_static_attribs_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c051fe1e11d38fce4b3395b5f96e90 inherit pub_static_attribs_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top"><a id="a06c051fe1e11d38fce4b3395b5f96e90"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>ResponseTimeoutMs</b> = 20</td></tr>
+<tr class="separator:a06c051fe1e11d38fce4b3395b5f96e90 inherit pub_static_attribs_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05d975545e8792c8f6ee00d874618c58 inherit pub_static_attribs_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top"><a id="a05d975545e8792c8f6ee00d874618c58"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>PacketOffsetCmd</b> = 3</td></tr>
+<tr class="separator:a05d975545e8792c8f6ee00d874618c58 inherit pub_static_attribs_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22224bc02e031e57d2173de3b71b9706 inherit pub_static_attribs_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top"><a id="a22224bc02e031e57d2173de3b71b9706"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>PacketOffsetArg</b> = 5</td></tr>
+<tr class="separator:a22224bc02e031e57d2173de3b71b9706 inherit pub_static_attribs_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8719400a67031eb35b577412e549f1 inherit pub_static_attribs_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top"><a id="aab8719400a67031eb35b577412e549f1"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>PacketOffsetCkSum</b> = 7</td></tr>
+<tr class="separator:aab8719400a67031eb35b577412e549f1 inherit pub_static_attribs_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a> controller with numeric readout functions. </p>
+<div class="textblock"><p><a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> controller with numeric readout functions. </p>
 <p>This class is intended for use with the samples in the audio/ directory of the main Mutila repository. Copy these files to an SD card in a directory called "mp3". </p>
 
-<p class="definition">Definition at line <a class="el" href="DFPReader_8h_source.html#l00049">49</a> of file <a class="el" href="DFPReader_8h_source.html">DFPReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPReader_8h_source.html#l00012">12</a> of file <a class="el" href="DFPReader_8h_source.html">DFPReader.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a42264bec0c84cff338fd6b0f8dbcb8d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42264bec0c84cff338fd6b0f8dbcb8d8">&#9670;&nbsp;</a></span>DFPReader()</h2>
@@ -199,8 +327,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr
 </div><div class="memdoc">
 <p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">serial</td><td>a software serial object set at 9600 baud connected to the <a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a> device </td></tr>
-    <tr><td class="paramname">busyPin</td><td>the pin on the arduino connected to the BUSY pin of the <a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a>. See the <a class="el" href="classDFPlayerMini.html#a77c49559ebb6df0e377f4bf2d691d588">busy()</a> documentation for more details. </td></tr>
+    <tr><td class="paramname">serial</td><td>a software serial object set at 9600 baud connected to the <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> device </td></tr>
+    <tr><td class="paramname">busyPin</td><td>the pin on the arduino connected to the BUSY pin of the <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a>. See the <a class="el" href="classDFPlayerMini.html#a77c49559ebb6df0e377f4bf2d691d588">busy()</a> documentation for more details. </td></tr>
   </table>
   </dd>
 </dl>

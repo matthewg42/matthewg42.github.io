@@ -1,4 +1,4 @@
 <map id="Mode::modeStop" name="Mode::modeStop">
-<area shape="rect" id="node2" href="$classMode.html#a653b321767a9bf1878c285068a2aae24" title="To be called when switching to another mode. " alt="" coords="184,5,277,32"/>
+<area shape="rect" id="node2" href="$classMode.html#a653b321767a9bf1878c285068a2aae24" title="Mode::stop" alt="" coords="184,5,277,32"/>
 <area shape="rect" id="node3" href="$classParentMode.html#ade4f1473efd9fd796d8c38c5963b08bb" title="ParentMode::switchMode" alt="" coords="325,5,508,32"/>
 </map>

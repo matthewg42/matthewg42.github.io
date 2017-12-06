@@ -69,9 +69,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classA.html">A</a> response to a query set to a <a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a> object.  
- <a href="structDFPResponse.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="DFPlayerMini_8h_source.html">DFPlayerMini.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -89,9 +86,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adc628c9fb4d0d3fc2957c78835d18402"><td class="memItemLeft" align="right" valign="top"><a id="adc628c9fb4d0d3fc2957c78835d18402"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDFPResponse.html#adc628c9fb4d0d3fc2957c78835d18402">DFPResponse</a> ()</td></tr>
-<tr class="memdesc:adc628c9fb4d0d3fc2957c78835d18402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor - packet starts in Incomplete state. <br /></td></tr>
+<tr class="memitem:adc628c9fb4d0d3fc2957c78835d18402"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDFPResponse.html#adc628c9fb4d0d3fc2957c78835d18402">DFPResponse</a> ()</td></tr>
 <tr class="separator:adc628c9fb4d0d3fc2957c78835d18402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -107,10 +102,10 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>arg</b></td></tr>
 <tr class="separator:a68687786d0881ba9470b1d84e9fba030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classA.html">A</a> response to a query set to a <a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a> object. </p>
-<p>This object is returned when a query is sent to a <a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a> object It indicates the success of the query using the .status member, and also contains the message type (which presumably should the same as the command used in the query), and the argument (result) value, which is always a uint16_t. </p>
+<div class="textblock"><p>A response to a query set to a <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> object.</p>
+<p>This object is returned when a query is sent to a <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> object It indicates the success of the query using the .status member, and also contains the message type (which presumably should the same as the command used in the query), and the argument (result) value, which is always a uint16_t. </p>
 
-<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8h_source.html#l00023">23</a> of file <a class="el" href="DFPlayerMini_8h_source.html">DFPlayerMini.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8h_source.html#l00147">147</a> of file <a class="el" href="DFPlayerMini_8h_source.html">DFPlayerMini.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a66f85c2d6c3ab76a3f1079d2db5c9f7b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66f85c2d6c3ab76a3f1079d2db5c9f7b">&#9670;&nbsp;</a></span>Status</h2>
@@ -128,7 +123,7 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>arg</b></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a66f85c2d6c3ab76a3f1079d2db5c9f7ba8a5c6c77c04287036356e2bf80487911"></a>Ok&#160;</td><td class="fielddoc"><p>Messaged received and is valid. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a66f85c2d6c3ab76a3f1079d2db5c9f7baa7330ecf4d77c8a3a7de2b793b0d4f8e"></a>Timeout&#160;</td><td class="fielddoc"><p>Message timed out (DFP_RESP_TIMEOUT_MS ms passed) </p>
+<tr><td class="fieldname"><a id="a66f85c2d6c3ab76a3f1079d2db5c9f7baa7330ecf4d77c8a3a7de2b793b0d4f8e"></a>Timeout&#160;</td><td class="fielddoc"><p>Message timed out (DFPlayerMini::ResponseTimeoutMs ms passed) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a66f85c2d6c3ab76a3f1079d2db5c9f7ba180a5b2f0604090282f26d12208ec15b"></a>SerialError&#160;</td><td class="fielddoc"><p>Indicates broken serial comms. </p>
 </td></tr>
@@ -136,7 +131,36 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>arg</b></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8h_source.html#l00024">24</a> of file <a class="el" href="DFPlayerMini_8h_source.html">DFPlayerMini.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8h_source.html#l00148">148</a> of file <a class="el" href="DFPlayerMini_8h_source.html">DFPlayerMini.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="adc628c9fb4d0d3fc2957c78835d18402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc628c9fb4d0d3fc2957c78835d18402">&#9670;&nbsp;</a></span>DFPResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DFPResponse::DFPResponse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Default constructor - packet starts in Incomplete state. </p>
+
+<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8h_source.html#l00158">158</a> of file <a class="el" href="DFPlayerMini_8h_source.html">DFPlayerMini.h</a>.</p>
 
 </div>
 </div>

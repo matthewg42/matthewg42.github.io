@@ -67,30 +67,27 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Discrete values from a potential divider.  
- <a href="classDiscretePot.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="DiscretePot_8h_source.html">DiscretePot.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a95cd5b97571845e8ca3ce84b684edd65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiscretePot.html#a95cd5b97571845e8ca3ce84b684edd65">DiscretePot</a> (uint8_t pin)</td></tr>
-<tr class="separator:a95cd5b97571845e8ca3ce84b684edd65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93705213d8ad2867fb1c0ede0f8cef0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiscretePot.html#a93705213d8ad2867fb1c0ede0f8cef0e">begin</a> (int8_t min=0, int8_t max=11, bool reversed=false, uint8_t threshold=DEBOUNCED_BUTTON_THRESHOLD, uint8_t delay=DEBOUNCED_BUTTON_DELAY)</td></tr>
-<tr class="separator:a93705213d8ad2867fb1c0ede0f8cef0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a94d7c9f8861a519d2a00a92919ea8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiscretePot.html#ac7a94d7c9f8861a519d2a00a92919ea8">DiscretePot</a> (const uint8_t pin)</td></tr>
+<tr class="separator:ac7a94d7c9f8861a519d2a00a92919ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc7b6c76305376c9bfabd51ef904566"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiscretePot.html#a9dc7b6c76305376c9bfabd51ef904566">begin</a> (int8_t min=0, int8_t max=11, bool reversed=false, uint8_t threshold=AbstractDebouncedButton::DefaultThreshold, uint8_t delay=AbstractDebouncedButton::DefaultButtonDelay)</td></tr>
+<tr class="separator:a9dc7b6c76305376c9bfabd51ef904566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c204ac0007b4c505d8e5282f4781e0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiscretePot.html#a0c204ac0007b4c505d8e5282f4781e0a">update</a> ()</td></tr>
 <tr class="separator:a0c204ac0007b4c505d8e5282f4781e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c6c85c04ca60ab99b5170b29fd85afc"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDiscretePot.html#a1c6c85c04ca60ab99b5170b29fd85afc">value</a> ()</td></tr>
 <tr class="separator:a1c6c85c04ca60ab99b5170b29fd85afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Discrete values from a potential divider. </p>
+<div class="textblock"><p>Discrete values from a potential divider.</p>
 <p>Monitors an analog input pin and converts the voltage on the input to a discrete value within a specified range (the default goes up to 11). </p>
 
 <p class="definition">Definition at line <a class="el" href="DiscretePot_8h_source.html#l00012">12</a> of file <a class="el" href="DiscretePot_8h_source.html">DiscretePot.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a95cd5b97571845e8ca3ce84b684edd65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95cd5b97571845e8ca3ce84b684edd65">&#9670;&nbsp;</a></span>DiscretePot()</h2>
+<a id="ac7a94d7c9f8861a519d2a00a92919ea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a94d7c9f8861a519d2a00a92919ea8">&#9670;&nbsp;</a></span>DiscretePot()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -98,26 +95,27 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">DiscretePot::DiscretePot </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>pin</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Constructor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pin</td><td>the analog input pin to monitor (e.g. A0) </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="DiscretePot_8cpp_source.html#l00006">6</a> of file <a class="el" href="DiscretePot_8cpp_source.html">DiscretePot.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DiscretePot_8cpp_source.html#l00005">5</a> of file <a class="el" href="DiscretePot_8cpp_source.html">DiscretePot.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a93705213d8ad2867fb1c0ede0f8cef0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93705213d8ad2867fb1c0ede0f8cef0e">&#9670;&nbsp;</a></span>begin()</h2>
+<a id="a9dc7b6c76305376c9bfabd51ef904566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc7b6c76305376c9bfabd51ef904566">&#9670;&nbsp;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,13 +142,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>threshold</em> = <code>DEBOUNCED_BUTTON_THRESHOLD</code>, </td>
+          <td class="paramname"><em>threshold</em> = <code>AbstractDebouncedButton::DefaultThreshold</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>delay</em> = <code>DEBOUNCED_BUTTON_DELAY</code>&#160;</td>
+          <td class="paramname"><em>delay</em> = <code>AbstractDebouncedButton::DefaultButtonDelay</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -159,18 +157,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initializtion. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Initializtion.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">min</td><td>the minimum value </td></tr>
     <tr><td class="paramname">max</td><td>the maximum value </td></tr>
     <tr><td class="paramname">reversed</td><td>set to true to reverse the scale (return max when analogRead is at 0) </td></tr>
-    <tr><td class="paramname">threshold</td><td>debouncing threshold (see <a class="el" href="classDebouncedButton.html" title="Timeslice-based button with debouncing. ">DebouncedButton</a> for details) </td></tr>
-    <tr><td class="paramname">delay</td><td>debouncing delay (see <a class="el" href="classDebouncedButton.html" title="Timeslice-based button with debouncing. ">DebouncedButton</a> for details) </td></tr>
+    <tr><td class="paramname">threshold</td><td>debouncing threshold (see <a class="el" href="classDebouncedButton.html">DebouncedButton</a> for details) </td></tr>
+    <tr><td class="paramname">delay</td><td>debouncing delay (see <a class="el" href="classDebouncedButton.html">DebouncedButton</a> for details) </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="DiscretePot_8cpp_source.html#l00011">11</a> of file <a class="el" href="DiscretePot_8cpp_source.html">DiscretePot.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DiscretePot_8cpp_source.html#l00010">10</a> of file <a class="el" href="DiscretePot_8cpp_source.html">DiscretePot.cpp</a>.</p>
 
 </div>
 </div>
@@ -188,10 +187,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Allocate Timeslice</p>
+<p>Allocate Timeslice.</p>
 <p>This method must be called frequently - usually from loop() </p>
 
-<p class="definition">Definition at line <a class="el" href="DiscretePot_8cpp_source.html#l00021">21</a> of file <a class="el" href="DiscretePot_8cpp_source.html">DiscretePot.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DiscretePot_8cpp_source.html#l00020">20</a> of file <a class="el" href="DiscretePot_8cpp_source.html">DiscretePot.cpp</a>.</p>
 
 </div>
 </div>
@@ -209,10 +208,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get</p>
+<p>Get value.</p>
 <dl class="section return"><dt>Returns</dt><dd>Current value for the pot. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DiscretePot_8cpp_source.html#l00037">37</a> of file <a class="el" href="DiscretePot_8cpp_source.html">DiscretePot.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DiscretePot_8cpp_source.html#l00035">35</a> of file <a class="el" href="DiscretePot_8cpp_source.html">DiscretePot.cpp</a>.</p>
 
 </div>
 </div>

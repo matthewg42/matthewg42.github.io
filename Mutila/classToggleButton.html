@@ -67,24 +67,21 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>PushButton which toggles state.  
- <a href="classToggleButton.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="ToggleButton_8h_source.html">ToggleButton.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac829a996657d8d85a87e49993f63f251"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToggleButton.html#ac829a996657d8d85a87e49993f63f251">ToggleButton</a> (uint8_t pin, bool pullup=true)</td></tr>
 <tr class="separator:ac829a996657d8d85a87e49993f63f251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf067cc210a5c24bd6ecd833a09d00a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToggleButton.html#adf067cc210a5c24bd6ecd833a09d00a2">begin</a> (bool startState=false, uint8_t threshold=DEBOUNCED_BUTTON_THRESHOLD, uint8_t delay=DEBOUNCED_BUTTON_DELAY)</td></tr>
-<tr class="separator:adf067cc210a5c24bd6ecd833a09d00a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b717861bf854f2192c5a333fb93ef2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToggleButton.html#a80b717861bf854f2192c5a333fb93ef2">begin</a> (bool startState=false, uint8_t threshold=AbstractDebouncedButton::DefaultThreshold, uint8_t delay=AbstractDebouncedButton::DefaultButtonDelay)</td></tr>
+<tr class="separator:a80b717861bf854f2192c5a333fb93ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8a6fdad6e76b0d9466e55bbefd3bc46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToggleButton.html#ab8a6fdad6e76b0d9466e55bbefd3bc46">update</a> ()</td></tr>
 <tr class="separator:ab8a6fdad6e76b0d9466e55bbefd3bc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad65f6ea0758c6d01dc783fe699bb8a28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToggleButton.html#ad65f6ea0758c6d01dc783fe699bb8a28">on</a> ()</td></tr>
 <tr class="separator:ad65f6ea0758c6d01dc783fe699bb8a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>PushButton which toggles state. </p>
+<div class="textblock"><p>PushButton which toggles state.</p>
 <p>Push once - on. Push again - off. </p>
 
 <p class="definition">Definition at line <a class="el" href="ToggleButton_8h_source.html#l00009">9</a> of file <a class="el" href="ToggleButton_8h_source.html">ToggleButton.h</a>.</p>
@@ -114,7 +111,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor</p>
+<p>Constructor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pin</td><td>the pin which he button is connected to. </td></tr>
@@ -129,8 +126,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="adf067cc210a5c24bd6ecd833a09d00a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf067cc210a5c24bd6ecd833a09d00a2">&#9670;&nbsp;</a></span>begin()</h2>
+<a id="a80b717861bf854f2192c5a333fb93ef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b717861bf854f2192c5a333fb93ef2">&#9670;&nbsp;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,13 +142,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>threshold</em> = <code>DEBOUNCED_BUTTON_THRESHOLD</code>, </td>
+          <td class="paramname"><em>threshold</em> = <code>AbstractDebouncedButton::DefaultThreshold</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>delay</em> = <code>DEBOUNCED_BUTTON_DELAY</code>&#160;</td>
+          <td class="paramname"><em>delay</em> = <code>AbstractDebouncedButton::DefaultButtonDelay</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -160,12 +157,12 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialization</p>
+<p>Initialization.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">startState</td><td>which state (on or off) the toggle starts in </td></tr>
-    <tr><td class="paramname">threshold</td><td>how many tests of the pin must match for a press detection </td></tr>
-    <tr><td class="paramname">delay</td><td>number of ms between tests of press detection</td></tr>
+    <tr><td class="paramname">startState</td><td>which state (on or off) the toggle starts in. </td></tr>
+    <tr><td class="paramname">threshold</td><td>how many tests of the pin must match for a press detection. </td></tr>
+    <tr><td class="paramname">delay</td><td>number of ms between tests of press detection.</td></tr>
   </table>
   </dd>
 </dl>
@@ -175,11 +172,12 @@ Public Member Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classToggleButton_adf067cc210a5c24bd6ecd833a09d00a2_cgraph.png" border="0" usemap="#classToggleButton_adf067cc210a5c24bd6ecd833a09d00a2_cgraph" alt=""/></div>
-<map name="classToggleButton_adf067cc210a5c24bd6ecd833a09d00a2_cgraph" id="classToggleButton_adf067cc210a5c24bd6ecd833a09d00a2_cgraph">
-<area shape="rect" id="node2" href="classDebouncedButton.html#af0bfebb2830f4b6f5873c9e0ec6ff18d" title="DebouncedButton::begin" alt="" coords="204,31,387,57"/>
-<area shape="rect" id="node3" href="classRawButton.html#a7832c59ffdd2c86feb96ca3ca3b61684" title="RawButton::begin" alt="" coords="466,5,603,32"/>
-<area shape="rect" id="node4" href="classDebouncedButton.html#a9b34291dcea290feac4502ef0692a732" title="DebouncedButton::setState" alt="" coords="435,56,635,83"/>
+<div class="center"><img src="classToggleButton_a80b717861bf854f2192c5a333fb93ef2_cgraph.png" border="0" usemap="#classToggleButton_a80b717861bf854f2192c5a333fb93ef2_cgraph" alt=""/></div>
+<map name="classToggleButton_a80b717861bf854f2192c5a333fb93ef2_cgraph" id="classToggleButton_a80b717861bf854f2192c5a333fb93ef2_cgraph">
+<area shape="rect" id="node2" href="classDebouncedButton.html#a15b47d7ece1c6fc74176ade0b05ffb21" title="DebouncedButton::begin" alt="" coords="204,35,387,61"/>
+<area shape="rect" id="node3" href="classAbstractButton.html#a13d299e72fba0dfd7c294b513a464aa5" title="AbstractButton::begin" alt="" coords="435,5,597,32"/>
+<area shape="rect" id="node5" href="classDigitalInputButton.html#a5504c479f491d6038a04802bf9c88568" title="DigitalInputButton\l::begin" alt="" coords="445,57,587,98"/>
+<area shape="rect" id="node4" href="classAbstractButton.html#a183f04ee1764bac387c74bf6e13446b1" title="AbstractButton::on" alt="" coords="645,5,788,32"/>
 </map>
 </div>
 
@@ -199,7 +197,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Test toggle state</p>
+<p>Test toggle state.</p>
 <dl class="section return"><dt>Returns</dt><dd>true if the toggle is on, else false. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ToggleButton_8cpp_source.html#l00022">22</a> of file <a class="el" href="ToggleButton_8cpp_source.html">ToggleButton.cpp</a>.</p>
@@ -220,8 +218,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Allocate Timeslice</p>
-<p>This method must be called frequently - usually from loop() </p>
+<p>Allocate Timeslice.</p>
+<p>This method must be called frequently - usually from loop(). </p>
 
 <p class="definition">Definition at line <a class="el" href="ToggleButton_8cpp_source.html#l00014">14</a> of file <a class="el" href="ToggleButton_8cpp_source.html">ToggleButton.cpp</a>.</p>
 <div class="dynheader">
@@ -229,10 +227,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classToggleButton_ab8a6fdad6e76b0d9466e55bbefd3bc46_cgraph.png" border="0" usemap="#classToggleButton_ab8a6fdad6e76b0d9466e55bbefd3bc46_cgraph" alt=""/></div>
 <map name="classToggleButton_ab8a6fdad6e76b0d9466e55bbefd3bc46_cgraph" id="classToggleButton_ab8a6fdad6e76b0d9466e55bbefd3bc46_cgraph">
-<area shape="rect" id="node2" href="classDebouncedButton.html#a6df550e3af8195ab8374c86660abe6ae" title="DebouncedButton::update" alt="" coords="215,31,405,57"/>
-<area shape="rect" id="node5" href="classDebouncedButton.html#a57863e89ceb79fb8cb0b2f6e183decea" title="DebouncedButton::pushed" alt="" coords="213,81,407,108"/>
-<area shape="rect" id="node3" href="classRawButton.html#aa1ff6ef2c4300d63eccc631bac61cd74" title="RawButton::on" alt="" coords="496,5,613,32"/>
-<area shape="rect" id="node4" href="classDebouncedButton.html#a9b34291dcea290feac4502ef0692a732" title="DebouncedButton::setState" alt="" coords="455,56,655,83"/>
+<area shape="rect" id="node2" href="classDebouncedButton.html#a6df550e3af8195ab8374c86660abe6ae" title="DebouncedButton::update" alt="" coords="214,35,405,61"/>
+<area shape="rect" id="node5" href="classAbstractDebouncedButton.html#a500497ea3c850464edac0e1d310a73d8" title="AbstractDebouncedButton\l::pushed" alt="" coords="213,86,405,127"/>
+<area shape="rect" id="node3" href="classDigitalInputButton.html#a502de66816d4f2116b834ce505cf7c31" title="DigitalInputButton::on" alt="" coords="467,5,632,32"/>
+<area shape="rect" id="node4" href="classAbstractDebouncedButton.html#a865fdf4b67386c90b53d33906a22bc6d" title="AbstractDebouncedButton\l::setState" alt="" coords="453,57,645,98"/>
 </map>
 </div>
 

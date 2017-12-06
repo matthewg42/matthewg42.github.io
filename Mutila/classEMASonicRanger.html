@@ -76,7 +76,7 @@ Inheritance diagram for EMASonicRanger:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEMASonicRanger__inherit__graph.png" border="0" usemap="#EMASonicRanger_inherit__map" alt="Inheritance graph"/></div>
 <map name="EMASonicRanger_inherit__map" id="EMASonicRanger_inherit__map">
-<area shape="rect" id="node2" href="classSonicRanger.html" title="{SonicRanger\n||+ SonicRanger()\l+ begin()\l+ getRange()\l+ setMaxRange()\l+ setTimeoutMs()\l}" alt="" coords="14,5,153,141"/>
+<area shape="rect" id="node2" href="classSonicRanger.html" title="{SonicRanger\n|+ DefaultMaxRangeCm\l+ DefaultTimeoutMs\l|+ SonicRanger()\l+ begin()\l+ getRange()\l+ setMaxRange()\l+ setTimeoutMs()\l}" alt="" coords="5,5,180,156"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -101,6 +101,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab27fbe7338aadc678f40d02ce7e78c25 inherit pub_methods_classSonicRanger"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af86e296bdb4e89c38d9aa6e5b3387330 inherit pub_methods_classSonicRanger"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSonicRanger.html#af86e296bdb4e89c38d9aa6e5b3387330">setTimeoutMs</a> (uint16_t ms)</td></tr>
 <tr class="separator:af86e296bdb4e89c38d9aa6e5b3387330 inherit pub_methods_classSonicRanger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_classSonicRanger"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classSonicRanger')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classSonicRanger.html">SonicRanger</a></td></tr>
+<tr class="memitem:a73051dd06e12df6369d7703d31c6024e inherit pub_static_attribs_classSonicRanger"><td class="memItemLeft" align="right" valign="top"><a id="a73051dd06e12df6369d7703d31c6024e"></a>
+static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultMaxRangeCm</b> = 200</td></tr>
+<tr class="separator:a73051dd06e12df6369d7703d31c6024e inherit pub_static_attribs_classSonicRanger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8af4bca25297d9642ecce97d0f57c6 inherit pub_static_attribs_classSonicRanger"><td class="memItemLeft" align="right" valign="top"><a id="a2a8af4bca25297d9642ecce97d0f57c6"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultTimeoutMs</b> = 15</td></tr>
+<tr class="separator:a2a8af4bca25297d9642ecce97d0f57c6 inherit pub_static_attribs_classSonicRanger"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classSonicRanger.html">SonicRanger</a> with EMA-smoothed values. </p>
@@ -151,7 +161,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor</p>
+<p>Constructor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">trigPin</td><td>the arduino pin conneced to the TRIG pin of the HC-SR04 device </td></tr>

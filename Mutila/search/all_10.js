@@ -8,7 +8,7 @@ var searchData=
   ['seteqalizer',['SetEqalizer',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da0e3c54aec8299342e69aa642e756441d',1,'DFPlayerMini']]],
   ['setmaxrange',['setMaxRange',['../classSonicRanger.html#ab27fbe7338aadc678f40d02ce7e78c25',1,'SonicRanger']]],
   ['setmode',['setMode',['../classHeartbeat.html#a9b3545c198f4531263404e3503e2d409',1,'Heartbeat::setMode(Mode mode)'],['../classHeartbeat.html#afe4c050a2169e7f3638650e3bdcbd192',1,'Heartbeat::setMode(Times times)']]],
-  ['setstate',['setState',['../classDebouncedButton.html#a9b34291dcea290feac4502ef0692a732',1,'DebouncedButton']]],
+  ['setstate',['setState',['../classAbstractDebouncedButton.html#a865fdf4b67386c90b53d33906a22bc6d',1,'AbstractDebouncedButton']]],
   ['settimeoutms',['setTimeoutMs',['../classSonicRanger.html#af86e296bdb4e89c38d9aa6e5b3387330',1,'SonicRanger']]],
   ['setupdateperiod',['setUpdatePeriod',['../classMode.html#a1b458a232619aab904c58df750c8546a',1,'Mode']]],
   ['setvolume',['SetVolume',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da69ce0e1556d6213e11f2d4a195b0d40e',1,'DFPlayerMini']]],
@@ -20,5 +20,5 @@ var searchData=
   ['start',['start',['../classMode.html#ae78f0051b444b4389eaf984b8a3a4e78',1,'Mode']]],
   ['status',['Status',['../structDFPResponse.html#a66f85c2d6c3ab76a3f1079d2db5c9f7b',1,'DFPResponse']]],
   ['stop',['Stop',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542daeab028bcf1709f0c42ee7483397db6e0',1,'DFPlayerMini::Stop()'],['../classMode.html#a653b321767a9bf1878c285068a2aae24',1,'Mode::stop()']]],
-  ['switchmode',['switchMode',['../classParentMode.html#ade4f1473efd9fd796d8c38c5963b08bb',1,'ParentMode']]]
+  ['switchmode',['switchMode',['../classModeManager.html#ae55bdd41ef522137f8e7bd3373cbbdef',1,'ModeManager::switchMode()'],['../classParentMode.html#ade4f1473efd9fd796d8c38c5963b08bb',1,'ParentMode::switchMode()']]]
 ];

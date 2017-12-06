@@ -67,16 +67,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Timeslice-based button with debouncing.  
- <a href="classDebouncedButton.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="DebouncedButton_8h_source.html">DebouncedButton.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DebouncedButton:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDebouncedButton__inherit__graph.png" border="0" usemap="#DebouncedButton_inherit__map" alt="Inheritance graph"/></div>
 <map name="DebouncedButton_inherit__map" id="DebouncedButton_inherit__map">
-<area shape="rect" id="node2" href="classRawButton.html" title="Basic instantaneous button. " alt="" coords="27,5,146,127"/>
+<area shape="rect" id="node2" href="classAbstractDebouncedButton.html" title="{AbstractDebouncedButton\n|+ DefaultThreshold\l+ DefaultButtonDelay\l+ DefaultHeldMs\l+ DefaultButtonRepeatInitialMs\l+ DefaultButtonRepeatMs\l# _threshold\l# _delay\l# _lastUpdate\l# _counter\l# _state\l# _lastStateChange\l# _pushed\l# _repeatCount\l# _lastRepeat\l# _lastOnDuration\l|+ AbstractDebouncedButton()\l+ begin()\l+ update()\l+ pushed()\l+ tapped()\l+ held()\l+ repeat()\l+ setState()\l}" alt="" coords="5,160,233,545"/>
+<area shape="rect" id="node3" href="classAbstractButton.html" title="{AbstractButton\n||+ AbstractButton()\l+ begin()\l+ on()\l}" alt="" coords="158,5,302,112"/>
+<area shape="rect" id="node4" href="classDigitalInputButton.html" title="{DigitalInputButton\n|# _pin\l# _pullup\l|+ DigitalInputButton()\l+ begin()\l+ on()\l}" alt="" coords="257,292,424,413"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -84,43 +83,98 @@ Inheritance diagram for DebouncedButton:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af827cf629cf34632b7634df34e92ee79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebouncedButton.html#af827cf629cf34632b7634df34e92ee79">DebouncedButton</a> (uint8_t pin, bool pullup=true)</td></tr>
 <tr class="separator:af827cf629cf34632b7634df34e92ee79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0bfebb2830f4b6f5873c9e0ec6ff18d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebouncedButton.html#af0bfebb2830f4b6f5873c9e0ec6ff18d">begin</a> (uint8_t threshold=DEBOUNCED_BUTTON_THRESHOLD, uint8_t delay=DEBOUNCED_BUTTON_DELAY)</td></tr>
-<tr class="separator:af0bfebb2830f4b6f5873c9e0ec6ff18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b47d7ece1c6fc74176ade0b05ffb21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebouncedButton.html#a15b47d7ece1c6fc74176ade0b05ffb21">begin</a> (uint8_t threshold=AbstractDebouncedButton::DefaultThreshold, uint8_t delay=AbstractDebouncedButton::DefaultButtonDelay)</td></tr>
+<tr class="separator:a15b47d7ece1c6fc74176ade0b05ffb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6df550e3af8195ab8374c86660abe6ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebouncedButton.html#a6df550e3af8195ab8374c86660abe6ae">update</a> ()</td></tr>
 <tr class="separator:a6df550e3af8195ab8374c86660abe6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac908c18c076200f3345c86fc3bba366b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebouncedButton.html#ac908c18c076200f3345c86fc3bba366b">on</a> ()</td></tr>
 <tr class="separator:ac908c18c076200f3345c86fc3bba366b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57863e89ceb79fb8cb0b2f6e183decea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebouncedButton.html#a57863e89ceb79fb8cb0b2f6e183decea">pushed</a> ()</td></tr>
-<tr class="separator:a57863e89ceb79fb8cb0b2f6e183decea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca38673648fd0e0de07f5486762960b3"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebouncedButton.html#aca38673648fd0e0de07f5486762960b3">tapped</a> ()</td></tr>
-<tr class="separator:aca38673648fd0e0de07f5486762960b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52d31c961275c5caeaedccb0884284d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebouncedButton.html#a52d31c961275c5caeaedccb0884284d5">held</a> (uint16_t ms=DEBOUNCED_BUTTON_HELD_MS)</td></tr>
-<tr class="separator:a52d31c961275c5caeaedccb0884284d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace5621dee2abbec7612160d3fa4a06e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebouncedButton.html#ace5621dee2abbec7612160d3fa4a06e3">repeat</a> (uint16_t initialMs=DEBOUNCED_BUTTON_RPT_INITIAL_MS, uint16_t repeatMs=DEBOUNCED_BUTTON_RPT_MS)</td></tr>
-<tr class="separator:ace5621dee2abbec7612160d3fa4a06e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b34291dcea290feac4502ef0692a732"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDebouncedButton.html#a9b34291dcea290feac4502ef0692a732">setState</a> (bool newState)</td></tr>
-<tr class="separator:a9b34291dcea290feac4502ef0692a732"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classRawButton"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classRawButton')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classRawButton.html">RawButton</a></td></tr>
-<tr class="memitem:a4f6fcbd3aa452779c205bf5f021139e1 inherit pub_methods_classRawButton"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRawButton.html#a4f6fcbd3aa452779c205bf5f021139e1">RawButton</a> (uint8_t pin, bool pullup=true)</td></tr>
-<tr class="separator:a4f6fcbd3aa452779c205bf5f021139e1 inherit pub_methods_classRawButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7832c59ffdd2c86feb96ca3ca3b61684 inherit pub_methods_classRawButton"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRawButton.html#a7832c59ffdd2c86feb96ca3ca3b61684">begin</a> ()</td></tr>
-<tr class="separator:a7832c59ffdd2c86feb96ca3ca3b61684 inherit pub_methods_classRawButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1ff6ef2c4300d63eccc631bac61cd74 inherit pub_methods_classRawButton"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRawButton.html#aa1ff6ef2c4300d63eccc631bac61cd74">on</a> ()</td></tr>
-<tr class="separator:aa1ff6ef2c4300d63eccc631bac61cd74 inherit pub_methods_classRawButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classAbstractDebouncedButton"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAbstractDebouncedButton')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classAbstractDebouncedButton.html">AbstractDebouncedButton</a></td></tr>
+<tr class="memitem:aeb344ce65e826e31b26fe9edc89ce463 inherit pub_methods_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#aeb344ce65e826e31b26fe9edc89ce463">AbstractDebouncedButton</a> ()</td></tr>
+<tr class="separator:aeb344ce65e826e31b26fe9edc89ce463 inherit pub_methods_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad513839709d4b54dd400423da100a4cf inherit pub_methods_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#ad513839709d4b54dd400423da100a4cf">begin</a> (uint8_t threshold=DefaultThreshold, uint8_t delay=DefaultButtonDelay)</td></tr>
+<tr class="separator:ad513839709d4b54dd400423da100a4cf inherit pub_methods_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500497ea3c850464edac0e1d310a73d8 inherit pub_methods_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#a500497ea3c850464edac0e1d310a73d8">pushed</a> ()</td></tr>
+<tr class="separator:a500497ea3c850464edac0e1d310a73d8 inherit pub_methods_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a080eaeb29bace8057224bdb84974f5 inherit pub_methods_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#a9a080eaeb29bace8057224bdb84974f5">tapped</a> ()</td></tr>
+<tr class="separator:a9a080eaeb29bace8057224bdb84974f5 inherit pub_methods_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6425bc0edce537961eed777fef30618 inherit pub_methods_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#ad6425bc0edce537961eed777fef30618">held</a> (uint16_t ms=DefaultHeldMs)</td></tr>
+<tr class="separator:ad6425bc0edce537961eed777fef30618 inherit pub_methods_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31166c2acf373e141c3afaf7372a5f6 inherit pub_methods_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#af31166c2acf373e141c3afaf7372a5f6">repeat</a> (uint16_t initialMs=DefaultButtonRepeatInitialMs, uint16_t repeatMs=DefaultButtonRepeatMs)</td></tr>
+<tr class="separator:af31166c2acf373e141c3afaf7372a5f6 inherit pub_methods_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865fdf4b67386c90b53d33906a22bc6d inherit pub_methods_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#a865fdf4b67386c90b53d33906a22bc6d">setState</a> (bool newState)</td></tr>
+<tr class="separator:a865fdf4b67386c90b53d33906a22bc6d inherit pub_methods_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classAbstractButton"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAbstractButton')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classAbstractButton.html">AbstractButton</a></td></tr>
+<tr class="memitem:a92f1f19070cda4a8f784568ee387648f inherit pub_methods_classAbstractButton"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractButton.html#a92f1f19070cda4a8f784568ee387648f">AbstractButton</a> ()</td></tr>
+<tr class="separator:a92f1f19070cda4a8f784568ee387648f inherit pub_methods_classAbstractButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classDigitalInputButton"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDigitalInputButton')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classDigitalInputButton.html">DigitalInputButton</a></td></tr>
+<tr class="memitem:af2014dc25cbf9ee251d1992acb58bd4c inherit pub_methods_classDigitalInputButton"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDigitalInputButton.html#af2014dc25cbf9ee251d1992acb58bd4c">DigitalInputButton</a> (const uint8_t pin, const bool pullup=true)</td></tr>
+<tr class="separator:af2014dc25cbf9ee251d1992acb58bd4c inherit pub_methods_classDigitalInputButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5504c479f491d6038a04802bf9c88568 inherit pub_methods_classDigitalInputButton"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDigitalInputButton.html#a5504c479f491d6038a04802bf9c88568">begin</a> ()</td></tr>
+<tr class="separator:a5504c479f491d6038a04802bf9c88568 inherit pub_methods_classDigitalInputButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502de66816d4f2116b834ce505cf7c31 inherit pub_methods_classDigitalInputButton"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDigitalInputButton.html#a502de66816d4f2116b834ce505cf7c31">on</a> ()</td></tr>
+<tr class="separator:a502de66816d4f2116b834ce505cf7c31 inherit pub_methods_classDigitalInputButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_classRawButton"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classRawButton')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classRawButton.html">RawButton</a></td></tr>
-<tr class="memitem:a1ef6ce0c470743959391561340ea6625 inherit pro_attribs_classRawButton"><td class="memItemLeft" align="right" valign="top"><a id="a1ef6ce0c470743959391561340ea6625"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>_pin</b></td></tr>
-<tr class="separator:a1ef6ce0c470743959391561340ea6625 inherit pro_attribs_classRawButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96e7401f8579a32e79342721078e60c4 inherit pro_attribs_classRawButton"><td class="memItemLeft" align="right" valign="top"><a id="a96e7401f8579a32e79342721078e60c4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>_pullup</b></td></tr>
-<tr class="separator:a96e7401f8579a32e79342721078e60c4 inherit pro_attribs_classRawButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classAbstractDebouncedButton"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classAbstractDebouncedButton')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classAbstractDebouncedButton.html">AbstractDebouncedButton</a></td></tr>
+<tr class="memitem:a5a85b2e5f689214c0c5d7ee14f7be0a1 inherit pub_static_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="a5a85b2e5f689214c0c5d7ee14f7be0a1"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultThreshold</b> = 5</td></tr>
+<tr class="separator:a5a85b2e5f689214c0c5d7ee14f7be0a1 inherit pub_static_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4143bbae539195b3c26129b1d8bc303e inherit pub_static_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="a4143bbae539195b3c26129b1d8bc303e"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultButtonDelay</b> = 5</td></tr>
+<tr class="separator:a4143bbae539195b3c26129b1d8bc303e inherit pub_static_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88496dcf3c491d700a85c9a2b46e364 inherit pub_static_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="ad88496dcf3c491d700a85c9a2b46e364"></a>
+static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultHeldMs</b> = 800</td></tr>
+<tr class="separator:ad88496dcf3c491d700a85c9a2b46e364 inherit pub_static_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc0ab99a920e46d958374d12af38dc5 inherit pub_static_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="a4dc0ab99a920e46d958374d12af38dc5"></a>
+static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultButtonRepeatInitialMs</b> = 700</td></tr>
+<tr class="separator:a4dc0ab99a920e46d958374d12af38dc5 inherit pub_static_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9278064f67579617625cd96501e68dfd inherit pub_static_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="a9278064f67579617625cd96501e68dfd"></a>
+static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultButtonRepeatMs</b> = 350</td></tr>
+<tr class="separator:a9278064f67579617625cd96501e68dfd inherit pub_static_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classAbstractDebouncedButton"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classAbstractDebouncedButton')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classAbstractDebouncedButton.html">AbstractDebouncedButton</a></td></tr>
+<tr class="memitem:ab190b840014a85606f0b99eed090d152 inherit pro_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="ab190b840014a85606f0b99eed090d152"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>_threshold</b></td></tr>
+<tr class="separator:ab190b840014a85606f0b99eed090d152 inherit pro_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2e625f3f781b511919fb5ee0c55a1a inherit pro_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="add2e625f3f781b511919fb5ee0c55a1a"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>_delay</b></td></tr>
+<tr class="separator:add2e625f3f781b511919fb5ee0c55a1a inherit pro_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9120a190214b9dd7dd2f059bac6b4f inherit pro_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="ade9120a190214b9dd7dd2f059bac6b4f"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_lastUpdate</b></td></tr>
+<tr class="separator:ade9120a190214b9dd7dd2f059bac6b4f inherit pro_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd11c29734269ea016db0d37ccbea424 inherit pro_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="afd11c29734269ea016db0d37ccbea424"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>_counter</b></td></tr>
+<tr class="separator:afd11c29734269ea016db0d37ccbea424 inherit pro_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad836e0576513c40b179d8e7808924f55 inherit pro_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="ad836e0576513c40b179d8e7808924f55"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_state</b></td></tr>
+<tr class="separator:ad836e0576513c40b179d8e7808924f55 inherit pro_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3238ff585ab28996025b0c70bc103f69 inherit pro_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="a3238ff585ab28996025b0c70bc103f69"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_lastStateChange</b></td></tr>
+<tr class="separator:a3238ff585ab28996025b0c70bc103f69 inherit pro_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a2d3af5b1c4018566d27bc669c6b58 inherit pro_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="af8a2d3af5b1c4018566d27bc669c6b58"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_pushed</b></td></tr>
+<tr class="separator:af8a2d3af5b1c4018566d27bc669c6b58 inherit pro_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0957cbdbca5e92c32a2ff6cd92ccf7de inherit pro_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="a0957cbdbca5e92c32a2ff6cd92ccf7de"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>_repeatCount</b></td></tr>
+<tr class="separator:a0957cbdbca5e92c32a2ff6cd92ccf7de inherit pro_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74d03cb619448a729105852abf00628 inherit pro_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="ad74d03cb619448a729105852abf00628"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_lastRepeat</b></td></tr>
+<tr class="separator:ad74d03cb619448a729105852abf00628 inherit pro_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b6b3a66fe2485041e8bb687844c2e1 inherit pro_attribs_classAbstractDebouncedButton"><td class="memItemLeft" align="right" valign="top"><a id="a34b6b3a66fe2485041e8bb687844c2e1"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_lastOnDuration</b></td></tr>
+<tr class="separator:a34b6b3a66fe2485041e8bb687844c2e1 inherit pro_attribs_classAbstractDebouncedButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classDigitalInputButton"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classDigitalInputButton')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classDigitalInputButton.html">DigitalInputButton</a></td></tr>
+<tr class="memitem:aa55230abf13368c67da8c9701efe2b84 inherit pro_attribs_classDigitalInputButton"><td class="memItemLeft" align="right" valign="top"><a id="aa55230abf13368c67da8c9701efe2b84"></a>
+const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>_pin</b></td></tr>
+<tr class="separator:aa55230abf13368c67da8c9701efe2b84 inherit pro_attribs_classDigitalInputButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5664d8f0e9cd4a138239f6f3bb8f1669 inherit pro_attribs_classDigitalInputButton"><td class="memItemLeft" align="right" valign="top"><a id="a5664d8f0e9cd4a138239f6f3bb8f1669"></a>
+const bool&#160;</td><td class="memItemRight" valign="bottom"><b>_pullup</b></td></tr>
+<tr class="separator:a5664d8f0e9cd4a138239f6f3bb8f1669 inherit pro_attribs_classDigitalInputButton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Timeslice-based button with debouncing. </p>
-<p><a class="el" href="classDebouncedButton.html" title="Timeslice-based button with debouncing. ">DebouncedButton</a> reduces / eliminates bouncing (multiple press events registing close together with only one physical press).</p>
+<div class="textblock"><p>Timeslice-based button with debouncing</p>
+<p><a class="el" href="classDebouncedButton.html">DebouncedButton</a> reduces / eliminates bouncing (multiple press events registing close together with only one physical press).</p>
 <p>The <a class="el" href="classDebouncedButton.html#a6df550e3af8195ab8374c86660abe6ae">update()</a> method must be called frequently (usually from loop()) to work properly. </p>
 
 <p class="definition">Definition at line <a class="el" href="DebouncedButton_8h_source.html#l00015">15</a> of file <a class="el" href="DebouncedButton_8h_source.html">DebouncedButton.h</a>.</p>
@@ -150,22 +204,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_pullup</b></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor</p>
+<p>Constructor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pin</td><td>the pin used for this button </td></tr>
-    <tr><td class="paramname">pullup</td><td>if true pin==LOW means on, else pin==HIGH is on </td></tr>
+    <tr><td class="paramname">pin</td><td>the pin used for this button. </td></tr>
+    <tr><td class="paramname">pullup</td><td>if true pin==LOW means on, else pin==HIGH is on. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="DebouncedButton_8cpp_source.html#l00005">5</a> of file <a class="el" href="DebouncedButton_8cpp_source.html">DebouncedButton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DebouncedButton_8cpp_source.html#l00006">6</a> of file <a class="el" href="DebouncedButton_8cpp_source.html">DebouncedButton.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af0bfebb2830f4b6f5873c9e0ec6ff18d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0bfebb2830f4b6f5873c9e0ec6ff18d">&#9670;&nbsp;</a></span>begin()</h2>
+<a id="a15b47d7ece1c6fc74176ade0b05ffb21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b47d7ece1c6fc74176ade0b05ffb21">&#9670;&nbsp;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,13 +228,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_pullup</b></td></tr>
           <td class="memname">void DebouncedButton::begin </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>threshold</em> = <code>DEBOUNCED_BUTTON_THRESHOLD</code>, </td>
+          <td class="paramname"><em>threshold</em> = <code>AbstractDebouncedButton::DefaultThreshold</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>delay</em> = <code>DEBOUNCED_BUTTON_DELAY</code>&#160;</td>
+          <td class="paramname"><em>delay</em> = <code>AbstractDebouncedButton::DefaultButtonDelay</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -189,77 +243,34 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_pullup</b></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialization</p>
+<p>Initialization.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">threshold</td><td>how many tests of the pin must match for a state change </td></tr>
-    <tr><td class="paramname">delay</td><td>number of ms between tests of pin state</td></tr>
+    <tr><td class="paramname">threshold</td><td>how many tests of the pin must match for a state change. </td></tr>
+    <tr><td class="paramname">delay</td><td>number of ms between tests of pin state.</td></tr>
   </table>
   </dd>
 </dl>
 <p>Should be called from setup(), or at any rate, before other members are called. This will set the pinMode. The minimum time it takes for button presses / released to register is threshold * delay. </p>
 
-<p class="definition">Definition at line <a class="el" href="DebouncedButton_8cpp_source.html#l00010">10</a> of file <a class="el" href="DebouncedButton_8cpp_source.html">DebouncedButton.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DebouncedButton_8cpp_source.html#l00011">11</a> of file <a class="el" href="DebouncedButton_8cpp_source.html">DebouncedButton.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classDebouncedButton_af0bfebb2830f4b6f5873c9e0ec6ff18d_cgraph.png" border="0" usemap="#classDebouncedButton_af0bfebb2830f4b6f5873c9e0ec6ff18d_cgraph" alt=""/></div>
-<map name="classDebouncedButton_af0bfebb2830f4b6f5873c9e0ec6ff18d_cgraph" id="classDebouncedButton_af0bfebb2830f4b6f5873c9e0ec6ff18d_cgraph">
-<area shape="rect" id="node2" href="classRawButton.html#a7832c59ffdd2c86feb96ca3ca3b61684" title="RawButton::begin" alt="" coords="267,5,405,32"/>
-<area shape="rect" id="node3" href="classDebouncedButton.html#a9b34291dcea290feac4502ef0692a732" title="DebouncedButton::setState" alt="" coords="236,56,436,83"/>
+<div class="center"><img src="classDebouncedButton_a15b47d7ece1c6fc74176ade0b05ffb21_cgraph.png" border="0" usemap="#classDebouncedButton_a15b47d7ece1c6fc74176ade0b05ffb21_cgraph" alt=""/></div>
+<map name="classDebouncedButton_a15b47d7ece1c6fc74176ade0b05ffb21_cgraph" id="classDebouncedButton_a15b47d7ece1c6fc74176ade0b05ffb21_cgraph">
+<area shape="rect" id="node2" href="classAbstractButton.html#a13d299e72fba0dfd7c294b513a464aa5" title="AbstractButton::begin" alt="" coords="236,5,399,32"/>
+<area shape="rect" id="node4" href="classDigitalInputButton.html#a5504c479f491d6038a04802bf9c88568" title="DigitalInputButton\l::begin" alt="" coords="247,57,388,98"/>
+<area shape="rect" id="node3" href="classAbstractButton.html#a183f04ee1764bac387c74bf6e13446b1" title="AbstractButton::on" alt="" coords="447,5,589,32"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classDebouncedButton_af0bfebb2830f4b6f5873c9e0ec6ff18d_icgraph.png" border="0" usemap="#classDebouncedButton_af0bfebb2830f4b6f5873c9e0ec6ff18d_icgraph" alt=""/></div>
-<map name="classDebouncedButton_af0bfebb2830f4b6f5873c9e0ec6ff18d_icgraph" id="classDebouncedButton_af0bfebb2830f4b6f5873c9e0ec6ff18d_icgraph">
-<area shape="rect" id="node2" href="classDualButton.html#af57f28c932858d173c360d9deadff8c4" title="DualButton::begin" alt="" coords="242,5,381,32"/>
-<area shape="rect" id="node3" href="classToggleButton.html#adf067cc210a5c24bd6ecd833a09d00a2" title="ToggleButton::begin" alt="" coords="236,56,387,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a52d31c961275c5caeaedccb0884284d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52d31c961275c5caeaedccb0884284d5">&#9670;&nbsp;</a></span>held()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DebouncedButton::held </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>ms</em> = <code>DEBOUNCED_BUTTON_HELD_MS</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Test if held on for extended period</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ms</td><td>time in ms the button has to have been on for to be considered held</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the button is pushed and has been for longer than specified time. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="DebouncedButton_8cpp_source.html#l00055">55</a> of file <a class="el" href="DebouncedButton_8cpp_source.html">DebouncedButton.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classDebouncedButton_a52d31c961275c5caeaedccb0884284d5_cgraph.png" border="0" usemap="#classDebouncedButton_a52d31c961275c5caeaedccb0884284d5_cgraph" alt=""/></div>
-<map name="classDebouncedButton_a52d31c961275c5caeaedccb0884284d5_cgraph" id="classDebouncedButton_a52d31c961275c5caeaedccb0884284d5_cgraph">
-<area shape="rect" id="node2" href="classDebouncedButton.html#ac908c18c076200f3345c86fc3bba366b" title="DebouncedButton::on" alt="" coords="228,5,391,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classDebouncedButton_a52d31c961275c5caeaedccb0884284d5_icgraph.png" border="0" usemap="#classDebouncedButton_a52d31c961275c5caeaedccb0884284d5_icgraph" alt=""/></div>
-<map name="classDebouncedButton_a52d31c961275c5caeaedccb0884284d5_icgraph" id="classDebouncedButton_a52d31c961275c5caeaedccb0884284d5_icgraph">
-<area shape="rect" id="node2" href="classDualButton.html#a1123763ede6e1a3ab440462c950a31fe" title="DualButton::held" alt="" coords="228,5,359,32"/>
+<div class="center"><img src="classDebouncedButton_a15b47d7ece1c6fc74176ade0b05ffb21_icgraph.png" border="0" usemap="#classDebouncedButton_a15b47d7ece1c6fc74176ade0b05ffb21_icgraph" alt=""/></div>
+<map name="classDebouncedButton_a15b47d7ece1c6fc74176ade0b05ffb21_icgraph" id="classDebouncedButton_a15b47d7ece1c6fc74176ade0b05ffb21_icgraph">
+<area shape="rect" id="node2" href="classDualButton.html#a49a64babf3df5b63de40abe847a2586a" title="DualButton::begin" alt="" coords="242,5,381,32"/>
+<area shape="rect" id="node3" href="classToggleButton.html#a80b717861bf854f2192c5a333fb93ef2" title="ToggleButton::begin" alt="" coords="236,56,387,83"/>
 </map>
 </div>
 
@@ -270,6 +281,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool DebouncedButton::on </td>
@@ -278,176 +292,24 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Test instantaneous input state (with debouncing)</p>
+<p>Test instantaneous input state (with debouncing).</p>
 <dl class="section return"><dt>Returns</dt><dd>true if the button is pushed, else false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DebouncedButton_8cpp_source.html#l00036">36</a> of file <a class="el" href="DebouncedButton_8cpp_source.html">DebouncedButton.cpp</a>.</p>
+<p>Implements <a class="el" href="classAbstractButton.html#a183f04ee1764bac387c74bf6e13446b1">AbstractButton</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DebouncedButton_8cpp_source.html#l00031">31</a> of file <a class="el" href="DebouncedButton_8cpp_source.html">DebouncedButton.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDebouncedButton_ac908c18c076200f3345c86fc3bba366b_icgraph.png" border="0" usemap="#classDebouncedButton_ac908c18c076200f3345c86fc3bba366b_icgraph" alt=""/></div>
 <map name="classDebouncedButton_ac908c18c076200f3345c86fc3bba366b_icgraph" id="classDebouncedButton_ac908c18c076200f3345c86fc3bba366b_icgraph">
-<area shape="rect" id="node2" href="classDebouncedButton.html#a52d31c961275c5caeaedccb0884284d5" title="DebouncedButton::held" alt="" coords="223,5,397,32"/>
-<area shape="rect" id="node4" href="classDebouncedButton.html#ace5621dee2abbec7612160d3fa4a06e3" title="DebouncedButton::repeat" alt="" coords="216,56,404,83"/>
-<area shape="rect" id="node6" href="classDualButton.html#aeab84d886111669d451f2ad9f4c86e5a" title="DualButton::on" alt="" coords="251,107,369,133"/>
-<area shape="rect" id="node3" href="classDualButton.html#a1123763ede6e1a3ab440462c950a31fe" title="DualButton::held" alt="" coords="459,5,590,32"/>
-<area shape="rect" id="node5" href="classDualButton.html#abea55cbea72524f488e503cf3ee6b7bd" title="DualButton::repeat" alt="" coords="452,56,597,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a57863e89ceb79fb8cb0b2f6e183decea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57863e89ceb79fb8cb0b2f6e183decea">&#9670;&nbsp;</a></span>pushed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DebouncedButton::pushed </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Test if the button has been pushed since the last time it was off</p>
-<p>The idea is that you can call <a class="el" href="classDebouncedButton.html#a57863e89ceb79fb8cb0b2f6e183decea">pushed()</a> lots of times in a tight loop and only get one true return pre press of the button regardless of how many times you test. </p>
-
-<p class="definition">Definition at line <a class="el" href="DebouncedButton_8cpp_source.html#l00041">41</a> of file <a class="el" href="DebouncedButton_8cpp_source.html">DebouncedButton.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classDebouncedButton_a57863e89ceb79fb8cb0b2f6e183decea_icgraph.png" border="0" usemap="#classDebouncedButton_a57863e89ceb79fb8cb0b2f6e183decea_icgraph" alt=""/></div>
-<map name="classDebouncedButton_a57863e89ceb79fb8cb0b2f6e183decea_icgraph" id="classDebouncedButton_a57863e89ceb79fb8cb0b2f6e183decea_icgraph">
-<area shape="rect" id="node2" href="classDualButton.html#a0bda2ad5839807cd65f2f8c33e5320cb" title="DualButton::pushed" alt="" coords="251,5,402,32"/>
-<area shape="rect" id="node3" href="classToggleButton.html#ab8a6fdad6e76b0d9466e55bbefd3bc46" title="ToggleButton::update" alt="" coords="247,56,407,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ace5621dee2abbec7612160d3fa4a06e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace5621dee2abbec7612160d3fa4a06e3">&#9670;&nbsp;</a></span>repeat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DebouncedButton::repeat </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>initialMs</em> = <code>DEBOUNCED_BUTTON_RPT_INITIAL_MS</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>repeatMs</em> = <code>DEBOUNCED_BUTTON_RPT_MS</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Get periodic press results when button is held.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">initialMs</td><td>time between first press and first repeat in ms </td></tr>
-    <tr><td class="paramname">repeatMs</td><td>time between subsequent releats </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true when pushed every so often... </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="DebouncedButton_8cpp_source.html#l00060">60</a> of file <a class="el" href="DebouncedButton_8cpp_source.html">DebouncedButton.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classDebouncedButton_ace5621dee2abbec7612160d3fa4a06e3_cgraph.png" border="0" usemap="#classDebouncedButton_ace5621dee2abbec7612160d3fa4a06e3_cgraph" alt=""/></div>
-<map name="classDebouncedButton_ace5621dee2abbec7612160d3fa4a06e3_cgraph" id="classDebouncedButton_ace5621dee2abbec7612160d3fa4a06e3_cgraph">
-<area shape="rect" id="node2" href="classDebouncedButton.html#ac908c18c076200f3345c86fc3bba366b" title="DebouncedButton::on" alt="" coords="241,5,404,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classDebouncedButton_ace5621dee2abbec7612160d3fa4a06e3_icgraph.png" border="0" usemap="#classDebouncedButton_ace5621dee2abbec7612160d3fa4a06e3_icgraph" alt=""/></div>
-<map name="classDebouncedButton_ace5621dee2abbec7612160d3fa4a06e3_icgraph" id="classDebouncedButton_ace5621dee2abbec7612160d3fa4a06e3_icgraph">
-<area shape="rect" id="node2" href="classDualButton.html#abea55cbea72524f488e503cf3ee6b7bd" title="DualButton::repeat" alt="" coords="241,5,387,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a9b34291dcea290feac4502ef0692a732"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b34291dcea290feac4502ef0692a732">&#9670;&nbsp;</a></span>setState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DebouncedButton::setState </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>newState</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Explicitly set the state of the button.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">newState</td><td>the new state to have </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="DebouncedButton_8cpp_source.html#l00073">73</a> of file <a class="el" href="DebouncedButton_8cpp_source.html">DebouncedButton.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classDebouncedButton_a9b34291dcea290feac4502ef0692a732_icgraph.png" border="0" usemap="#classDebouncedButton_a9b34291dcea290feac4502ef0692a732_icgraph" alt=""/></div>
-<map name="classDebouncedButton_a9b34291dcea290feac4502ef0692a732_icgraph" id="classDebouncedButton_a9b34291dcea290feac4502ef0692a732_icgraph">
-<area shape="rect" id="node2" href="classDebouncedButton.html#af0bfebb2830f4b6f5873c9e0ec6ff18d" title="DebouncedButton::begin" alt="" coords="257,56,440,83"/>
-<area shape="rect" id="node5" href="classDebouncedButton.html#a6df550e3af8195ab8374c86660abe6ae" title="DebouncedButton::update" alt="" coords="253,107,444,133"/>
-<area shape="rect" id="node3" href="classDualButton.html#af57f28c932858d173c360d9deadff8c4" title="DualButton::begin" alt="" coords="503,5,641,32"/>
-<area shape="rect" id="node4" href="classToggleButton.html#adf067cc210a5c24bd6ecd833a09d00a2" title="ToggleButton::begin" alt="" coords="497,56,647,83"/>
-<area shape="rect" id="node6" href="classDualButton.html#aa3e0cbe8865dce165618a1897ee1575b" title="DualButton::update" alt="" coords="498,107,646,133"/>
-<area shape="rect" id="node7" href="classToggleButton.html#ab8a6fdad6e76b0d9466e55bbefd3bc46" title="ToggleButton::update" alt="" coords="492,157,652,184"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aca38673648fd0e0de07f5486762960b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca38673648fd0e0de07f5486762960b3">&#9670;&nbsp;</a></span>tapped()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned long DebouncedButton::tapped </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Test if the button has been pushed and released.</p>
-<p>After returning a non-zero value (i.e. a tap was registered), the state will be reset. Only the last tap duration will be returned.</p>
-<dl class="section return"><dt>Returns</dt><dd>length of last tap in ms if the button has been tapped, else 0. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="DebouncedButton_8cpp_source.html#l00048">48</a> of file <a class="el" href="DebouncedButton_8cpp_source.html">DebouncedButton.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classDebouncedButton_aca38673648fd0e0de07f5486762960b3_icgraph.png" border="0" usemap="#classDebouncedButton_aca38673648fd0e0de07f5486762960b3_icgraph" alt=""/></div>
-<map name="classDebouncedButton_aca38673648fd0e0de07f5486762960b3_icgraph" id="classDebouncedButton_aca38673648fd0e0de07f5486762960b3_icgraph">
-<area shape="rect" id="node2" href="classDualButton.html#ac47bae80cd0ee01d144ea736d91b70a8" title="DualButton::tapped" alt="" coords="244,5,392,32"/>
+<area shape="rect" id="node2" href="classDualButton.html#aeab84d886111669d451f2ad9f4c86e5a" title="DualButton::on" alt="" coords="216,5,335,32"/>
 </map>
 </div>
 
@@ -458,6 +320,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void DebouncedButton::update </td>
@@ -466,18 +331,25 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Allocate Timeslice</p>
-<p>This method must be called frequently - usually from loop() </p>
+<p>Allocate timeslice.</p>
+<p>This method must be called frequently - usually from loop(). </p>
 
-<p class="definition">Definition at line <a class="el" href="DebouncedButton_8cpp_source.html#l00020">20</a> of file <a class="el" href="DebouncedButton_8cpp_source.html">DebouncedButton.cpp</a>.</p>
+<p>Implements <a class="el" href="classAbstractDebouncedButton.html#a299deb979acbc6c4c33e8658b338d179">AbstractDebouncedButton</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DebouncedButton_8cpp_source.html#l00017">17</a> of file <a class="el" href="DebouncedButton_8cpp_source.html">DebouncedButton.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDebouncedButton_a6df550e3af8195ab8374c86660abe6ae_cgraph.png" border="0" usemap="#classDebouncedButton_a6df550e3af8195ab8374c86660abe6ae_cgraph" alt=""/></div>
 <map name="classDebouncedButton_a6df550e3af8195ab8374c86660abe6ae_cgraph" id="classDebouncedButton_a6df550e3af8195ab8374c86660abe6ae_cgraph">
-<area shape="rect" id="node2" href="classRawButton.html#aa1ff6ef2c4300d63eccc631bac61cd74" title="RawButton::on" alt="" coords="285,5,403,32"/>
-<area shape="rect" id="node3" href="classDebouncedButton.html#a9b34291dcea290feac4502ef0692a732" title="DebouncedButton::setState" alt="" coords="244,56,444,83"/>
+<area shape="rect" id="node2" href="classDigitalInputButton.html#a502de66816d4f2116b834ce505cf7c31" title="DigitalInputButton::on" alt="" coords="257,5,423,32"/>
+<area shape="rect" id="node3" href="classAbstractDebouncedButton.html#a865fdf4b67386c90b53d33906a22bc6d" title="AbstractDebouncedButton\l::setState" alt="" coords="244,57,436,98"/>
 </map>
 </div>
 <div class="dynheader">

@@ -67,17 +67,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Single button object responding to two inputs.  
- <a href="classDualButton.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="DualButton_8h_source.html">DualButton.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac2f5111bf20ad7689f5f2e84223647c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDualButton.html#ac2f5111bf20ad7689f5f2e84223647c9">DualButton</a> (<a class="el" href="classDebouncedButton.html">DebouncedButton</a> *b1, <a class="el" href="classDebouncedButton.html">DebouncedButton</a> *b2)</td></tr>
 <tr class="separator:ac2f5111bf20ad7689f5f2e84223647c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af57f28c932858d173c360d9deadff8c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDualButton.html#af57f28c932858d173c360d9deadff8c4">begin</a> (uint8_t threshold=DEBOUNCED_BUTTON_THRESHOLD, uint8_t delay=DEBOUNCED_BUTTON_DELAY)</td></tr>
-<tr class="separator:af57f28c932858d173c360d9deadff8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a64babf3df5b63de40abe847a2586a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDualButton.html#a49a64babf3df5b63de40abe847a2586a">begin</a> (uint8_t threshold=AbstractDebouncedButton::DefaultThreshold, uint8_t delay=AbstractDebouncedButton::DefaultButtonDelay)</td></tr>
+<tr class="separator:a49a64babf3df5b63de40abe847a2586a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3e0cbe8865dce165618a1897ee1575b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDualButton.html#aa3e0cbe8865dce165618a1897ee1575b">update</a> ()</td></tr>
 <tr class="separator:aa3e0cbe8865dce165618a1897ee1575b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeab84d886111669d451f2ad9f4c86e5a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDualButton.html#aeab84d886111669d451f2ad9f4c86e5a">on</a> ()</td></tr>
@@ -86,16 +83,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0bda2ad5839807cd65f2f8c33e5320cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac47bae80cd0ee01d144ea736d91b70a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDualButton.html#ac47bae80cd0ee01d144ea736d91b70a8">tapped</a> ()</td></tr>
 <tr class="separator:ac47bae80cd0ee01d144ea736d91b70a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1123763ede6e1a3ab440462c950a31fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDualButton.html#a1123763ede6e1a3ab440462c950a31fe">held</a> (uint16_t ms=DEBOUNCED_BUTTON_HELD_MS)</td></tr>
-<tr class="separator:a1123763ede6e1a3ab440462c950a31fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abea55cbea72524f488e503cf3ee6b7bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDualButton.html#abea55cbea72524f488e503cf3ee6b7bd">repeat</a> (uint16_t initialMs=DEBOUNCED_BUTTON_RPT_INITIAL_MS, uint16_t repeatMs=DEBOUNCED_BUTTON_RPT_MS)</td></tr>
-<tr class="separator:abea55cbea72524f488e503cf3ee6b7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2381138b4696000e407ddd181adace59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDualButton.html#a2381138b4696000e407ddd181adace59">held</a> (uint16_t ms=AbstractDebouncedButton::DefaultHeldMs)</td></tr>
+<tr class="separator:a2381138b4696000e407ddd181adace59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad278d0e64415710f3c5355b96de2b6c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDualButton.html#ad278d0e64415710f3c5355b96de2b6c3">repeat</a> (uint16_t initialMs=AbstractDebouncedButton::DefaultButtonRepeatInitialMs, uint16_t repeatMs=AbstractDebouncedButton::DefaultButtonRepeatMs)</td></tr>
+<tr class="separator:ad278d0e64415710f3c5355b96de2b6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Single button object responding to two inputs. </p>
-<p><a class="el" href="classDualButton.html" title="Single button object responding to two inputs. ">DualButton</a> acts like a single button, but will respond to input from one of two separate DebouncedButtons on different pins and potentially with different pin logic. This makes it easy to have a second input (e.g. wired button and FM button) whilst maintaining the clean syntax of a single button object in your sketch. </p>
+<div class="textblock"><p>Single button object responding to two inputs</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>This class is now deprecated and will be removed from Mutile in the near future. Please consider using <a class="el" href="classDualInputButton.html">DualInputButton</a> for instantaneous buttons, and <a class="el" href="classDebouncedDualButton.html">DebouncedDualButton</a> for a version with <a class="el" href="classDualButton.html#ac47bae80cd0ee01d144ea736d91b70a8">tapped()</a> and other debounced features.</dd></dl>
+<p><a class="el" href="classDualButton.html">DualButton</a> acts like a single button, but will respond to input from one of two separate DebouncedButtons on different pins and potentially with different pin logic. This makes it easy to have a second input (e.g. wired button and FM button) whilst maintaining the clean syntax of a single button object in your sketch. </p>
 
-<p class="definition">Definition at line <a class="el" href="DualButton_8h_source.html#l00015">15</a> of file <a class="el" href="DualButton_8h_source.html">DualButton.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DualButton_8h_source.html#l00020">20</a> of file <a class="el" href="DualButton_8h_source.html">DualButton.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac2f5111bf20ad7689f5f2e84223647c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2f5111bf20ad7689f5f2e84223647c9">&#9670;&nbsp;</a></span>DualButton()</h2>
@@ -124,8 +122,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">b1</td><td><a class="el" href="classA.html">A</a> pointer to a <a class="el" href="classDebouncedButton.html" title="Timeslice-based button with debouncing. ">DebouncedButton</a> object </td></tr>
-    <tr><td class="paramname">v2</td><td><a class="el" href="classA.html">A</a> pointer to a <a class="el" href="classDebouncedButton.html" title="Timeslice-based button with debouncing. ">DebouncedButton</a> object </td></tr>
+    <tr><td class="paramname">b1</td><td>A pointer to a <a class="el" href="classDebouncedButton.html">DebouncedButton</a> object </td></tr>
+    <tr><td class="paramname">v2</td><td>A pointer to a <a class="el" href="classDebouncedButton.html">DebouncedButton</a> object </td></tr>
   </table>
   </dd>
 </dl>
@@ -135,8 +133,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af57f28c932858d173c360d9deadff8c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af57f28c932858d173c360d9deadff8c4">&#9670;&nbsp;</a></span>begin()</h2>
+<a id="a49a64babf3df5b63de40abe847a2586a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a64babf3df5b63de40abe847a2586a">&#9670;&nbsp;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,13 +143,13 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void DualButton::begin </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>threshold</em> = <code>DEBOUNCED_BUTTON_THRESHOLD</code>, </td>
+          <td class="paramname"><em>threshold</em> = <code>AbstractDebouncedButton::DefaultThreshold</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>delay</em> = <code>DEBOUNCED_BUTTON_DELAY</code>&#160;</td>
+          <td class="paramname"><em>delay</em> = <code>AbstractDebouncedButton::DefaultButtonDelay</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -168,24 +166,25 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>Should be called from setup(), or at any rate, before other members are called. This will call the <a class="el" href="classDualButton.html#af57f28c932858d173c360d9deadff8c4">begin()</a> method in both of the linked DebouncedButtons. </p>
+<p>Should be called from setup(), or at any rate, before other members are called. This will call the <a class="el" href="classDualButton.html#a49a64babf3df5b63de40abe847a2586a">begin()</a> method in both of the linked DebouncedButtons. </p>
 
 <p class="definition">Definition at line <a class="el" href="DualButton_8cpp_source.html#l00009">9</a> of file <a class="el" href="DualButton_8cpp_source.html">DualButton.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classDualButton_af57f28c932858d173c360d9deadff8c4_cgraph.png" border="0" usemap="#classDualButton_af57f28c932858d173c360d9deadff8c4_cgraph" alt=""/></div>
-<map name="classDualButton_af57f28c932858d173c360d9deadff8c4_cgraph" id="classDualButton_af57f28c932858d173c360d9deadff8c4_cgraph">
-<area shape="rect" id="node2" href="classDebouncedButton.html#af0bfebb2830f4b6f5873c9e0ec6ff18d" title="DebouncedButton::begin" alt="" coords="192,31,375,57"/>
-<area shape="rect" id="node3" href="classRawButton.html#a7832c59ffdd2c86feb96ca3ca3b61684" title="RawButton::begin" alt="" coords="454,5,591,32"/>
-<area shape="rect" id="node4" href="classDebouncedButton.html#a9b34291dcea290feac4502ef0692a732" title="DebouncedButton::setState" alt="" coords="423,56,623,83"/>
+<div class="center"><img src="classDualButton_a49a64babf3df5b63de40abe847a2586a_cgraph.png" border="0" usemap="#classDualButton_a49a64babf3df5b63de40abe847a2586a_cgraph" alt=""/></div>
+<map name="classDualButton_a49a64babf3df5b63de40abe847a2586a_cgraph" id="classDualButton_a49a64babf3df5b63de40abe847a2586a_cgraph">
+<area shape="rect" id="node2" href="classDebouncedButton.html#a15b47d7ece1c6fc74176ade0b05ffb21" title="DebouncedButton::begin" alt="" coords="192,35,375,61"/>
+<area shape="rect" id="node3" href="classAbstractButton.html#a13d299e72fba0dfd7c294b513a464aa5" title="AbstractButton::begin" alt="" coords="423,5,585,32"/>
+<area shape="rect" id="node5" href="classDigitalInputButton.html#a5504c479f491d6038a04802bf9c88568" title="DigitalInputButton\l::begin" alt="" coords="433,57,575,98"/>
+<area shape="rect" id="node4" href="classAbstractButton.html#a183f04ee1764bac387c74bf6e13446b1" title="AbstractButton::on" alt="" coords="633,5,776,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a1123763ede6e1a3ab440462c950a31fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1123763ede6e1a3ab440462c950a31fe">&#9670;&nbsp;</a></span>held()</h2>
+<a id="a2381138b4696000e407ddd181adace59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2381138b4696000e407ddd181adace59">&#9670;&nbsp;</a></span>held()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +193,7 @@ Here is the call graph for this function:</div>
           <td class="memname">bool DualButton::held </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>ms</em> = <code>DEBOUNCED_BUTTON_HELD_MS</code></td><td>)</td>
+          <td class="paramname"><em>ms</em> = <code>AbstractDebouncedButton::DefaultHeldMs</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -212,10 +211,10 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classDualButton_a1123763ede6e1a3ab440462c950a31fe_cgraph.png" border="0" usemap="#classDualButton_a1123763ede6e1a3ab440462c950a31fe_cgraph" alt=""/></div>
-<map name="classDualButton_a1123763ede6e1a3ab440462c950a31fe_cgraph" id="classDualButton_a1123763ede6e1a3ab440462c950a31fe_cgraph">
-<area shape="rect" id="node2" href="classDebouncedButton.html#a52d31c961275c5caeaedccb0884284d5" title="DebouncedButton::held" alt="" coords="184,5,359,32"/>
-<area shape="rect" id="node3" href="classDebouncedButton.html#ac908c18c076200f3345c86fc3bba366b" title="DebouncedButton::on" alt="" coords="407,5,569,32"/>
+<div class="center"><img src="classDualButton_a2381138b4696000e407ddd181adace59_cgraph.png" border="0" usemap="#classDualButton_a2381138b4696000e407ddd181adace59_cgraph" alt=""/></div>
+<map name="classDualButton_a2381138b4696000e407ddd181adace59_cgraph" id="classDualButton_a2381138b4696000e407ddd181adace59_cgraph">
+<area shape="rect" id="node2" href="classAbstractDebouncedButton.html#ad6425bc0edce537961eed777fef30618" title="AbstractDebouncedButton\l::held" alt="" coords="184,5,376,47"/>
+<area shape="rect" id="node3" href="classAbstractButton.html#a183f04ee1764bac387c74bf6e13446b1" title="AbstractButton::on" alt="" coords="424,13,567,39"/>
 </map>
 </div>
 
@@ -273,14 +272,14 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDualButton_a0bda2ad5839807cd65f2f8c33e5320cb_cgraph.png" border="0" usemap="#classDualButton_a0bda2ad5839807cd65f2f8c33e5320cb_cgraph" alt=""/></div>
 <map name="classDualButton_a0bda2ad5839807cd65f2f8c33e5320cb_cgraph" id="classDualButton_a0bda2ad5839807cd65f2f8c33e5320cb_cgraph">
-<area shape="rect" id="node2" href="classDebouncedButton.html#a57863e89ceb79fb8cb0b2f6e183decea" title="DebouncedButton::pushed" alt="" coords="204,5,397,32"/>
+<area shape="rect" id="node2" href="classAbstractDebouncedButton.html#a500497ea3c850464edac0e1d310a73d8" title="AbstractDebouncedButton\l::pushed" alt="" coords="204,5,396,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="abea55cbea72524f488e503cf3ee6b7bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abea55cbea72524f488e503cf3ee6b7bd">&#9670;&nbsp;</a></span>repeat()</h2>
+<a id="ad278d0e64415710f3c5355b96de2b6c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad278d0e64415710f3c5355b96de2b6c3">&#9670;&nbsp;</a></span>repeat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,13 +288,13 @@ Here is the call graph for this function:</div>
           <td class="memname">bool DualButton::repeat </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>initialMs</em> = <code>DEBOUNCED_BUTTON_RPT_INITIAL_MS</code>, </td>
+          <td class="paramname"><em>initialMs</em> = <code>AbstractDebouncedButton::DefaultButtonRepeatInitialMs</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>repeatMs</em> = <code>DEBOUNCED_BUTTON_RPT_MS</code>&#160;</td>
+          <td class="paramname"><em>repeatMs</em> = <code>AbstractDebouncedButton::DefaultButtonRepeatMs</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -318,10 +317,10 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classDualButton_abea55cbea72524f488e503cf3ee6b7bd_cgraph.png" border="0" usemap="#classDualButton_abea55cbea72524f488e503cf3ee6b7bd_cgraph" alt=""/></div>
-<map name="classDualButton_abea55cbea72524f488e503cf3ee6b7bd_cgraph" id="classDualButton_abea55cbea72524f488e503cf3ee6b7bd_cgraph">
-<area shape="rect" id="node2" href="classDebouncedButton.html#ace5621dee2abbec7612160d3fa4a06e3" title="DebouncedButton::repeat" alt="" coords="199,5,387,32"/>
-<area shape="rect" id="node3" href="classDebouncedButton.html#ac908c18c076200f3345c86fc3bba366b" title="DebouncedButton::on" alt="" coords="435,5,597,32"/>
+<div class="center"><img src="classDualButton_ad278d0e64415710f3c5355b96de2b6c3_cgraph.png" border="0" usemap="#classDualButton_ad278d0e64415710f3c5355b96de2b6c3_cgraph" alt=""/></div>
+<map name="classDualButton_ad278d0e64415710f3c5355b96de2b6c3_cgraph" id="classDualButton_ad278d0e64415710f3c5355b96de2b6c3_cgraph">
+<area shape="rect" id="node2" href="classAbstractDebouncedButton.html#af31166c2acf373e141c3afaf7372a5f6" title="AbstractDebouncedButton\l::repeat" alt="" coords="199,5,391,47"/>
+<area shape="rect" id="node3" href="classAbstractButton.html#a183f04ee1764bac387c74bf6e13446b1" title="AbstractButton::on" alt="" coords="439,13,581,39"/>
 </map>
 </div>
 
@@ -350,7 +349,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDualButton_ac47bae80cd0ee01d144ea736d91b70a8_cgraph.png" border="0" usemap="#classDualButton_ac47bae80cd0ee01d144ea736d91b70a8_cgraph" alt=""/></div>
 <map name="classDualButton_ac47bae80cd0ee01d144ea736d91b70a8_cgraph" id="classDualButton_ac47bae80cd0ee01d144ea736d91b70a8_cgraph">
-<area shape="rect" id="node2" href="classDebouncedButton.html#aca38673648fd0e0de07f5486762960b3" title="DebouncedButton::tapped" alt="" coords="201,5,392,32"/>
+<area shape="rect" id="node2" href="classAbstractDebouncedButton.html#a9a080eaeb29bace8057224bdb84974f5" title="AbstractDebouncedButton\l::tapped" alt="" coords="201,5,393,47"/>
 </map>
 </div>
 
@@ -379,9 +378,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDualButton_aa3e0cbe8865dce165618a1897ee1575b_cgraph.png" border="0" usemap="#classDualButton_aa3e0cbe8865dce165618a1897ee1575b_cgraph" alt=""/></div>
 <map name="classDualButton_aa3e0cbe8865dce165618a1897ee1575b_cgraph" id="classDualButton_aa3e0cbe8865dce165618a1897ee1575b_cgraph">
-<area shape="rect" id="node2" href="classDebouncedButton.html#a6df550e3af8195ab8374c86660abe6ae" title="DebouncedButton::update" alt="" coords="201,31,392,57"/>
-<area shape="rect" id="node3" href="classRawButton.html#aa1ff6ef2c4300d63eccc631bac61cd74" title="RawButton::on" alt="" coords="481,5,599,32"/>
-<area shape="rect" id="node4" href="classDebouncedButton.html#a9b34291dcea290feac4502ef0692a732" title="DebouncedButton::setState" alt="" coords="440,56,640,83"/>
+<area shape="rect" id="node2" href="classDebouncedButton.html#a6df550e3af8195ab8374c86660abe6ae" title="DebouncedButton::update" alt="" coords="201,35,392,61"/>
+<area shape="rect" id="node3" href="classDigitalInputButton.html#a502de66816d4f2116b834ce505cf7c31" title="DigitalInputButton::on" alt="" coords="453,5,619,32"/>
+<area shape="rect" id="node4" href="classAbstractDebouncedButton.html#a865fdf4b67386c90b53d33906a22bc6d" title="AbstractDebouncedButton\l::setState" alt="" coords="440,57,632,98"/>
 </map>
 </div>
 

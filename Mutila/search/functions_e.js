@@ -5,11 +5,11 @@ var searchData=
   ['setenabled',['setEnabled',['../classHeartbeat.html#a54b53d6346772f84f8146baa805c966d',1,'Heartbeat']]],
   ['setmaxrange',['setMaxRange',['../classSonicRanger.html#ab27fbe7338aadc678f40d02ce7e78c25',1,'SonicRanger']]],
   ['setmode',['setMode',['../classHeartbeat.html#a9b3545c198f4531263404e3503e2d409',1,'Heartbeat::setMode(Mode mode)'],['../classHeartbeat.html#afe4c050a2169e7f3638650e3bdcbd192',1,'Heartbeat::setMode(Times times)']]],
-  ['setstate',['setState',['../classDebouncedButton.html#a9b34291dcea290feac4502ef0692a732',1,'DebouncedButton']]],
+  ['setstate',['setState',['../classAbstractDebouncedButton.html#a865fdf4b67386c90b53d33906a22bc6d',1,'AbstractDebouncedButton']]],
   ['settimeoutms',['setTimeoutMs',['../classSonicRanger.html#af86e296bdb4e89c38d9aa6e5b3387330',1,'SonicRanger']]],
   ['setupdateperiod',['setUpdatePeriod',['../classMode.html#a1b458a232619aab904c58df750c8546a',1,'Mode']]],
   ['sonicranger',['SonicRanger',['../classSonicRanger.html#a4894b1743c81af8b3230e86211d957a9',1,'SonicRanger']]],
   ['start',['start',['../classMode.html#ae78f0051b444b4389eaf984b8a3a4e78',1,'Mode']]],
   ['stop',['stop',['../classMode.html#a653b321767a9bf1878c285068a2aae24',1,'Mode']]],
-  ['switchmode',['switchMode',['../classParentMode.html#ade4f1473efd9fd796d8c38c5963b08bb',1,'ParentMode']]]
+  ['switchmode',['switchMode',['../classModeManager.html#ae55bdd41ef522137f8e7bd3373cbbdef',1,'ModeManager::switchMode()'],['../classParentMode.html#ade4f1473efd9fd796d8c38c5963b08bb',1,'ParentMode::switchMode()']]]
 ];

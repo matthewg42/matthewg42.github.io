@@ -1,3 +1,5 @@
 <map id="DebouncedAnalogButton" name="DebouncedAnalogButton">
-<area shape="rect" id="node2" href="$classRawButton.html" title="Basic instantaneous button. " alt="" coords="50,5,169,127"/>
+<area shape="rect" id="node2" href="$classAbstractDebouncedButton.html" title="{AbstractDebouncedButton\n|+ DefaultThreshold\l+ DefaultButtonDelay\l+ DefaultHeldMs\l+ DefaultButtonRepeatInitialMs\l+ DefaultButtonRepeatMs\l# _threshold\l# _delay\l# _lastUpdate\l# _counter\l# _state\l# _lastStateChange\l# _pushed\l# _repeatCount\l# _lastRepeat\l# _lastOnDuration\l|+ AbstractDebouncedButton()\l+ begin()\l+ update()\l+ pushed()\l+ tapped()\l+ held()\l+ repeat()\l+ setState()\l}" alt="" coords="5,160,233,545"/>
+<area shape="rect" id="node3" href="$classAbstractButton.html" title="{AbstractButton\n||+ AbstractButton()\l+ begin()\l+ on()\l}" alt="" coords="158,5,302,112"/>
+<area shape="rect" id="node4" href="$classAnalogInputButton.html" title="{AnalogInputButton\n|# _pin\l# _pullup\l# _analogThreshold\l|+ AnalogInputButton()\l+ begin()\l+ on()\l}" alt="" coords="258,285,426,421"/>
 </map>

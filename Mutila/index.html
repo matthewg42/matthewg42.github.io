@@ -66,13 +66,16 @@ $(function() {
 <div class="textblock"><h2>Summary</h2>
 <p>Re-usable utility components for Arduino projects. All the stuff we all end up re-implementing every project - buttons, averaging samplers, voltage and current measurements calculations and so on.</p>
 <h3>Inputs</h3>
-<p><a class="el" href="classA.html">A</a> collection of classes and functions for nice handling of basic inputs (buttons and such). The classes are kept as simple as possible while having enough functionality to be useful. ''Timeslice-based'' classes should have their ''update()'' method called as frequently as possible, which will return rapidly. These classes are an alternative to interrupt driven IO for projects where interrupts can't be used - e.g. where <em>Mutila</em> inputs must not intefere with timing of other parts of your project which might use interrupts themselves (e.g. motor control)</p>
+<p>A collection of classes and functions for nice handling of basic inputs (buttons and such). The classes are kept as simple as possible while having enough functionality to be useful. ''Timeslice-based'' classes should have their ''update()'' method called as frequently as possible, which will return rapidly. These classes are an alternative to interrupt driven IO for projects where interrupts can't be used - e.g. where <em>Mutila</em> inputs must not intefere with timing of other parts of your project which might use interrupts themselves (e.g. motor control)</p>
 <ul>
-<li><em><a class="el" href="classRawButton.html" title="Basic instantaneous button. ">RawButton</a></em> - switch with optional logic inversion (pullup).</li>
-<li><em><a class="el" href="classDebouncedButton.html" title="Timeslice-based button with debouncing. ">DebouncedButton</a></em> - timeslice-based debounced push button class.</li>
-<li><em><a class="el" href="classDualButton.html" title="Single button object responding to two inputs. ">DualButton</a></em> - works like a <a class="el" href="classDebouncedButton.html" title="Timeslice-based button with debouncing. ">DebouncedButton</a> which has two inputs (from separate DebouncedButtons). The purpose of this class is to enable easy addition of a second control (e.g. from radio remote control) to a system with an existing <a class="el" href="classDebouncedButton.html" title="Timeslice-based button with debouncing. ">DebouncedButton</a>, without having to change/clutter up your firmware logic.</li>
-<li><em><a class="el" href="classDiscretePot.html" title="Discrete values from a potential divider. ">DiscretePot</a></em> - use a potential divider attached to an analog input to return a discrete value within a specified range - includes smoothing.</li>
-<li><em><a class="el" href="classToggleButton.html" title="PushButton which toggles state. ">ToggleButton</a></em> - each press flips state from on to off.</li>
+<li><em><a class="el" href="classDigitalInputButton.html">DigitalInputButton</a></em> - switch from a digital input pin(pullup).</li>
+<li><em><a class="el" href="classAnalogInputButton.html">AnalogInputButton</a></em> - switch from an analog input pin.</li>
+<li><em><a class="el" href="classDualInputButton.html">DualInputButton</a></em> - switch from combination of two other buttons.</li>
+<li><em><a class="el" href="classDebouncedButton.html">DebouncedButton</a></em> - timeslice-based debounced button class with input from a <a class="el" href="classDigitalInputButton.html">DigitalInputButton</a> object.</li>
+<li><em><a class="el" href="classDebouncedAnalogButton.html" title="Timeslice-based button with debouncing using analogRead. ">DebouncedAnalogButton</a></em> - timeslice-based debounced button class with input from an <a class="el" href="classAnalogInputButton.html">AnalogInputButton</a> object.</li>
+<li><em><a class="el" href="classDebouncedDualButton.html">DebouncedDualButton</a></em> - timeslice-based debounced button class with input from a <a class="el" href="classDualInputButton.html">DualInputButton</a> object.</li>
+<li><em><a class="el" href="classDiscretePot.html">DiscretePot</a></em> - use a potential divider attached to an analog input to return a discrete value within a specified range - includes smoothing.</li>
+<li><em><a class="el" href="classToggleButton.html">ToggleButton</a></em> - each press flips state from on to off.</li>
 </ul>
 <p>Terms used for Mutila input classes:</p>
 <ul>
@@ -85,8 +88,8 @@ $(function() {
 <h3>Samplers</h3>
 <p>Samplers read from analog input pins and allow some operations to be performed on the data - typically calculating some sort of average value for the pin to help de-noise signals from sensors.</p>
 <ul>
-<li><em><a class="el" href="classBufferedSampler.html" title="Ringbuffer-based sampler for analog values. ">BufferedSampler</a></em> - keeps a buffer of recent samples, providing ability to get average, minimum and maximum for values in the buffer</li>
-<li><em><a class="el" href="classEMASampler.html" title="Exponential Moving Average (EMA) analog pin sampler. ">EMASampler</a></em> - provides calculation of exponential moving average value for an analog input</li>
+<li><em><a class="el" href="classBufferedSampler.html" title="Ringbuffer-based sampler for analog values. ">BufferedSampler</a></em> - keeps a buffer of recent samples, providing ability to get average, minimum and maximum for values in the buffer.</li>
+<li><em><a class="el" href="classEMASampler.html" title="Exponential Moving Average (EMA) analog pin sampler. ">EMASampler</a></em> - provides calculation of exponential moving average value for an analog input.</li>
 </ul>
 <p>Sampling voltage and current values may be performed using the following classes, which are good examples of how to derive custom samplers from <a class="el" href="classBufferedSampler.html" title="Ringbuffer-based sampler for analog values. ">BufferedSampler</a> and <a class="el" href="classEMASampler.html" title="Exponential Moving Average (EMA) analog pin sampler. ">EMASampler</a>:</p>
 <ul>
@@ -94,15 +97,19 @@ $(function() {
 <li><em><a class="el" href="classEMAVDivSampler.html" title="Exponential Moving Average Voltage Divider based voltage sampler. ">EMAVDivSampler</a></em> - measure voltage over a voltage divider using <a class="el" href="classEMASampler.html" title="Exponential Moving Average (EMA) analog pin sampler. ">EMASampler</a>.</li>
 <li><em><a class="el" href="classEMACurrentSampler.html" title="Exponential Moving Average current sampler. ">EMACurrentSampler</a></em> - measure current using an Allegro ACS756SCB-050B-PFF-T Bi-directional 50A hall effect sensor and <a class="el" href="classEMASampler.html" title="Exponential Moving Average (EMA) analog pin sampler. ">EMASampler</a>.</li>
 </ul>
-<p>Current measuement may be achieved using an Allegro ACS756SCB-050B-PFF-T Bi-directional 50A hall effect sensor and the class</p>
 <h3>DFPlayer Mini MP3 audio module</h3>
-<p>DFPlayer Mini is a neat and affordable audio module which can play MP3 files from an SD card, with a serial interface for control. It can also drive a small speaker. Mutila provides the class <em><a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a></em> for controlling such a device. <em><a class="el" href="classDFPReader.html" title="DFPlayerMini controller with numeric readout functions. ">DFPReader</a></em> is a class which can be used to read out numbers and durations, using the samples in the <em>audio/</em> directory.</p>
+<p>DFPlayer Mini is a neat and affordable audio module which can play MP3 files from an SD card with a serial interface for control. It can also drive a small speaker. Mutila provides the class <em><a class="el" href="classDFPlayerMini.html">DFPlayerMini</a></em> for controlling such a device. <em><a class="el" href="classDFPReader.html" title="DFPlayerMini controller with numeric readout functions. ">DFPReader</a></em> is a class which can be used to read out numbers and durations, using the samples in the <em>audio/</em> directory.</p>
 <h3>HC-SR04 Ultrasonic Ranger</h3>
 <p>HC-SR04 ultrasonic range finding modules are inexpensive and popular modules used in Arduino projects. While using them is simple (it only takes a few lines of code to fetch and calculate the range), Mutila provides the following classes for clean usage of these modules, and enhanced functionality:</p>
 <ul>
 <li><em><a class="el" href="classSonicRanger.html">SonicRanger</a></em> - a basic wrapper around the code necessary to calculate the range of an object, done in the same style as other Mutila classes (with pins passes in a constructor and initialized in a begin() member).</li>
 <li><em><a class="el" href="classEMASonicRanger.html" title="SonicRanger with EMA-smoothed values. ">EMASonicRanger</a></em> - periodic sampling of the range value, smoothed using the exponential moving average method.</li>
 </ul>
+<h3><a class="el" href="classHeartbeat.html">Heartbeat</a></h3>
+<p>Mutila's <em><a class="el" href="classHeartbeat.html">Heartbeat</a></em> class can be used to blink and LED with variable patterns to give some diagnostic information about the state of the program without needed a more sophisticated display.</p>
+<h3><a class="el" href="classMode.html">Mode</a> System</h3>
+<p>A <em><a class="el" href="classMode.html">Mode</a></em> is a kind of sub-program which has distinct startup, shutdown and update routines. For example, your program might have a special setup mode which suspends normal operations while settings are altered. The <em><a class="el" href="classModeManager.html">ModeManager</a></em> class can be used to switch between such mutually exclusive modes while keeping your main loop clean and simple.</p>
+<p>Modes may be arranged in a hierarchical manner using the <em><a class="el" href="classParentMode.html">ParentMode</a></em> class. This can be useful when building hierarchical menu systems which a couple of buttons.</p>
 <h2>Author &amp; License</h2>
 <p>All code written by Matthew Gates (Mouse), and licensed under the GNU GPL v3. See the LICENSE file for details.</p>
 <h2>API Documentation</h2>
@@ -113,23 +120,20 @@ $(function() {
 <li>Run ''doxygen'' from the root of this project - html is generated in doc/html</li>
 </ol>
 <h2>Ideas for future development</h2>
-<h3><a class="el" href="classDebouncedButton.html" title="Timeslice-based button with debouncing. ">DebouncedButton</a></h3>
-<ul>
-<li>DebouncedButton::wasPressed() should return number of presses if more than one since last test.</li>
-</ul>
+<h3>Templetsed PersistentSettings classes</h3>
+<p>Similar to the ones implemented in EspApConfigurator (by the same Author), but that works with both ESP and Arduino hardware (the use of the EEPROM library for ESP devices is incompatible with regular Arduino EEPROM usage).</p>
 <h3>StickyButton</h3>
 <ul>
-<li>When pushed, stays on for some period of time and thn switches off.</li>
+<li>When pushed, stays on for some period of time and then switches off.</li>
 <li>Pushing when on restarts the on timer.</li>
 </ul>
 <h3>n-state button</h3>
 <ul>
 <li>state=0 &ndash;&gt; state=1 ... &ndash;&gt; state=n-1 &ndash;&gt; state=0.</li>
-<li>This makes <a class="el" href="classToggleButton.html" title="PushButton which toggles state. ">ToggleButton</a> just an n-state where n=2.</li>
+<li>This makes <a class="el" href="classToggleButton.html">ToggleButton</a> just an n-state where n=2.</li>
 </ul>
-<h3><a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a></h3>
+<h3><a class="el" href="classDFPlayerMini.html">DFPlayerMini</a></h3>
 <ul>
-<li>add busy detection / wait function</li>
 <li>doc ops which create reply</li>
 <li>asynchronous commands (i.e. do not wait for serial, use update() to send bytes one at a time) </li>
 </ul>

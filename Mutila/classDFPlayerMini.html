@@ -62,14 +62,12 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classDFPlayerMini-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DFPlayerMini Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Easy-to-use controller class for DFPlayer Mini devices.  
- <a href="classDFPlayerMini.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="DFPlayerMini_8h_source.html">DFPlayerMini.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -77,7 +75,7 @@ Inheritance diagram for DFPlayerMini:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDFPlayerMini__inherit__graph.png" border="0" usemap="#DFPlayerMini_inherit__map" alt="Inheritance graph"/></div>
 <map name="DFPlayerMini_inherit__map" id="DFPlayerMini_inherit__map">
-<area shape="rect" id="node2" href="classDFPReader.html" title="DFPlayerMini controller with numeric readout functions. " alt="" coords="5,204,155,384"/>
+<area shape="rect" id="node2" href="classDFPReader.html" title="DFPlayerMini controller with numeric readout functions. " alt="" coords="15,277,166,604"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -117,8 +115,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aead5c4345c63cc4bf4a5b59567fc87d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#aead5c4345c63cc4bf4a5b59567fc87d7">DFPlayerMini</a> (Stream &amp;serial, uint8_t busyPin=0)</td></tr>
-<tr class="separator:aead5c4345c63cc4bf4a5b59567fc87d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145c491034ae5bc0a05bbfb9c19bb486"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a145c491034ae5bc0a05bbfb9c19bb486">DFPlayerMini</a> (Stream &amp;serial, const uint8_t busyPin=0)</td></tr>
+<tr class="separator:a145c491034ae5bc0a05bbfb9c19bb486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39407b29a79cada8add9b8d2c50073ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a39407b29a79cada8add9b8d2c50073ea">begin</a> ()</td></tr>
 <tr class="separator:a39407b29a79cada8add9b8d2c50073ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81cfb933970793106a39bec9a9a6d83e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a81cfb933970793106a39bec9a9a6d83e">sendCmd</a> (<a class="el" href="classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542d">Cmd</a> cmd, uint16_t arg=0)</td></tr>
@@ -129,13 +127,38 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a77c49559ebb6df0e377f4bf2d691d588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e63c101a7595d945884a055f431c306"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a8e63c101a7595d945884a055f431c306">check</a> ()</td></tr>
 <tr class="separator:a8e63c101a7595d945884a055f431c306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a811bdd44704a8495155e05335d69a1f8"><td class="memItemLeft" align="right" valign="top"><a id="a811bdd44704a8495155e05335d69a1f8"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>BufferLength</b> = 10</td></tr>
+<tr class="separator:a811bdd44704a8495155e05335d69a1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6652f68b6790b578ab0d22d632cd98c9"><td class="memItemLeft" align="right" valign="top"><a id="a6652f68b6790b578ab0d22d632cd98c9"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MinimumTimeMs</b> = 20</td></tr>
+<tr class="separator:a6652f68b6790b578ab0d22d632cd98c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c051fe1e11d38fce4b3395b5f96e90"><td class="memItemLeft" align="right" valign="top"><a id="a06c051fe1e11d38fce4b3395b5f96e90"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>ResponseTimeoutMs</b> = 20</td></tr>
+<tr class="separator:a06c051fe1e11d38fce4b3395b5f96e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05d975545e8792c8f6ee00d874618c58"><td class="memItemLeft" align="right" valign="top"><a id="a05d975545e8792c8f6ee00d874618c58"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>PacketOffsetCmd</b> = 3</td></tr>
+<tr class="separator:a05d975545e8792c8f6ee00d874618c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22224bc02e031e57d2173de3b71b9706"><td class="memItemLeft" align="right" valign="top"><a id="a22224bc02e031e57d2173de3b71b9706"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>PacketOffsetArg</b> = 5</td></tr>
+<tr class="separator:a22224bc02e031e57d2173de3b71b9706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8719400a67031eb35b577412e549f1"><td class="memItemLeft" align="right" valign="top"><a id="aab8719400a67031eb35b577412e549f1"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>PacketOffsetCkSum</b> = 7</td></tr>
+<tr class="separator:aab8719400a67031eb35b577412e549f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Easy-to-use controller class for DFPlayer Mini devices. </p>
+<div class="textblock"><p>Easy-to-use controller class for DFPlayer Mini devices.</p>
 <p>This class implements some of the functionality of the DFPlayer_Mini_MP3 library, to control a DFPlayer Mini device. It includes features which were not yet implemented in the DFPlayer_Mini_MP3 at time of writing, namely a mechanism to receive results of query calls to the device.</p>
-<p>The device is expected to be connected using serial and optionally the BUSY line. Serial comms are at 9600 baud. The BUSY line is pulled to ground when the <a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a> device is playing an mp3 file. </p>
+<p>The device is expected to be connected using serial and optionally the BUSY line. Serial comms are at 9600 baud. The BUSY line is pulled to ground when the <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> device is playing an mp3 file.</p>
+<p>See also:</p><ul>
+<li><a href="https://www.dfrobot.com/wiki/images/thumb/a/ab/Miniplayer_pin_map.png/550px-Miniplayer_pin_map.png">Pinout diagram</a></li>
+<li><a href="https://www.dfrobot.com/wiki/images/a/a7/Pin_map_desc_en.png">Pin descriptions</a> </li>
+</ul>
 
-<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8h_source.html#l00054">54</a> of file <a class="el" href="DFPlayerMini_8h_source.html">DFPlayerMini.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8h_source.html#l00025">25</a> of file <a class="el" href="DFPlayerMini_8h_source.html">DFPlayerMini.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ab911bc8f36339e52bbc740139220542d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab911bc8f36339e52bbc740139220542d">&#9670;&nbsp;</a></span>Cmd</h2>
@@ -148,8 +171,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Command codes</p>
-<p>The <a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a>'s serial interface uses this set of command codes to instruct the device to perform some action or reply with some information. </p>
+<p>Command codes.</p>
+<p>The <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a>'s serial interface uses this set of command codes to instruct the device to perform some action or reply with some information. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab911bc8f36339e52bbc740139220542da6e5c3055ff797457d801e2e236165fef"></a>Next&#160;</td><td class="fielddoc"><p>Play next track. </p>
 </td></tr>
@@ -195,13 +218,13 @@ Public Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8h_source.html#l00063">63</a> of file <a class="el" href="DFPlayerMini_8h_source.html">DFPlayerMini.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8h_source.html#l00044">44</a> of file <a class="el" href="DFPlayerMini_8h_source.html">DFPlayerMini.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aead5c4345c63cc4bf4a5b59567fc87d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aead5c4345c63cc4bf4a5b59567fc87d7">&#9670;&nbsp;</a></span>DFPlayerMini()</h2>
+<a id="a145c491034ae5bc0a05bbfb9c19bb486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a145c491034ae5bc0a05bbfb9c19bb486">&#9670;&nbsp;</a></span>DFPlayerMini()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -215,7 +238,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>busyPin</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -227,8 +250,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">serial</td><td>a software serial object set at 9600 baud connected to the <a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a> device </td></tr>
-    <tr><td class="paramname">busyPin</td><td>the pin on the arduino connected to the BUSY pin of the <a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a>. See the <a class="el" href="classDFPlayerMini.html#a77c49559ebb6df0e377f4bf2d691d588">busy()</a> documentation for more details. </td></tr>
+    <tr><td class="paramname">serial</td><td>a software serial object set at 9600 baud connected to the <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> device </td></tr>
+    <tr><td class="paramname">busyPin</td><td>the pin on the arduino connected to the BUSY pin of the <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a>. See the <a class="el" href="classDFPlayerMini.html#a77c49559ebb6df0e377f4bf2d691d588">busy()</a> documentation for more details. </td></tr>
   </table>
   </dd>
 </dl>
@@ -280,11 +303,12 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Find out if a sound is playing If the BUSY pin has been connected to the arduino and properly set with the busyPin parameter to the <a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a> constructor, the value will be determined by analysing this pin state.</p>
-<p>If the busy pin was not passed when the <a class="el" href="classDFPlayerMini.html" title="Easy-to-use controller class for DFPlayer Mini devices. ">DFPlayerMini</a> was constructed, a GetStatus query will be sent to the player and the result analysed to determine the result. Note that the query method will cause jitter in the audio playback, and takes longer to execute, so the BUSY pin method is recommended if there is a digital input available.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if audio is currently playing, else false </dd></dl>
+<p>Find out if a sound is playing.</p>
+<p>If the BUSY pin has been connected to the arduino and properly set with the busyPin parameter to the <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> constructor, the value will be determined by analysing this pin state.</p>
+<p>If the busy pin was not passed when the <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> was constructed, a GetStatus query will be sent to the player and the result analysed to determine the result. Note that the query method will cause jitter in the audio playback, and takes longer to execute, so the BUSY pin method is recommended if there is a digital input available.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if audio is currently playing, else false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00160">160</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00161">161</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -322,9 +346,10 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Find out if we can communicate with the device </p><dl class="section return"><dt>Returns</dt><dd>true if comms works, else false </dd></dl>
+<p>Find out if we can communicate with the device.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if comms works, else false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00211">211</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00212">212</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -362,14 +387,15 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Send a command and wait for a response </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Send a command and wait for a response.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cmd</td><td>The command to send </td></tr>
-    <tr><td class="paramname">tries</td><td>how many attempts will be made to get a valid result </td></tr>
+    <tr><td class="paramname">cmd</td><td>The command to send. </td></tr>
+    <tr><td class="paramname">tries</td><td>how many attempts will be made to get a valid result. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="structDFPResponse.html" title="A response to a query set to a DFPlayerMini object. ">DFPResponse</a> object with the results of the query. The .ok member will be false if the query failed to get a valid result (possible resons: timeout, bad serial comms etc.) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="structDFPResponse.html">DFPResponse</a> object with the results of the query. The .ok member will be false if the query failed to get a valid result (possible resons: timeout, bad serial comms etc.) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00053">53</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
 <div class="dynheader">
