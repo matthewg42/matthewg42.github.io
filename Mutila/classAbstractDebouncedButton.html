@@ -90,10 +90,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad513839709d4b54dd400423da100a4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a299deb979acbc6c4c33e8658b338d179"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#a299deb979acbc6c4c33e8658b338d179">update</a> ()=0</td></tr>
 <tr class="separator:a299deb979acbc6c4c33e8658b338d179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a500497ea3c850464edac0e1d310a73d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#a500497ea3c850464edac0e1d310a73d8">pushed</a> ()</td></tr>
-<tr class="separator:a500497ea3c850464edac0e1d310a73d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a080eaeb29bace8057224bdb84974f5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#a9a080eaeb29bace8057224bdb84974f5">tapped</a> ()</td></tr>
-<tr class="separator:a9a080eaeb29bace8057224bdb84974f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec15d7b6f78886d1386de1ccaa2b80e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#aec15d7b6f78886d1386de1ccaa2b80e5">pushed</a> (bool peek=false)</td></tr>
+<tr class="separator:aec15d7b6f78886d1386de1ccaa2b80e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0b8b673c566742b29a61bb0dfa93d4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#aad0b8b673c566742b29a61bb0dfa93d4">tapped</a> (bool peek=false)</td></tr>
+<tr class="separator:aad0b8b673c566742b29a61bb0dfa93d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6425bc0edce537961eed777fef30618"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#ad6425bc0edce537961eed777fef30618">held</a> (uint16_t ms=DefaultHeldMs)</td></tr>
 <tr class="separator:ad6425bc0edce537961eed777fef30618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af31166c2acf373e141c3afaf7372a5f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractDebouncedButton.html#af31166c2acf373e141c3afaf7372a5f6">repeat</a> (uint16_t initialMs=DefaultButtonRepeatInitialMs, uint16_t repeatMs=DefaultButtonRepeatMs)</td></tr>
@@ -277,8 +277,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a500497ea3c850464edac0e1d310a73d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a500497ea3c850464edac0e1d310a73d8">&#9670;&nbsp;</a></span>pushed()</h2>
+<a id="aec15d7b6f78886d1386de1ccaa2b80e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec15d7b6f78886d1386de1ccaa2b80e5">&#9670;&nbsp;</a></span>pushed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,20 +286,29 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool AbstractDebouncedButton::pushed </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>peek</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Test if the button has been pushed since the last time it was off.</p>
-<p>The idea is that you can call <a class="el" href="classAbstractDebouncedButton.html#a500497ea3c850464edac0e1d310a73d8">pushed()</a> lots of times in a tight loop and only get one true return pre press of the button regardless of how many times you test. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Please use tapped instead. This member will be removed in future releases of Mutila.</dd></dl>
+<p>The idea is that you can call <a class="el" href="classAbstractDebouncedButton.html#aec15d7b6f78886d1386de1ccaa2b80e5">pushed()</a> lots of times in a tight loop and only get one true return per press of the button regardless of how many times you test.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">peek</td><td>if true, do not reset the pushed state. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the button has been pushed and released since the last test. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="AbstractDebouncedButton_8cpp_source.html#l00020">20</a> of file <a class="el" href="AbstractDebouncedButton_8cpp_source.html">AbstractDebouncedButton.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classAbstractDebouncedButton_a500497ea3c850464edac0e1d310a73d8_icgraph.png" border="0" usemap="#classAbstractDebouncedButton_a500497ea3c850464edac0e1d310a73d8_icgraph" alt=""/></div>
-<map name="classAbstractDebouncedButton_a500497ea3c850464edac0e1d310a73d8_icgraph" id="classAbstractDebouncedButton_a500497ea3c850464edac0e1d310a73d8_icgraph">
+<div class="center"><img src="classAbstractDebouncedButton_aec15d7b6f78886d1386de1ccaa2b80e5_icgraph.png" border="0" usemap="#classAbstractDebouncedButton_aec15d7b6f78886d1386de1ccaa2b80e5_icgraph" alt=""/></div>
+<map name="classAbstractDebouncedButton_aec15d7b6f78886d1386de1ccaa2b80e5_icgraph" id="classAbstractDebouncedButton_aec15d7b6f78886d1386de1ccaa2b80e5_icgraph">
 <area shape="rect" id="node2" href="classDualButton.html#a0bda2ad5839807cd65f2f8c33e5320cb" title="DualButton::pushed" alt="" coords="250,5,401,32"/>
 <area shape="rect" id="node3" href="classToggleButton.html#ab8a6fdad6e76b0d9466e55bbefd3bc46" title="ToggleButton::update" alt="" coords="245,56,405,83"/>
 </map>
@@ -402,8 +411,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a9a080eaeb29bace8057224bdb84974f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a080eaeb29bace8057224bdb84974f5">&#9670;&nbsp;</a></span>tapped()</h2>
+<a id="aad0b8b673c566742b29a61bb0dfa93d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad0b8b673c566742b29a61bb0dfa93d4">&#9670;&nbsp;</a></span>tapped()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -411,21 +420,28 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">uint32_t AbstractDebouncedButton::tapped </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>peek</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Test if the button has been pushed and released.</p>
 <p>After returning a non-zero value (i.e. a tap was registered), the state will be reset. Only the last tap duration will be returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">peek</td><td>if true, do not reset the pushed state. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>length of last tap in ms if the button has been tapped, else 0. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="AbstractDebouncedButton_8cpp_source.html#l00027">27</a> of file <a class="el" href="AbstractDebouncedButton_8cpp_source.html">AbstractDebouncedButton.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classAbstractDebouncedButton_a9a080eaeb29bace8057224bdb84974f5_icgraph.png" border="0" usemap="#classAbstractDebouncedButton_a9a080eaeb29bace8057224bdb84974f5_icgraph" alt=""/></div>
-<map name="classAbstractDebouncedButton_a9a080eaeb29bace8057224bdb84974f5_icgraph" id="classAbstractDebouncedButton_a9a080eaeb29bace8057224bdb84974f5_icgraph">
+<div class="center"><img src="classAbstractDebouncedButton_aad0b8b673c566742b29a61bb0dfa93d4_icgraph.png" border="0" usemap="#classAbstractDebouncedButton_aad0b8b673c566742b29a61bb0dfa93d4_icgraph" alt=""/></div>
+<map name="classAbstractDebouncedButton_aad0b8b673c566742b29a61bb0dfa93d4_icgraph" id="classAbstractDebouncedButton_aad0b8b673c566742b29a61bb0dfa93d4_icgraph">
 <area shape="rect" id="node2" href="classDualButton.html#ac47bae80cd0ee01d144ea736d91b70a8" title="DualButton::tapped" alt="" coords="245,13,393,39"/>
 </map>
 </div>
