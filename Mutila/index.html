@@ -63,17 +63,19 @@ $(function() {
 <div class="title">Mouse's Utilities for Arduino (Mutila) </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Summary</h2>
-<p>Re-usable utility components for Arduino projects. All the stuff we all end up re-implementing every project - buttons, averaging samplers, voltage and current measurements calculations and so on.</p>
+<div class="textblock"><p>Re-usable utility components for Arduino projects. All the stuff we all end up re-implementing every project - buttons, averaging samplers, voltage and current measurements calculations and so on. The classes and functions in this library are intended to be flexible, efficient and stable, as well as following a style which is broadly similar to the core Arduino libraries.</p>
+<h2>Author &amp; License</h2>
+<p>All code written by Matthew Gates (Mouse), and licensed under the GNU GPL version 3. See the LICENSE file for details.</p>
+<h2>Feature Summary</h2>
 <h3>Inputs</h3>
-<p>A collection of classes and functions for nice handling of basic inputs (buttons and such). The classes are kept as simple as possible while having enough functionality to be useful. ''Timeslice-based'' classes should have their ''update()'' method called as frequently as possible, which will return rapidly. These classes are an alternative to interrupt driven IO for projects where interrupts can't be used - e.g. where <em>Mutila</em> inputs must not intefere with timing of other parts of your project which might use interrupts themselves (e.g. motor control)</p>
+<p>A collection of classes and functions for nice handling of basic inputs (buttons and such). The classes are kept as simple as possible while having enough functionality to be useful. ''Time slice-based'' classes should have their ''update()'' method called as frequently as possible, which will return rapidly. These classes are an alternative to interrupt driven IO for projects where interrupts can't be used - e.g. where <em>Mutila</em> inputs must not interfere with timing of other parts of your project which might use interrupts themselves (e.g. motor control)</p>
 <ul>
-<li><em><a class="el" href="classDigitalInputButton.html">DigitalInputButton</a></em> - switch from a digital input pin(pullup).</li>
+<li><em><a class="el" href="classDigitalInputButton.html">DigitalInputButton</a></em> - switch from a digital input pin.</li>
 <li><em><a class="el" href="classAnalogInputButton.html">AnalogInputButton</a></em> - switch from an analog input pin.</li>
 <li><em><a class="el" href="classDualInputButton.html">DualInputButton</a></em> - switch from combination of two other buttons.</li>
-<li><em><a class="el" href="classDebouncedButton.html">DebouncedButton</a></em> - timeslice-based debounced button class with input from a <a class="el" href="classDigitalInputButton.html">DigitalInputButton</a> object.</li>
-<li><em><a class="el" href="classDebouncedAnalogButton.html" title="Timeslice-based button with debouncing using analogRead. ">DebouncedAnalogButton</a></em> - timeslice-based debounced button class with input from an <a class="el" href="classAnalogInputButton.html">AnalogInputButton</a> object.</li>
-<li><em><a class="el" href="classDebouncedDualButton.html">DebouncedDualButton</a></em> - timeslice-based debounced button class with input from a <a class="el" href="classDualInputButton.html">DualInputButton</a> object.</li>
+<li><em><a class="el" href="classDebouncedButton.html">DebouncedButton</a></em> - time slice-based debounced button class with input from a <a class="el" href="classDigitalInputButton.html">DigitalInputButton</a> object.</li>
+<li><em><a class="el" href="classDebouncedAnalogButton.html" title="Timeslice-based button with debouncing using analogRead. ">DebouncedAnalogButton</a></em> - time slice-based debounced button class with input from an <a class="el" href="classAnalogInputButton.html">AnalogInputButton</a> object.</li>
+<li><em><a class="el" href="classDebouncedDualButton.html">DebouncedDualButton</a></em> - time slice-based debounced button class with input from a <a class="el" href="classDualInputButton.html">DualInputButton</a> object.</li>
 <li><em><a class="el" href="classDiscretePot.html">DiscretePot</a></em> - use a potential divider attached to an analog input to return a discrete value within a specified range - includes smoothing.</li>
 <li><em><a class="el" href="classToggleButton.html">ToggleButton</a></em> - each press flips state from on to off.</li>
 </ul>
@@ -98,7 +100,7 @@ $(function() {
 <li><em><a class="el" href="classEMACurrentSampler.html" title="Exponential Moving Average current sampler. ">EMACurrentSampler</a></em> - measure current using an Allegro ACS756SCB-050B-PFF-T Bi-directional 50A hall effect sensor and <a class="el" href="classEMASampler.html" title="Exponential Moving Average (EMA) analog pin sampler. ">EMASampler</a>.</li>
 </ul>
 <h3>DFPlayer Mini MP3 audio module</h3>
-<p>DFPlayer Mini is a neat and affordable audio module which can play MP3 files from an SD card with a serial interface for control. It can also drive a small speaker. Mutila provides the class <em><a class="el" href="classDFPlayerMini.html">DFPlayerMini</a></em> for controlling such a device. <em><a class="el" href="classDFPReader.html" title="DFPlayerMini controller with numeric readout functions. ">DFPReader</a></em> is a class which can be used to read out numbers and durations, using the samples in the <em>audio/</em> directory.</p>
+<p>DFPlayer Mini is a neat and affordable audio module which can play MP3 files from an SD card with a serial interface for control. It can also drive a small speaker. Mutila provides the class <em><a class="el" href="classDFPlayerMini.html">DFPlayerMini</a></em> for controlling such a device. <em><a class="el" href="classDFPReader.html">DFPReader</a></em> is a class which can be used to read out numbers and durations, using the samples in the <em>audio/</em> directory.</p>
 <h3>HC-SR04 Ultrasonic Ranger</h3>
 <p>HC-SR04 ultrasonic range finding modules are inexpensive and popular modules used in Arduino projects. While using them is simple (it only takes a few lines of code to fetch and calculate the range), Mutila provides the following classes for clean usage of these modules, and enhanced functionality:</p>
 <ul>
@@ -110,8 +112,6 @@ $(function() {
 <h3><a class="el" href="classMode.html">Mode</a> System</h3>
 <p>A <em><a class="el" href="classMode.html">Mode</a></em> is a kind of sub-program which has distinct startup, shutdown and update routines. For example, your program might have a special setup mode which suspends normal operations while settings are altered. The <em><a class="el" href="classModeManager.html">ModeManager</a></em> class can be used to switch between such mutually exclusive modes while keeping your main loop clean and simple.</p>
 <p>Modes may be arranged in a hierarchical manner using the <em><a class="el" href="classParentMode.html">ParentMode</a></em> class. This can be useful when building hierarchical menu systems which a couple of buttons.</p>
-<h2>Author &amp; License</h2>
-<p>All code written by Matthew Gates (Mouse), and licensed under the GNU GPL v3. See the LICENSE file for details.</p>
 <h2>API Documentation</h2>
 <p>Doxygen-generated documentation can be found here: <a href="https://matthewg42.github.io/Mutila/">https://matthewg42.github.io/Mutila/</a></p>
 <h3>Generating documentation</h3>
@@ -120,8 +120,11 @@ $(function() {
 <li>Run ''doxygen'' from the root of this project - html is generated in doc/html</li>
 </ol>
 <h2>Ideas for future development</h2>
-<h3>Templetsed PersistentSettings classes</h3>
+<h3>Templatised PersistentSetting classes</h3>
 <p>Similar to the ones implemented in EspApConfigurator (by the same Author), but that works with both ESP and Arduino hardware (the use of the EEPROM library for ESP devices is incompatible with regular Arduino EEPROM usage).</p>
+<p>This should include the same first-byte-of-eeprom-is-fingerprint thing, which lets is auto-revert to defaults if the settings fingerprint doesn't match what's in EEPROM (e.g. first time we burn the firmware to a device).</p>
+<h3>Auto version message</h3>
+<p>It would be really nice to have some mechanism to write the current project version, and library versions into flash automatically. By version I guess I mean git short hash of library version from library.properties.</p>
 <h3>StickyButton</h3>
 <ul>
 <li>When pushed, stays on for some period of time and then switches off.</li>
@@ -135,7 +138,15 @@ $(function() {
 <h3><a class="el" href="classDFPlayerMini.html">DFPlayerMini</a></h3>
 <ul>
 <li>doc ops which create reply</li>
-<li>asynchronous commands (i.e. do not wait for serial, use update() to send bytes one at a time) </li>
+<li>asynchronous commands (i.e. do not wait for serial, use update() to send bytes one at a time)</li>
+</ul>
+<h2>Development Workflow</h2>
+<p>At time of writing, Mutila is a one-Mouse project. versions up until v1.1.0 were not made into releases, and most work was done directly in master. However, enough projects now use Mutila that is makes sense to start being a bit more structured, so here's how it's going to work from now (until I need to change it again).</p>
+<ul>
+<li>After v1.1.1, the <em>master</em> branch is just for releases, which (I hope) will be well-tested and stable.</li>
+<li>Each release will be summarised in the <a class="el" href="ReleaseNotes_8md_source.html">ReleaseNotes.md</a> file.</li>
+<li>Minor new features, bug fixes and the like will go in the <em>dev</em> branch, which will periodically be merged with master to create a new release.</li>
+<li>Major new features will be created in feature branches. </li>
 </ul>
 </div></div><!-- contents -->
 <!-- start footer part -->

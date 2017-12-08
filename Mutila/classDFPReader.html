@@ -69,9 +69,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> controller with numeric readout functions.  
- <a href="classDFPReader.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="DFPReader_8h_source.html">DFPReader.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DFPReader:</div>
@@ -84,9 +81,9 @@ Inheritance diagram for DFPReader:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab26957c20cad663b45437747da74dca3"><td class="memItemLeft" align="right" valign="top"><a id="ab26957c20cad663b45437747da74dca3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PlaybackState</b> { <b>Idle</b>, 
-<b>Pending</b>, 
-<b>Playing</b>
+<tr class="memitem:ab26957c20cad663b45437747da74dca3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPReader.html#ab26957c20cad663b45437747da74dca3">PlaybackState</a> { <a class="el" href="classDFPReader.html#ab26957c20cad663b45437747da74dca3ad5b6e5954506bd4f7f0deb1dcb72701c">Idle</a>, 
+<a class="el" href="classDFPReader.html#ab26957c20cad663b45437747da74dca3a6a183b5de946a5ba1e25e44a3c2522eb">Pending</a>, 
+<a class="el" href="classDFPReader.html#ab26957c20cad663b45437747da74dca3a7ea71c5f7ccdb861f82de69a5d5ff7d7">Playing</a>
  }</td></tr>
 <tr class="separator:ab26957c20cad663b45437747da74dca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classDFPlayerMini"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classDFPlayerMini')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a></td></tr>
@@ -128,9 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a42264bec0c84cff338fd6b0f8dbcb8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a361c2a2d9ffaea4c4131c7c3ff5fe94b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPReader.html#a361c2a2d9ffaea4c4131c7c3ff5fe94b">~DFPReader</a> ()</td></tr>
 <tr class="separator:a361c2a2d9ffaea4c4131c7c3ff5fe94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd508b4a256b059fac5f658dbe060995"><td class="memItemLeft" align="right" valign="top"><a id="acd508b4a256b059fac5f658dbe060995"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
-<tr class="separator:acd508b4a256b059fac5f658dbe060995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a019cbcff2549069bdddf9055ab12e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPReader.html#a41a019cbcff2549069bdddf9055ab12e">begin</a> (bool bootWait=true)</td></tr>
+<tr class="separator:a41a019cbcff2549069bdddf9055ab12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab504fa45cc94ef77f07c8e48d6318418"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPReader.html#ab504fa45cc94ef77f07c8e48d6318418">update</a> ()</td></tr>
 <tr class="separator:ab504fa45cc94ef77f07c8e48d6318418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbeaf83f8c5cd0f2dd66cc519a51d24c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPReader.html#afbeaf83f8c5cd0f2dd66cc519a51d24c">readNumber</a> (double number, uint8_t dp=0)</td></tr>
@@ -144,8 +140,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr
 <tr class="inherit_header pub_methods_classDFPlayerMini"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDFPlayerMini')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a></td></tr>
 <tr class="memitem:a145c491034ae5bc0a05bbfb9c19bb486 inherit pub_methods_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a145c491034ae5bc0a05bbfb9c19bb486">DFPlayerMini</a> (Stream &amp;serial, const uint8_t busyPin=0)</td></tr>
 <tr class="separator:a145c491034ae5bc0a05bbfb9c19bb486 inherit pub_methods_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39407b29a79cada8add9b8d2c50073ea inherit pub_methods_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a39407b29a79cada8add9b8d2c50073ea">begin</a> ()</td></tr>
-<tr class="separator:a39407b29a79cada8add9b8d2c50073ea inherit pub_methods_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279d39f30c12b2a99c93354ec1ec8656 inherit pub_methods_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a279d39f30c12b2a99c93354ec1ec8656">begin</a> (bool bootWait=true)</td></tr>
+<tr class="separator:a279d39f30c12b2a99c93354ec1ec8656 inherit pub_methods_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81cfb933970793106a39bec9a9a6d83e inherit pub_methods_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a81cfb933970793106a39bec9a9a6d83e">sendCmd</a> (<a class="el" href="classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542d">Cmd</a> cmd, uint16_t arg=0)</td></tr>
 <tr class="separator:a81cfb933970793106a39bec9a9a6d83e inherit pub_methods_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12c9990291d77489da556f990318ade5 inherit pub_methods_classDFPlayerMini"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDFPResponse.html">DFPResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a12c9990291d77489da556f990318ade5">query</a> (<a class="el" href="classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542d">Cmd</a> cmd, uint8_t tries=3)</td></tr>
@@ -283,11 +279,36 @@ static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Packe
 <tr class="separator:aab8719400a67031eb35b577412e549f1 inherit pub_static_attribs_classDFPlayerMini"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> controller with numeric readout functions. </p>
+<div class="textblock"><p><a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> controller with numeric readout functions.</p>
 <p>This class is intended for use with the samples in the audio/ directory of the main Mutila repository. Copy these files to an SD card in a directory called "mp3". </p>
 
 <p class="definition">Definition at line <a class="el" href="DFPReader_8h_source.html#l00012">12</a> of file <a class="el" href="DFPReader_8h_source.html">DFPReader.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ab26957c20cad663b45437747da74dca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26957c20cad663b45437747da74dca3">&#9670;&nbsp;</a></span>PlaybackState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classDFPReader.html#ab26957c20cad663b45437747da74dca3">DFPReader::PlaybackState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab26957c20cad663b45437747da74dca3ad5b6e5954506bd4f7f0deb1dcb72701c"></a>Idle&#160;</td><td class="fielddoc"><p>Reader is idle. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab26957c20cad663b45437747da74dca3a6a183b5de946a5ba1e25e44a3c2522eb"></a>Pending&#160;</td><td class="fielddoc"><p>Reader is not playing, but is waiting for an audio file to play. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab26957c20cad663b45437747da74dca3a7ea71c5f7ccdb861f82de69a5d5ff7d7"></a>Playing&#160;</td><td class="fielddoc"><p>Reader is playing an audio file. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="DFPReader_8h_source.html#l00055">55</a> of file <a class="el" href="DFPReader_8h_source.html">DFPReader.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a42264bec0c84cff338fd6b0f8dbcb8d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a42264bec0c84cff338fd6b0f8dbcb8d8">&#9670;&nbsp;</a></span>DFPReader()</h2>
 
@@ -325,15 +346,16 @@ static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Packe
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Constructor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">serial</td><td>a software serial object set at 9600 baud connected to the <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> device </td></tr>
+    <tr><td class="paramname">serial</td><td>a software serial object set at 9600 baud connected to the <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> device. </td></tr>
     <tr><td class="paramname">busyPin</td><td>the pin on the arduino connected to the BUSY pin of the <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a>. See the <a class="el" href="classDFPlayerMini.html#a77c49559ebb6df0e377f4bf2d691d588">busy()</a> documentation for more details. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00019">19</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00027">27</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
 
 </div>
 </div>
@@ -351,21 +373,9 @@ static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Packe
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Destructor </p>
+<p>Destructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00027">27</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classDFPReader_a361c2a2d9ffaea4c4131c7c3ff5fe94b_cgraph.png" border="0" usemap="#classDFPReader_a361c2a2d9ffaea4c4131c7c3ff5fe94b_cgraph" alt=""/></div>
-<map name="classDFPReader_a361c2a2d9ffaea4c4131c7c3ff5fe94b_cgraph" id="classDFPReader_a361c2a2d9ffaea4c4131c7c3ff5fe94b_cgraph">
-<area shape="rect" id="node2" href="classDFPlayerMini.html#a39407b29a79cada8add9b8d2c50073ea" title="DFPlayerMini::begin" alt="" coords="259,5,410,32"/>
-<area shape="rect" id="node3" href="classDFPReader.html#a574fbccf4630ab39354e9656900b967d" title="DFPReader::resetReaderBuf" alt="" coords="235,56,435,83"/>
-<area shape="rect" id="node4" href="classDFPlayerMini.html#a77c49559ebb6df0e377f4bf2d691d588" title="DFPlayerMini::busy" alt="" coords="483,31,629,57"/>
-<area shape="rect" id="node6" href="classDFPlayerMini.html#a81cfb933970793106a39bec9a9a6d83e" title="DFPlayerMini::sendCmd" alt="" coords="877,56,1053,83"/>
-<area shape="rect" id="node5" href="classDFPlayerMini.html#a12c9990291d77489da556f990318ade5" title="DFPlayerMini::query" alt="" coords="677,31,829,57"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00035">35</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
 
 </div>
 </div>
@@ -385,15 +395,56 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Append a sample to play Add a sample to the end of the run buffer to play as soon as other elements in the buffer have been played </p>
+<p>Append a sample to play.</p>
+<p>Add a sample to the end of the run buffer to play as soon as other elements in the buffer have been played. </p>
 
-<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00143">143</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00151">151</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDFPReader_a9cbb46808219d8030ba675274c208424_icgraph.png" border="0" usemap="#classDFPReader_a9cbb46808219d8030ba675274c208424_icgraph" alt=""/></div>
 <map name="classDFPReader_a9cbb46808219d8030ba675274c208424_icgraph" id="classDFPReader_a9cbb46808219d8030ba675274c208424_icgraph">
 <area shape="rect" id="node2" href="classDFPReader.html#afbeaf83f8c5cd0f2dd66cc519a51d24c" title="DFPReader::readNumber" alt="" coords="256,5,437,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a41a019cbcff2549069bdddf9055ab12e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a019cbcff2549069bdddf9055ab12e">&#9670;&nbsp;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DFPReader::begin </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bootWait</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize.</p>
+<p>Typically called from setup().</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bootWait</td><td>if true, wait 600ms for the DFPlayer to boot. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00040">40</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDFPReader_a41a019cbcff2549069bdddf9055ab12e_cgraph.png" border="0" usemap="#classDFPReader_a41a019cbcff2549069bdddf9055ab12e_cgraph" alt=""/></div>
+<map name="classDFPReader_a41a019cbcff2549069bdddf9055ab12e_cgraph" id="classDFPReader_a41a019cbcff2549069bdddf9055ab12e_cgraph">
+<area shape="rect" id="node2" href="classDFPlayerMini.html#a279d39f30c12b2a99c93354ec1ec8656" title="DFPlayerMini::begin" alt="" coords="214,5,365,32"/>
+<area shape="rect" id="node3" href="classDFPReader.html#a574fbccf4630ab39354e9656900b967d" title="DFPReader::resetReaderBuf" alt="" coords="189,56,389,83"/>
+<area shape="rect" id="node4" href="classDFPlayerMini.html#a77c49559ebb6df0e377f4bf2d691d588" title="DFPlayerMini::busy" alt="" coords="437,31,584,57"/>
+<area shape="rect" id="node6" href="classDFPlayerMini.html#a81cfb933970793106a39bec9a9a6d83e" title="DFPlayerMini::sendCmd" alt="" coords="832,56,1008,83"/>
+<area shape="rect" id="node5" href="classDFPlayerMini.html#a12c9990291d77489da556f990318ade5" title="DFPlayerMini::query" alt="" coords="632,31,784,57"/>
 </map>
 </div>
 
@@ -413,9 +464,10 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Find out if still reading </p><dl class="section return"><dt>Returns</dt><dd>true if a sound is being played, or if there are still samples to play after the current sample (i.e. if we're still reading out a number), else return false </dd></dl>
+<p>Find out if still reading.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if a sound is being played, or if there are still samples to play after the current sample (i.e. if we're still reading out a number), else return false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00111">111</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00119">119</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -454,11 +506,11 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Queue up digits of a number to read</p>
+<p>Queue up digits of a number to read.</p>
 <p>When called, the ring buffer is populated with the IDs of samples which are required to read the number. For example if number=3.14159, and dp=2, the samples for "three", "point" "one", and "four" would be appened to the ring buffer.</p>
 <p>During <a class="el" href="classDFPReader.html#ab504fa45cc94ef77f07c8e48d6318418">update()</a>, samples are played in order such that they do not overlap. </p>
 
-<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00070">70</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00078">78</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -484,9 +536,9 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Stop playback and reset the run buffer to an empty state </p>
+<p>Stop playback and reset the run buffer to an empty state. </p>
 
-<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00122">122</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00130">130</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -502,7 +554,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDFPReader_a574fbccf4630ab39354e9656900b967d_icgraph.png" border="0" usemap="#classDFPReader_a574fbccf4630ab39354e9656900b967d_icgraph" alt=""/></div>
 <map name="classDFPReader_a574fbccf4630ab39354e9656900b967d_icgraph" id="classDFPReader_a574fbccf4630ab39354e9656900b967d_icgraph">
-<area shape="rect" id="node2" href="classDFPReader.html#a361c2a2d9ffaea4c4131c7c3ff5fe94b" title="DFPReader::~DFPReader" alt="" coords="253,5,435,32"/>
+<area shape="rect" id="node2" href="classDFPReader.html#a41a019cbcff2549069bdddf9055ab12e" title="DFPReader::begin" alt="" coords="253,5,389,32"/>
 </map>
 </div>
 
@@ -522,9 +574,10 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Allocate Timeslice Should be called frequently - typically from loop() </p>
+<p>Allocate Timeslice.</p>
+<p>Should be called frequently - typically from loop(). </p>
 
-<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00040">40</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPReader_8cpp_source.html#l00048">48</a> of file <a class="el" href="DFPReader_8cpp_source.html">DFPReader.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

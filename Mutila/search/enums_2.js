@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['status',['Status',['../structDFPResponse.html#a66f85c2d6c3ab76a3f1079d2db5c9f7b',1,'DFPResponse']]]
+  ['playbackstate',['PlaybackState',['../classDFPReader.html#ab26957c20cad663b45437747da74dca3',1,'DFPReader']]]
 ];

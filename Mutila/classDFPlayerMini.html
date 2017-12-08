@@ -75,7 +75,7 @@ Inheritance diagram for DFPlayerMini:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDFPlayerMini__inherit__graph.png" border="0" usemap="#DFPlayerMini_inherit__map" alt="Inheritance graph"/></div>
 <map name="DFPlayerMini_inherit__map" id="DFPlayerMini_inherit__map">
-<area shape="rect" id="node2" href="classDFPReader.html" title="DFPlayerMini controller with numeric readout functions. " alt="" coords="15,277,166,604"/>
+<area shape="rect" id="node2" href="classDFPReader.html" title="{DFPReader\n|+ PlaybackStartMs\l+ Mp3TrackZero\l+ Mp3TrackTen\l+ Mp3TrackTwenty\l+ Mp3TrackThirty\l+ Mp3TrackFourty\l+ Mp3TrackFifty\l+ Mp3TrackSixty\l+ Mp3TrackSeventy\l+ Mp3TrackEighty\land 25 more...\l|+ DFPReader()\l+ ~DFPReader()\l+ begin()\l+ update()\l+ readNumber()\l+ reading()\l+ resetReaderBuf()\l+ appendElement()\l}" alt="" coords="15,277,166,604"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -117,8 +117,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a145c491034ae5bc0a05bbfb9c19bb486"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a145c491034ae5bc0a05bbfb9c19bb486">DFPlayerMini</a> (Stream &amp;serial, const uint8_t busyPin=0)</td></tr>
 <tr class="separator:a145c491034ae5bc0a05bbfb9c19bb486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39407b29a79cada8add9b8d2c50073ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a39407b29a79cada8add9b8d2c50073ea">begin</a> ()</td></tr>
-<tr class="separator:a39407b29a79cada8add9b8d2c50073ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279d39f30c12b2a99c93354ec1ec8656"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a279d39f30c12b2a99c93354ec1ec8656">begin</a> (bool bootWait=true)</td></tr>
+<tr class="separator:a279d39f30c12b2a99c93354ec1ec8656"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81cfb933970793106a39bec9a9a6d83e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a81cfb933970793106a39bec9a9a6d83e">sendCmd</a> (<a class="el" href="classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542d">Cmd</a> cmd, uint16_t arg=0)</td></tr>
 <tr class="separator:a81cfb933970793106a39bec9a9a6d83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12c9990291d77489da556f990318ade5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDFPResponse.html">DFPResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDFPlayerMini.html#a12c9990291d77489da556f990318ade5">query</a> (<a class="el" href="classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542d">Cmd</a> cmd, uint8_t tries=3)</td></tr>
@@ -248,7 +248,8 @@ static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Packe
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Constructor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">serial</td><td>a software serial object set at 9600 baud connected to the <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> device </td></tr>
     <tr><td class="paramname">busyPin</td><td>the pin on the arduino connected to the BUSY pin of the <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a>. See the <a class="el" href="classDFPlayerMini.html#a77c49559ebb6df0e377f4bf2d691d588">busy()</a> documentation for more details. </td></tr>
@@ -261,8 +262,8 @@ static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Packe
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a39407b29a79cada8add9b8d2c50073ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39407b29a79cada8add9b8d2c50073ea">&#9670;&nbsp;</a></span>begin()</h2>
+<a id="a279d39f30c12b2a99c93354ec1ec8656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279d39f30c12b2a99c93354ec1ec8656">&#9670;&nbsp;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,20 +271,28 @@ static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Packe
         <tr>
           <td class="memname">void DFPlayerMini::begin </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bootWait</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialization Sets up pin modes and resets state - typically called from <a class="el" href="classDFPlayerMini.html#a39407b29a79cada8add9b8d2c50073ea">begin()</a> </p>
+<p>Initialization.</p>
+<p>Sets up pin modes and resets state - typically called from <a class="el" href="classDFPlayerMini.html#a279d39f30c12b2a99c93354ec1ec8656">begin()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bootWait</td><td>if true, delay for about 600ms to allow the DFPlayer to boot. Failure to wait can cause the DFPlayer to miss initial commands like volume setting. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00013">13</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classDFPlayerMini_a39407b29a79cada8add9b8d2c50073ea_icgraph.png" border="0" usemap="#classDFPlayerMini_a39407b29a79cada8add9b8d2c50073ea_icgraph" alt=""/></div>
-<map name="classDFPlayerMini_a39407b29a79cada8add9b8d2c50073ea_icgraph" id="classDFPlayerMini_a39407b29a79cada8add9b8d2c50073ea_icgraph">
-<area shape="rect" id="node2" href="classDFPReader.html#a361c2a2d9ffaea4c4131c7c3ff5fe94b" title="DFPReader::~DFPReader" alt="" coords="204,5,385,32"/>
+<div class="center"><img src="classDFPlayerMini_a279d39f30c12b2a99c93354ec1ec8656_icgraph.png" border="0" usemap="#classDFPlayerMini_a279d39f30c12b2a99c93354ec1ec8656_icgraph" alt=""/></div>
+<map name="classDFPlayerMini_a279d39f30c12b2a99c93354ec1ec8656_icgraph" id="classDFPlayerMini_a279d39f30c12b2a99c93354ec1ec8656_icgraph">
+<area shape="rect" id="node2" href="classDFPReader.html#a41a019cbcff2549069bdddf9055ab12e" title="DFPReader::begin" alt="" coords="204,5,340,32"/>
 </map>
 </div>
 
@@ -308,7 +317,7 @@ Here is the caller graph for this function:</div>
 <p>If the busy pin was not passed when the <a class="el" href="classDFPlayerMini.html">DFPlayerMini</a> was constructed, a GetStatus query will be sent to the player and the result analysed to determine the result. Note that the query method will cause jitter in the audio playback, and takes longer to execute, so the BUSY pin method is recommended if there is a digital input available.</p>
 <dl class="section return"><dt>Returns</dt><dd>true if audio is currently playing, else false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00161">161</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00164">164</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -326,7 +335,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="classDFPReader.html#ab504fa45cc94ef77f07c8e48d6318418" title="DFPReader::update" alt="" coords="227,5,373,32"/>
 <area shape="rect" id="node3" href="classDFPReader.html#aadfe9c2ebb3d0182caf5b1615ccb18f9" title="DFPReader::reading" alt="" coords="225,56,375,83"/>
 <area shape="rect" id="node4" href="classDFPReader.html#a574fbccf4630ab39354e9656900b967d" title="DFPReader::resetReaderBuf" alt="" coords="200,107,400,133"/>
-<area shape="rect" id="node5" href="classDFPReader.html#a361c2a2d9ffaea4c4131c7c3ff5fe94b" title="DFPReader::~DFPReader" alt="" coords="448,107,629,133"/>
+<area shape="rect" id="node5" href="classDFPReader.html#a41a019cbcff2549069bdddf9055ab12e" title="DFPReader::begin" alt="" coords="448,107,584,133"/>
 </map>
 </div>
 
@@ -349,7 +358,7 @@ Here is the caller graph for this function:</div>
 <p>Find out if we can communicate with the device.</p>
 <dl class="section return"><dt>Returns</dt><dd>true if comms works, else false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00212">212</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00215">215</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -397,7 +406,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="structDFPResponse.html">DFPResponse</a> object with the results of the query. The .ok member will be false if the query failed to get a valid result (possible resons: timeout, bad serial comms etc.) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00053">53</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00056">56</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -416,7 +425,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node3" href="classDFPReader.html#ab504fa45cc94ef77f07c8e48d6318418" title="DFPReader::update" alt="" coords="434,5,579,32"/>
 <area shape="rect" id="node4" href="classDFPReader.html#aadfe9c2ebb3d0182caf5b1615ccb18f9" title="DFPReader::reading" alt="" coords="432,56,581,83"/>
 <area shape="rect" id="node5" href="classDFPReader.html#a574fbccf4630ab39354e9656900b967d" title="DFPReader::resetReaderBuf" alt="" coords="407,107,607,133"/>
-<area shape="rect" id="node6" href="classDFPReader.html#a361c2a2d9ffaea4c4131c7c3ff5fe94b" title="DFPReader::~DFPReader" alt="" coords="655,107,836,133"/>
+<area shape="rect" id="node6" href="classDFPReader.html#a41a019cbcff2549069bdddf9055ab12e" title="DFPReader::begin" alt="" coords="655,107,791,133"/>
 </map>
 </div>
 
@@ -447,7 +456,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Send a command no response is expected </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Send a command no response is expected.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmd</td><td>The command to send </td></tr>
     <tr><td class="paramname">arg</td><td>The argument to the command, if one is expected </td></tr>
@@ -455,7 +465,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00029">29</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DFPlayerMini_8cpp_source.html#l00032">32</a> of file <a class="el" href="DFPlayerMini_8cpp_source.html">DFPlayerMini.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -467,7 +477,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node3" href="classDFPlayerMini.html#a77c49559ebb6df0e377f4bf2d691d588" title="DFPlayerMini::busy" alt="" coords="433,56,579,83"/>
 <area shape="rect" id="node8" href="classDFPlayerMini.html#a8e63c101a7595d945884a055f431c306" title="DFPlayerMini::check" alt="" coords="429,107,583,133"/>
 <area shape="rect" id="node5" href="classDFPReader.html#aadfe9c2ebb3d0182caf5b1615ccb18f9" title="DFPReader::reading" alt="" coords="656,56,805,83"/>
-<area shape="rect" id="node7" href="classDFPReader.html#a361c2a2d9ffaea4c4131c7c3ff5fe94b" title="DFPReader::~DFPReader" alt="" coords="879,132,1060,159"/>
+<area shape="rect" id="node7" href="classDFPReader.html#a41a019cbcff2549069bdddf9055ab12e" title="DFPReader::begin" alt="" coords="879,132,1015,159"/>
 </map>
 </div>
 
