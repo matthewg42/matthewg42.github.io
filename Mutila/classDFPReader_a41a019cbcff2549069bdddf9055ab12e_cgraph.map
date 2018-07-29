@@ -1,7 +1,7 @@
 <map id="DFPReader::begin" name="DFPReader::begin">
 <area shape="rect" id="node2" href="$classDFPlayerMini.html#a279d39f30c12b2a99c93354ec1ec8656" title="DFPlayerMini::begin" alt="" coords="214,5,365,32"/>
 <area shape="rect" id="node3" href="$classDFPReader.html#a574fbccf4630ab39354e9656900b967d" title="DFPReader::resetReaderBuf" alt="" coords="189,56,389,83"/>
-<area shape="rect" id="node4" href="$classDFPlayerMini.html#a77c49559ebb6df0e377f4bf2d691d588" title="DFPlayerMini::busy" alt="" coords="437,31,584,57"/>
-<area shape="rect" id="node6" href="$classDFPlayerMini.html#a81cfb933970793106a39bec9a9a6d83e" title="DFPlayerMini::sendCmd" alt="" coords="832,56,1008,83"/>
-<area shape="rect" id="node5" href="$classDFPlayerMini.html#a12c9990291d77489da556f990318ade5" title="DFPlayerMini::query" alt="" coords="632,31,784,57"/>
+<area shape="rect" id="node4" href="$classDFPlayerMini.html#a77c49559ebb6df0e377f4bf2d691d588" title="DFPlayerMini::busy" alt="" coords="452,31,599,57"/>
+<area shape="rect" id="node6" href="$classDFPlayerMini.html#a81cfb933970793106a39bec9a9a6d83e" title="DFPlayerMini::sendCmd" alt="" coords="437,81,613,108"/>
+<area shape="rect" id="node5" href="$classDFPlayerMini.html#a12c9990291d77489da556f990318ade5" title="DFPlayerMini::query" alt="" coords="661,31,813,57"/>
 </map>
