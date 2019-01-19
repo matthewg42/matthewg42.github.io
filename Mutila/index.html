@@ -115,6 +115,8 @@ $(function() {
 <h3><a class="el" href="classMode.html">Mode</a> System</h3>
 <p>A <em><a class="el" href="classMode.html">Mode</a></em> is a kind of sub-program which has distinct startup, shutdown and update routines. For example, your program might have a special setup mode which suspends normal operations while settings are altered. The <em><a class="el" href="classModeManager.html">ModeManager</a></em> class can be used to switch between such mutually exclusive modes while keeping your main loop clean and simple.</p>
 <p>Modes may be arranged in a hierarchical manner using the <em><a class="el" href="classParentMode.html">ParentMode</a></em> class. This can be useful when building hierarchical menu systems which a couple of buttons.</p>
+<h3>EEPROM-backed Settings</h3>
+<p><em>PersistentSettings</em> provides an EEPROM-backed store for settings which you want to survive Arduino resets.</p>
 <h2>API Documentation</h2>
 <p>Doxygen-generated documentation can be found here: <a href="https://matthewg42.github.io/Mutila/">https://matthewg42.github.io/Mutila/</a></p>
 <h3>Generating documentation</h3>
@@ -123,9 +125,6 @@ $(function() {
 <li>Run ''doxygen'' from the root of this project - html is generated in doc/html</li>
 </ol>
 <h2>Ideas for future development</h2>
-<h3>Templatised PersistentSetting classes</h3>
-<p>Similar to the ones implemented in EspApConfigurator (by the same Author), but that works with both ESP and Arduino hardware (the use of the EEPROM library for ESP devices is incompatible with regular Arduino EEPROM usage).</p>
-<p>This should include the same first-byte-of-eeprom-is-fingerprint thing, which lets is auto-revert to defaults if the settings fingerprint doesn't match what's in EEPROM (e.g. first time we burn the firmware to a device).</p>
 <h3>Auto version message</h3>
 <p>It would be really nice to have some mechanism to write the current project version, and library versions into flash automatically. By version I guess I mean git short hash of library version from library.properties.</p>
 <h3>StickyButton</h3>

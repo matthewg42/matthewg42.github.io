@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['parentmode',['ParentMode',['../classParentMode.html',1,'']]]
+  ['mode',['Mode',['../classMode.html',1,'']]],
+  ['modemanager',['ModeManager',['../classModeManager.html',1,'']]]
 ];

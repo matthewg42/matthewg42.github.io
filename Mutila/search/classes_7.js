@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sonicranger',['SonicRanger',['../classSonicRanger.html',1,'']]]
+  ['namedpersistentsetting',['NamedPersistentSetting',['../classNamedPersistentSetting.html',1,'']]]
 ];

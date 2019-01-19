@@ -1,7 +1,9 @@
 var searchData=
 [
+  ['save',['save',['../classPersistentSetting.html#a94dfd264b885078ff8558f9037c56d8d',1,'PersistentSetting']]],
   ['sendcmd',['sendCmd',['../classDFPlayerMini.html#a81cfb933970793106a39bec9a9a6d83e',1,'DFPlayerMini']]],
   ['serialerror',['SerialError',['../structDFPResponse.html#a66f85c2d6c3ab76a3f1079d2db5c9f7ba180a5b2f0604090282f26d12208ec15b',1,'DFPResponse']]],
+  ['set',['set',['../classPersistentSetting.html#a1ce2d74130d8fedea23734d49241f2f8',1,'PersistentSetting']]],
   ['setcustommode',['setCustomMode',['../classHeartbeat.html#abcbcb22ca2e7c17c7f21ff49b13a54c0',1,'Heartbeat']]],
   ['setdevice',['SetDevice',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da5f1257457e59b8e6b897a9a17714ffb1',1,'DFPlayerMini']]],
   ['setenabled',['setEnabled',['../classHeartbeat.html#a54b53d6346772f84f8146baa805c966d',1,'Heartbeat']]],
@@ -13,6 +15,7 @@ var searchData=
   ['setupdateperiod',['setUpdatePeriod',['../classMode.html#a1b458a232619aab904c58df750c8546a',1,'Mode']]],
   ['setvolume',['SetVolume',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da69ce0e1556d6213e11f2d4a195b0d40e',1,'DFPlayerMini']]],
   ['singleloop',['SingleLoop',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da58c5b1fea14d8ad690df8ddd7a1369ad',1,'DFPlayerMini']]],
+  ['size',['size',['../classPersistentSetting.html#ad0798aad8e98b7eb8ccf5aeebf05e16d',1,'PersistentSetting']]],
   ['sleep',['Sleep',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da9174dfef98dcc0cb3cdd0787912a2be4',1,'DFPlayerMini']]],
   ['slow',['Slow',['../classHeartbeat.html#a1549df64b3207a5fd4ce23a84b79c4f7acfaa9d007c11928f08d4b89db1e96321',1,'Heartbeat']]],
   ['slower',['Slower',['../classHeartbeat.html#a1549df64b3207a5fd4ce23a84b79c4f7a3da6e8400dcb2c5be06ef46459004a73',1,'Heartbeat']]],

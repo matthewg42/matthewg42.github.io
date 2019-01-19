@@ -3,6 +3,7 @@ var searchData=
   ['parentmode',['ParentMode',['../classParentMode.html',1,'ParentMode'],['../classParentMode.html#a760b0e94cda00ffe806dd298f1ce8e32',1,'ParentMode::ParentMode()']]],
   ['pause',['Pause',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da3be961ea6f60513eabaacc503dda0067',1,'DFPlayerMini']]],
   ['pending',['Pending',['../classDFPReader.html#ab26957c20cad663b45437747da74dca3a6a183b5de946a5ba1e25e44a3c2522eb',1,'DFPReader']]],
+  ['persistentsetting',['PersistentSetting',['../classPersistentSetting.html',1,'PersistentSetting&lt; T &gt;'],['../classPersistentSetting.html#a1f09738822402ce48a4909da5a1cff0a',1,'PersistentSetting::PersistentSetting()']]],
   ['pin',['pin',['../classAbstractSampler.html#aa98f9791c9a06de867b8e4f7d6374716',1,'AbstractSampler']]],
   ['play',['Play',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da6c7ae278fce2922183459004991acdbf',1,'DFPlayerMini']]],
   ['playbackstate',['PlaybackState',['../classDFPReader.html#ab26957c20cad663b45437747da74dca3',1,'DFPReader']]],
