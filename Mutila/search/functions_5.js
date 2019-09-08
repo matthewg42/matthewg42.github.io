@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['get',['get',['../classPersistentSetting.html#a573802a9f7edb3b7e1f7e0df712b5b89',1,'PersistentSetting']]],
-  ['getdefault',['getDefault',['../classPersistentSetting.html#a51a50a0f9a4fa44b5129e2c93726827c',1,'PersistentSetting']]],
-  ['getmaximum',['getMaximum',['../classPersistentSetting.html#a2d67cebe05249a5195737e21b3c89ff1',1,'PersistentSetting']]],
-  ['getminimum',['getMinimum',['../classPersistentSetting.html#a480b2a2cdb5c2f58c7614a312e5739c4',1,'PersistentSetting']]],
-  ['getrange',['getRange',['../classEMASonicRanger.html#affea1f32126ecbb60e95ac9bc7e1b6c5',1,'EMASonicRanger::getRange()'],['../classSonicRanger.html#aced71d6ab88a1a8a3cf0171908717251',1,'SonicRanger::getRange()']]]
+  ['emacurrentsampler',['EMACurrentSampler',['../classEMACurrentSampler.html#a65fa25452486ae832a9254d14e8e9ef6',1,'EMACurrentSampler']]],
+  ['emasampler',['EMASampler',['../classEMASampler.html#a3b725ffc148e9f94efc66236472bc254',1,'EMASampler']]],
+  ['emasonicranger',['EMASonicRanger',['../classEMASonicRanger.html#a1d3a3c7606388f38dabdd9b3d23098f3',1,'EMASonicRanger']]],
+  ['emavdivsampler',['EMAVDivSampler',['../classEMAVDivSampler.html#a66535e38f0ee7ba183dbf97b182d4960',1,'EMAVDivSampler']]],
+  ['enterbrownout',['enterBrownout',['../classBrownoutMode.html#a0ad73f43215f9772e0bf468412a3988d',1,'BrownoutMode']]],
+  ['exitbrownout',['exitBrownout',['../classBrownoutMode.html#af53aafeeb702f6a6a0024881fc99609f',1,'BrownoutMode']]]
 ];

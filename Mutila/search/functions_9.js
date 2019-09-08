@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['maximum',['maximum',['../classBufferedSampler.html#a43c295248d162afefcb7b39e13571ade',1,'BufferedSampler']]],
-  ['minimum',['minimum',['../classBufferedSampler.html#aaa98fadd2b77c133c0cc19c08132b41a',1,'BufferedSampler']]],
-  ['mode',['Mode',['../classMode.html#a098246baedeee64fa0ed3b53547cf55f',1,'Mode::Mode()'],['../classHeartbeat.html#ad59dbbe35ec725034bd204ea9ca60c8c',1,'Heartbeat::mode()']]],
-  ['modefinished',['modeFinished',['../classModeManager.html#a9aee468b5ca0c873259befdd759780a8',1,'ModeManager']]],
-  ['modestart',['modeStart',['../classMode.html#a882bba0d704f8dd9ac9d861110e4e542',1,'Mode']]],
-  ['modestop',['modeStop',['../classMode.html#acb7c286b35a94482e05e646483aea531',1,'Mode']]],
-  ['modeupdate',['modeUpdate',['../classMode.html#a54f25cbf566ead1868baa14a7ec37032',1,'Mode']]]
+  ['last',['last',['../classAbstractSampler.html#a6efab491239b44fd768ee5568a364fec',1,'AbstractSampler::last()'],['../classBufferedSampler.html#a900e2e02f33f024a1a07072af7fe9211',1,'BufferedSampler::last()'],['../classEMASampler.html#ad806d68d890bb150b8a55d016fcb2bde',1,'EMASampler::last()']]],
+  ['lastamps',['lastAmps',['../classEMACurrentSampler.html#a4bdff7d02c245545d5d6299a884b4faf',1,'EMACurrentSampler']]],
+  ['lastvolts',['lastVolts',['../classBufferedVDivSampler.html#ad1c9287bf12c884392421a9ffcfb98d7',1,'BufferedVDivSampler::lastVolts()'],['../classEMAVDivSampler.html#a771d5993ba45bfa7b8b9031c5bfb5e34',1,'EMAVDivSampler::lastVolts()']]],
+  ['load',['load',['../classPersistentSetting.html#aba2ece0793feb43c653f3b9c7df5b7bb',1,'PersistentSetting']]]
 ];

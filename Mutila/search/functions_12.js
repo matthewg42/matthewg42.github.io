@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['_7eabstractsampler',['~AbstractSampler',['../classAbstractSampler.html#a4d47352375d01d711e8e241802ac75fd',1,'AbstractSampler']]],
-  ['_7ebufferedsampler',['~BufferedSampler',['../classBufferedSampler.html#ab0086f39fb430f8ddbd2424904850a8b',1,'BufferedSampler']]],
-  ['_7ecommandinterface',['~CommandInterface',['../classCommandInterface.html#ac2a42c5c7ea718e74bad2ca6c399fee5',1,'CommandInterface']]],
-  ['_7edfpreader',['~DFPReader',['../classDFPReader.html#a361c2a2d9ffaea4c4131c7c3ff5fe94b',1,'DFPReader']]],
-  ['_7eemasampler',['~EMASampler',['../classEMASampler.html#a3e240940aa3911eda8c13f1fea817f51',1,'EMASampler']]]
+  ['value',['value',['../classDiscretePot.html#a1c6c85c04ca60ab99b5170b29fd85afc',1,'DiscretePot::value()'],['../classQuantizedPot.html#a88a1175a800dc078a7adba1c666b4e0a',1,'QuantizedPot::value()']]],
+  ['velocity',['velocity',['../classQuantizedPot.html#af441c48ee3bb1aeedb05fa1a7c934c6f',1,'QuantizedPot']]]
 ];

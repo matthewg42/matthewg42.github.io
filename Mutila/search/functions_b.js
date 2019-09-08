@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['parentmode',['ParentMode',['../classParentMode.html#a760b0e94cda00ffe806dd298f1ce8e32',1,'ParentMode']]],
-  ['persistentsetting',['PersistentSetting',['../classPersistentSetting.html#a1f09738822402ce48a4909da5a1cff0a',1,'PersistentSetting']]],
-  ['pin',['pin',['../classAbstractSampler.html#aa98f9791c9a06de867b8e4f7d6374716',1,'AbstractSampler']]],
-  ['pushed',['pushed',['../classAbstractDebouncedButton.html#aec15d7b6f78886d1386de1ccaa2b80e5',1,'AbstractDebouncedButton::pushed()'],['../classDualButton.html#a0bda2ad5839807cd65f2f8c33e5320cb',1,'DualButton::pushed()']]]
+  ['on',['on',['../classAbstractButton.html#a183f04ee1764bac387c74bf6e13446b1',1,'AbstractButton::on()'],['../classAnalogInputButton.html#ab5cb35a026135d4875495496cea18e7b',1,'AnalogInputButton::on()'],['../classDebouncedAnalogButton.html#afd5f6ba7456382d757131bab92fb445c',1,'DebouncedAnalogButton::on()'],['../classDebouncedButton.html#ac908c18c076200f3345c86fc3bba366b',1,'DebouncedButton::on()'],['../classDebouncedDualButton.html#a58435c5357bd438a029ae30b5d9c0bf1',1,'DebouncedDualButton::on()'],['../classDigitalInputButton.html#a502de66816d4f2116b834ce505cf7c31',1,'DigitalInputButton::on()'],['../classDualButton.html#aeab84d886111669d451f2ad9f4c86e5a',1,'DualButton::on()'],['../classDualInputButton.html#a604d1216c2ae6538f9157a73d7190d18',1,'DualInputButton::on()'],['../classToggleButton.html#ad65f6ea0758c6d01dc783fe699bb8a28',1,'ToggleButton::on()']]],
+  ['operator_3d',['operator=',['../classPersistentSetting.html#a9e2c5416ce0d67ae4f07400af287064c',1,'PersistentSetting']]]
 ];

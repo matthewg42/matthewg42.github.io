@@ -13,5 +13,6 @@ var searchData=
   ['_5fpin',['_pin',['../classAbstractSampler.html#a43878ad4751cb0886896cf599d8ad6fe',1,'AbstractSampler']]],
   ['_5fsampledata',['_sampleData',['../classBufferedSampler.html#a6865a847b3bfa62fd8877b9f903f29bb',1,'BufferedSampler']]],
   ['_5fsamples',['_samples',['../classBufferedSampler.html#a4a669502fc6ad56dbf70789b8c58dc60',1,'BufferedSampler']]],
-  ['_5fupdated',['_updated',['../classBufferedSampler.html#a6e739a8922d4b8938dfb547924d20f05',1,'BufferedSampler']]]
+  ['_5fupdated',['_updated',['../classBufferedSampler.html#a6e739a8922d4b8938dfb547924d20f05',1,'BufferedSampler']]],
+  ['_5fvalue',['_value',['../classQuantizedPot.html#a76824ad27c0415c2e38a87dd9a62a5e4',1,'QuantizedPot']]]
 ];

@@ -80,6 +80,7 @@ $(function() {
 <li><em><a class="el" href="classDebouncedAnalogButton.html" title="Timeslice-based button with debouncing using analogRead. ">DebouncedAnalogButton</a></em> - time slice-based debounced button class with input from an <a class="el" href="classAnalogInputButton.html">AnalogInputButton</a> object.</li>
 <li><em><a class="el" href="classDebouncedDualButton.html">DebouncedDualButton</a></em> - time slice-based debounced button class with input from a <a class="el" href="classDualInputButton.html">DualInputButton</a> object.</li>
 <li><em><a class="el" href="classDiscretePot.html">DiscretePot</a></em> - use a potential divider attached to an analog input to return a discrete value within a specified range - includes smoothing.</li>
+<li><em><a class="el" href="classQuantizedPot.html">QuantizedPot</a></em> - use a potential divider attached to an analog input to return a discrete value based on specific ranges of raw values - includes smoothing.</li>
 <li><em><a class="el" href="classToggleButton.html">ToggleButton</a></em> - each press flips state from on to off.</li>
 </ul>
 <p>Terms used for Mutila input classes:</p>
@@ -116,7 +117,7 @@ $(function() {
 <p>A <em><a class="el" href="classMode.html">Mode</a></em> is a kind of sub-program which has distinct startup, shutdown and update routines. For example, your program might have a special setup mode which suspends normal operations while settings are altered. The <em><a class="el" href="classModeManager.html">ModeManager</a></em> class can be used to switch between such mutually exclusive modes while keeping your main loop clean and simple.</p>
 <p>Modes may be arranged in a hierarchical manner using the <em><a class="el" href="classParentMode.html">ParentMode</a></em> class. This can be useful when building hierarchical menu systems which a couple of buttons.</p>
 <h3>EEPROM-backed Settings</h3>
-<p><em>PersistentSettings</em> provides an EEPROM-backed store for settings which you want to survive Arduino resets.</p>
+<p><em><a class="el" href="classPersistentSetting.html">PersistentSetting</a></em> provides an EEPROM-backed store for settings which you want to survive Arduino resets.</p>
 <h2>API Documentation</h2>
 <p>Doxygen-generated documentation can be found here: <a href="https://matthewg42.github.io/Mutila/">https://matthewg42.github.io/Mutila/</a></p>
 <h3>Generating documentation</h3>

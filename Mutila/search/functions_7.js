@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['isfinished',['isFinished',['../classMode.html#a7eee303e8d3d6a75cf84d416a3bb5de5',1,'Mode']]],
-  ['isvalid',['isValid',['../classPersistentSetting.html#a12af0aed37f02f1eb7d52a28b905c096',1,'PersistentSetting']]]
+  ['heartbeat',['Heartbeat',['../classHeartbeat.html#a82e5f3f40bd124b66fb12e273b406f0c',1,'Heartbeat']]],
+  ['held',['held',['../classAbstractDebouncedButton.html#ad6425bc0edce537961eed777fef30618',1,'AbstractDebouncedButton::held()'],['../classDualButton.html#a2381138b4696000e407ddd181adace59',1,'DualButton::held()']]]
 ];

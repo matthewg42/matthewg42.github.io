@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sonicranger',['SonicRanger',['../classSonicRanger.html',1,'']]]
+  ['quantizedpot',['QuantizedPot',['../classQuantizedPot.html',1,'']]]
 ];
