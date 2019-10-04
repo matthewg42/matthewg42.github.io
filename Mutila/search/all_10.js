@@ -22,6 +22,6 @@ var searchData=
   ['sonicranger',['SonicRanger',['../classSonicRanger.html',1,'SonicRanger'],['../classSonicRanger.html#a4894b1743c81af8b3230e86211d957a9',1,'SonicRanger::SonicRanger()']]],
   ['start',['start',['../classMode.html#ae78f0051b444b4389eaf984b8a3a4e78',1,'Mode']]],
   ['status',['Status',['../structDFPResponse.html#a66f85c2d6c3ab76a3f1079d2db5c9f7b',1,'DFPResponse']]],
-  ['stop',['Stop',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542daeab028bcf1709f0c42ee7483397db6e0',1,'DFPlayerMini::Stop()'],['../classMode.html#a653b321767a9bf1878c285068a2aae24',1,'Mode::stop()']]],
+  ['stop',['stop',['../classMode.html#a653b321767a9bf1878c285068a2aae24',1,'Mode::stop()'],['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542daeab028bcf1709f0c42ee7483397db6e0',1,'DFPlayerMini::Stop()']]],
   ['switchmode',['switchMode',['../classModeManager.html#ae55bdd41ef522137f8e7bd3373cbbdef',1,'ModeManager::switchMode()'],['../classParentMode.html#ade4f1473efd9fd796d8c38c5963b08bb',1,'ParentMode::switchMode()']]]
 ];

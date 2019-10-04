@@ -71,7 +71,7 @@ $(function() {
 <p>All code written by Matthew Gates (Mouse), and licensed under the GNU GPL version 3. See the LICENSE file for details.</p>
 <h2>Feature Summary</h2>
 <h3>Inputs</h3>
-<p>A collection of classes and functions for nice handling of basic inputs (buttons and such). The classes are kept as simple as possible while having enough functionality to be useful. ''Time slice-based'' classes should have their ''update()'' method called as frequently as possible, which will return rapidly. These classes are an alternative to interrupt driven IO for projects where interrupts can't be used - e.g. where <em>Mutila</em> inputs must not interfere with timing of other parts of your project which might use interrupts themselves (e.g. motor control)</p>
+<p>A collection of classes and functions for nice handling of basic inputs (buttons and such). The classes are kept as simple as possible while having enough functionality to be useful. ''Time slice-based'' classes should have their ''update()'' method called as frequently as possible, which will return rapidly. These classes are an alternative to interrupt driven IO for projects where interrupts can't be used - e.g. where <em>Mutila</em> inputs must not interfere with timing of other parts of your project which might use interrupts themselves (e.g. motor control).</p>
 <ul>
 <li><em><a class="el" href="classDigitalInputButton.html">DigitalInputButton</a></em> - switch from a digital input pin.</li>
 <li><em><a class="el" href="classAnalogInputButton.html">AnalogInputButton</a></em> - switch from an analog input pin.</li>
@@ -81,6 +81,7 @@ $(function() {
 <li><em><a class="el" href="classDebouncedDualButton.html">DebouncedDualButton</a></em> - time slice-based debounced button class with input from a <a class="el" href="classDualInputButton.html">DualInputButton</a> object.</li>
 <li><em><a class="el" href="classDiscretePot.html">DiscretePot</a></em> - use a potential divider attached to an analog input to return a discrete value within a specified range - includes smoothing.</li>
 <li><em><a class="el" href="classQuantizedPot.html">QuantizedPot</a></em> - use a potential divider attached to an analog input to return a discrete value based on specific ranges of raw values - includes smoothing.</li>
+<li><em><a class="el" href="classMultiThrowSwitch.html">MultiThrowSwitch</a></em> - use for rotary switches with arbitrary number of throws.</li>
 <li><em><a class="el" href="classToggleButton.html">ToggleButton</a></em> - each press flips state from on to off.</li>
 </ul>
 <p>Terms used for Mutila input classes:</p>

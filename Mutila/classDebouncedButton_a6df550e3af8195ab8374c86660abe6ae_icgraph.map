@@ -1,4 +1,6 @@
 <map id="DebouncedButton::update" name="DebouncedButton::update">
-<area shape="rect" id="node2" href="$classDualButton.html#aa3e0cbe8865dce165618a1897ee1575b" title="DualButton::update" alt="" coords="250,5,398,32"/>
-<area shape="rect" id="node3" href="$classToggleButton.html#ab8a6fdad6e76b0d9466e55bbefd3bc46" title="ToggleButton::update" alt="" coords="244,56,404,83"/>
+<area shape="rect" id="node2" href="$classDualButton.html#aa3e0cbe8865dce165618a1897ee1575b" title="DualButton::update" alt="" coords="265,5,413,32"/>
+<area shape="rect" id="node3" href="$classMultiThrowSwitch.html#ae5045d63d9810eac2a953fd2b83936b9" title="MultiThrowSwitch::update" alt="" coords="244,56,435,83"/>
+<area shape="rect" id="node5" href="$classToggleButton.html#ab8a6fdad6e76b0d9466e55bbefd3bc46" title="ToggleButton::update" alt="" coords="259,107,419,133"/>
+<area shape="rect" id="node4" href="$classMultiThrowSwitch.html#a60820394b70b9af0f666f37beba7ac68" title="MultiThrowSwitch::begin" alt="" coords="483,56,664,83"/>
 </map>
