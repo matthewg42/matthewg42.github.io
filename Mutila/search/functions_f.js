@@ -10,7 +10,7 @@ var searchData=
   ['setstate',['setState',['../classAbstractDebouncedButton.html#a865fdf4b67386c90b53d33906a22bc6d',1,'AbstractDebouncedButton']]],
   ['settimeoutms',['setTimeoutMs',['../classSonicRanger.html#af86e296bdb4e89c38d9aa6e5b3387330',1,'SonicRanger']]],
   ['setupdateperiod',['setUpdatePeriod',['../classMode.html#a1b458a232619aab904c58df750c8546a',1,'Mode']]],
-  ['size',['size',['../classPersistentSetting.html#ad0798aad8e98b7eb8ccf5aeebf05e16d',1,'PersistentSetting']]],
+  ['size',['size',['../classPersistentSetting.html#a722b6acb61b42b59039e24b4af2fc22d',1,'PersistentSetting']]],
   ['sonicranger',['SonicRanger',['../classSonicRanger.html#a4894b1743c81af8b3230e86211d957a9',1,'SonicRanger']]],
   ['start',['start',['../classMode.html#ae78f0051b444b4389eaf984b8a3a4e78',1,'Mode']]],
   ['stop',['stop',['../classMode.html#a653b321767a9bf1878c285068a2aae24',1,'Mode']]],

@@ -1,5 +1,6 @@
 <map id="Mode::start" name="Mode::start">
-<area shape="rect" id="node2" href="$classModeManager.html#ae55bdd41ef522137f8e7bd3373cbbdef" title="ModeManager::switchMode" alt="" coords="148,5,347,32"/>
-<area shape="rect" id="node4" href="$classParentMode.html#ade4f1473efd9fd796d8c38c5963b08bb" title="ParentMode::switchMode" alt="" coords="156,56,339,83"/>
-<area shape="rect" id="node3" href="$classModeManager.html#aa8ae29e6b7b4fc75ba7e5fc3f2b11b64" title="ModeManager::begin" alt="" coords="395,5,552,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="457,31,552,57"/>
+<area shape="rect" id="node2" href="$classModeManager.html#ae55bdd41ef522137f8e7bd3373cbbdef" title=" " alt="" coords="211,5,409,32"/>
+<area shape="rect" id="node4" href="$classParentMode.html#ade4f1473efd9fd796d8c38c5963b08bb" title=" " alt="" coords="218,56,402,83"/>
+<area shape="rect" id="node3" href="$classModeManager.html#aa8ae29e6b7b4fc75ba7e5fc3f2b11b64" title=" " alt="" coords="5,5,163,32"/>
 </map>

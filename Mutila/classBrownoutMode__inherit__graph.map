@@ -1,3 +1,4 @@
 <map id="BrownoutMode" name="BrownoutMode">
-<area shape="rect" id="node2" href="$classMode.html" title="{Mode\n|# _state\l# _lastUpdateMs\l# _updatePeriodMs\l|+ Mode()\l+ begin()\l+ isFinished()\l+ start()\l+ stop()\l+ update()\l+ setUpdatePeriod()\l# modeStart()\l# modeStop()\l# modeUpdate()\l}" alt="" coords="5,5,160,244"/>
+<area shape="rect" id="node1" title="Mode class with brownout detection." alt="" coords="11,292,155,472"/>
+<area shape="rect" id="node2" href="$classMode.html" title=" " alt="" coords="5,5,160,244"/>
 </map>

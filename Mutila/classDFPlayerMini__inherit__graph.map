@@ -1,3 +1,4 @@
 <map id="DFPlayerMini" name="DFPlayerMini">
-<area shape="rect" id="node2" href="$classDFPReader.html" title="{DFPReader\n|+ PlaybackStartMs\l+ Mp3TrackZero\l+ Mp3TrackTen\l+ Mp3TrackTwenty\l+ Mp3TrackThirty\l+ Mp3TrackFourty\l+ Mp3TrackFifty\l+ Mp3TrackSixty\l+ Mp3TrackSeventy\l+ Mp3TrackEighty\land 25 more...\l|+ DFPReader()\l+ ~DFPReader()\l+ begin()\l+ update()\l+ readNumber()\l+ reading()\l+ resetReaderBuf()\l+ appendElement()\l}" alt="" coords="15,277,166,604"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,177,229"/>
+<area shape="rect" id="node2" href="$classDFPReader.html" title=" " alt="" coords="16,277,167,604"/>
 </map>

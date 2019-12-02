@@ -1,3 +1,4 @@
 <map id="DFPReader" name="DFPReader">
-<area shape="rect" id="node2" href="$classDFPlayerMini.html" title="{DFPlayerMini\n|+ BufferLength\l+ MinimumTimeMs\l+ ResponseTimeoutMs\l+ PacketOffsetCmd\l+ PacketOffsetArg\l+ PacketOffsetCkSum\l|+ DFPlayerMini()\l+ begin()\l+ sendCmd()\l+ query()\l+ busy()\l+ check()\l}" alt="" coords="5,5,176,229"/>
+<area shape="rect" id="node1" title=" " alt="" coords="16,277,167,604"/>
+<area shape="rect" id="node2" href="$classDFPlayerMini.html" title=" " alt="" coords="5,5,177,229"/>
 </map>

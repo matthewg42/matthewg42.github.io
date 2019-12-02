@@ -15,7 +15,7 @@ var searchData=
   ['setupdateperiod',['setUpdatePeriod',['../classMode.html#a1b458a232619aab904c58df750c8546a',1,'Mode']]],
   ['setvolume',['SetVolume',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da69ce0e1556d6213e11f2d4a195b0d40e',1,'DFPlayerMini']]],
   ['singleloop',['SingleLoop',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da58c5b1fea14d8ad690df8ddd7a1369ad',1,'DFPlayerMini']]],
-  ['size',['size',['../classPersistentSetting.html#ad0798aad8e98b7eb8ccf5aeebf05e16d',1,'PersistentSetting']]],
+  ['size',['size',['../classPersistentSetting.html#a722b6acb61b42b59039e24b4af2fc22d',1,'PersistentSetting']]],
   ['sleep',['Sleep',['../classDFPlayerMini.html#ab911bc8f36339e52bbc740139220542da9174dfef98dcc0cb3cdd0787912a2be4',1,'DFPlayerMini']]],
   ['slow',['Slow',['../classHeartbeat.html#a1549df64b3207a5fd4ce23a84b79c4f7acfaa9d007c11928f08d4b89db1e96321',1,'Heartbeat']]],
   ['slower',['Slower',['../classHeartbeat.html#a1549df64b3207a5fd4ce23a84b79c4f7a3da6e8400dcb2c5be06ef46459004a73',1,'Heartbeat']]],
